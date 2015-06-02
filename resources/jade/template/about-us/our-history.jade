@@ -1,0 +1,35 @@
+.row.history
+  .col-sm-12
+    #carousel-history-lautanluas.carousel.slide(data-ride='carousel')
+     
+      //- Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          .col-xs-6
+            img.img-responsive(src='images/1999.jpg', alt='gambar')
+          .col-xs-6
+            .year
+              h1 1969
+            .description
+              p Established first indonesia manufacturing
+
+        each item in [1,2,3]
+          .item
+            .col-xs-6
+              img.img-responsive(src='images/1999.jpg', alt='gambar')
+            .col-xs-6
+              .year
+                h1 1969
+              .description
+                p Established first indonesia manufacturing
+        
+     
+      //- Controls
+      a.left.carousel-control(href='#carousel-history-lautanluas', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#carousel-history-lautanluas', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+
+        

@@ -1,0 +1,148 @@
+extends ./_layout.jade
+
+block title
+  title About Us
+
+block content
+  .container-fluid.hero
+
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.active About Us
+
+  //- Intro paragraph
+  .padding-large
+    .container
+      .row
+        .col-sm-12
+          p Lautan Luas was founded in 1951 as an importer and distributor of basic chemicals. Today, the Company has evolved to become a distributor and manufacturer of basic and specialty chemicals, working with over 100 international principals, supplying more than 1,000 chemical products and serving some 2,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
+            | To oversee its vast distribution networks, Lautan Luas, is headquartered in Jakarta, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
+            |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
+
+          p Lautan Luas was founded in 1951 as an importer and distributor of basic chemicals. Today, the Company has evolved to become a distributor and manufacturer of basic and specialty chemicals, working with over 100 international principals, supplying more than 1,000 chemical products and serving some 2,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
+            | To oversee its vast distribution networks, Lautan Luas, is headquartered in Jakarta, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
+            |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
+
+  //- Tab - tab
+  div
+    .container
+      div.about-nav-tab(role='tabpanel')
+        //- Nav tabs
+        ul.nav.nav-tabs(role='tablist')
+          li.col-xs-4.text-center.active(role='presentation')
+            a(href='#ourbusiness', aria-controls='ourbusiness', role='tab', data-toggle='tab') Our Business
+          li.col-xs-4.text-center(role='presentation')
+            a(href='#ourhistory', aria-controls='ourhistory', role='tab', data-toggle='tab') Our History
+          li.col-xs-4.text-center(role='presentation')
+            a(href='#companyprofile', aria-controls='companyprofile', role='tab', data-toggle='tab') COmpany Profile
+         
+    //- Tab panes
+    .gray-bg.padding-large.about-content-tab
+      .container
+        .row
+          .col-sm-12
+            .tab-content
+              #ourbusiness.tab-pane.fade.in.active(role='tabpanel')
+                include ./template/about-us/our-business.jade
+              #ourhistory.tab-pane.fade(role='tabpanel')
+                include ./template/about-us/our-history.jade
+              #companyprofile.tab-pane.fade(role='tabpanel')
+                include ./template/about-us/company-profile.jade
+
+  //- Visi misi
+  .padding-large
+    .container
+      .row.visi-misi
+        .col-sm-6
+          h3 Our Vision
+          p To be the Leading Regional Integrated chemical distribution and manufacturing company by providing:
+          ul.list-unstyled
+            li Value to customers in becoming a preferred business partner
+            li Challenge and Opportunities to our employees; and
+            li Superior Return to our shareholders.
+        .col-sm-6
+          h3 Our Core Values
+          ul.list-unstyled
+            li We comply with high ethical standards.
+            li We commit to excellence, accountability, and responsibility in every role-performance.
+            li We serve our customers to the best of our ability.
+            li We recognize and reward creativity.
+            li We treat people with respect.
+  
+  //- Pendiri
+  .gray-bg.pendiri
+    .container-fluid
+      .row.row-pendiri
+        .col-sm-6.wrapper-2
+          a(href="#")
+            .text-wrapper.text-center.padding-small
+              span Lalalal lilil loooo
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+        .col-sm-6.wrapper-2
+          a(href="#")
+            .text-wrapper.text-center.padding-small
+              span Lalalal lilil loooo
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+      .row.row-pendiri
+        .col-sm-4.wrapper-3
+          a(href="#")
+            .text-wrapper.text-center.padding-small
+              span Lalalal lilil loooo
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+        .col-sm-4.wrapper-3
+          a(href="#")
+            .text-wrapper.text-center.padding-small
+              span Lalalal lilil loooo
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+        .col-sm-4.wrapper-3
+          a(href="#")
+            .text-wrapper.text-center.padding-small
+              span Lalalal lilil loooo
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+
+  
+  //- Video
+  .padding-large
+    .container.about-video
+      .row
+        .col-sm-12
+          h5 Videos
+      .row.row-video
+        a(class="fancybox fancybox.iframe" rel="group", href="https://www.youtube.com/embed/erLk59H86ww?autoplay=1")
+          .play-wrapper
+            i.fa.fa-play-circle
+          img.img-responsive(src="images/2005.jpg", alt="Budha")
+      .row.row-video
+        .col-sm-6.left
+          a(class="fancybox fancybox.iframe" rel="group", href="https://www.youtube.com/embed/erLk59H86ww?autoplay=1")
+            .play-wrapper
+              i.fa.fa-play-circle
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+        .col-sm-6.right
+          a(class="fancybox fancybox.iframe" rel="group", href="https://www.youtube.com/embed/erLk59H86ww?autoplay=1")
+            .play-wrapper
+              i.fa.fa-play-circle
+            img.img-responsive(src="images/2005.jpg", alt="Budha")
+
+block script
+  script(type="text/javascript").
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        maxWidth  : 800,
+        maxHeight : 600,
+        fitToView : false,
+        width   : '70%',
+        height    : '70%',
+        autoSize  : false,
+        closeClick  : false,
+        padding: 0,
+        loop: false,
+        tpl: {
+          next: '',
+          prev: ''
+        }
+      });
+    });

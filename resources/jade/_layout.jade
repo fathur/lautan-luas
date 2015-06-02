@@ -1,0 +1,121 @@
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='images/favicon.png')
+    
+    block title
+
+    //- Bootstrap core CSS
+    link(href='css/lautan-luas-bootstrap.css', rel='stylesheet')
+    link(href='css/jquery.fancybox.css', rel='stylesheet')
+    //- link(href='css/owl.carousel.css', rel='stylesheet')
+  
+    //- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='index.html')
+            img.img-responsive(src="images/logo.png")
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a(href='index.html') Home
+            each menu in [{link: 'about-us.html', text:'About Us'}, {link: 'industries.html', text:'Industries'}, {link: 'investor-relations.html', text:'Investor Relations'}, {link: 'csr.html', text:'CSR'}, {link: 'careers.html', text:'Careers'}, {link: 'contact-us.html', text:'Contact Us'}]
+              li
+                a(href=menu.link)= menu.text
+            
+        //- /.nav-collapse
+    block content
+
+    .footer.blue-bg
+      .container.hidden-xs.hidden-sm
+        .row.padding-large.footer-top
+          .col-sm-3
+            h4 About Us
+            ul.list-unstyled
+              each item in [{link: '#', text: 'Our Business'},{link: '#', text: 'Our History'},{link: '#', text: 'Board of Directors'},{link: '#', text: 'Board of Commissioners'},{link: '#', text: 'Health, Safety, and Environment'},{link: '#', text: 'Good Corporate Governance'},{link: '#', text: 'Our People'}]
+                li
+                  a(href=item.link)= item.text
+          .col-sm-3
+            h4 Product and Services
+            ul.list-unstyled
+              each item in [{link: '#', text: 'Industries'},{link: '#', text: 'Lab Services and R&D'},{link: '#', text: 'Supply Chain'},{link: '#', text: 'IT Solutions'},{link: '#', text: 'Water Treatment'}]
+                li
+                  a(href=item.link)= item.text
+          .col-sm-2
+            h4 Investor Relations
+            ul.list-unstyled
+              each item in [{link: '#', text: 'Stock Information'},{link: '#', text: 'Financial Information'},{link: '#', text: 'News and Events'},{link: '#', text: 'FAQ'}]
+                li
+                  a(href=item.link)= item.text
+          .col-sm-2
+            h4 CSR
+            ul.list-unstyled
+              each item in [{link: '#', text: 'Housing'},{link: '#', text: 'Education'},{link: '#', text: 'Environment'},{link: '#', text: 'Other'}]
+                li
+                  a(href=item.link)= item.text
+          .col-sm-2
+            h4 Careers
+            ul.list-unstyled
+              each item in [{link: '#', text: 'View All Jobs'},{link: '#', text: 'How to Apply'},{link: '#', text: 'What We Offer'},{link: '#', text: 'Employee Stories'},{link: '#', text: 'Employee Activities'},{link: '#', text: 'Events'}]
+                li
+                  a(href=item.link)= item.text
+        
+      .container-fluid
+        .row.footer-bottom.padding-small
+          .container-fluid
+            .col-sm-8
+              .hidden-xs.hidden-sm Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.
+              ul.menu
+                li 
+                  a(href="index.html") Home
+                li 
+                  a(href="#") Terms of Use
+                li 
+                  a(href="#") Privacy Policy
+                li 
+                  a(href="#") Accessibility
+                li 
+                  a(href="#") Disclaimer
+                li 
+                  a(href="contact-us.html") Contact Us
+              .hidden-md.hidden-lg Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.
+            .col-sm-4.sosmed
+              a(href="#")
+                .icon.facebook
+                  i.fa.fa-facebook
+              a(href="#")
+                .icon
+                  i.fa.fa-twitter
+              a(href="#")
+                .icon
+                  i.fa.fa-linkedin
+             
+    //- Placed at the end of the document so the pages load faster
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    //- IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='js/ie10-viewport-bug-workaround.js')
+    script(src='js/ie10-viewport-bug-workaround.js')
+    //- script(src='js/owl.carousel.min.js')
+    script(src='js/jquery.mousewheel-3.0.6.pack.js')
+    script(src='js/jquery.fancybox.pack.js')
+
+
+    block script

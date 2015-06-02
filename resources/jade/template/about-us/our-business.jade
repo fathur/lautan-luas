@@ -1,0 +1,18 @@
+.row
+  .tabs-left
+    .col-xs-3
+      ul.nav.nav-tabs(role='tablist')
+        li.active(role='presentation')
+          a(href='#distribution', aria-controls='distribution', role='tab', data-toggle='tab') Distribution
+        li(role='presentation')
+          a(href='#manufacturing', aria-controls='manufacturing', role='tab', data-toggle='tab') Manufacturing
+        li(role='presentation')
+          a(href='#services', aria-controls='services', role='tab', data-toggle='tab') Support and Services
+
+    .tab-content.col-xs-9
+      #distribution.tab-pane.fade.in.active(role='tabpanel')
+        include ./our-business/distribution.jade
+      #manufacturing.tab-pane.fade(role='tabpanel')
+        include ./our-business/manufacturing.jade
+      #services.tab-pane.fade(role='tabpanel')
+        include ./our-business/services.jade
