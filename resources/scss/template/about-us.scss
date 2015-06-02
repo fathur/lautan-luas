@@ -412,6 +412,7 @@
 			  margin-top: 0px;
 			  line-height: 1.5em;
 			  font-weight: 600;
+			  color: $white;
 		}
 
 		.bottom {
@@ -427,9 +428,45 @@
 	}
 }
 
+.board-of {
+	.board-row {
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	
+
+		& > .picture {
+			position: relative;
+
+			& > .gray-bg {
+				position: absolute;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				height: 200px;
+				border-bottom: 1px solid #ebebeb;
+				border-top: 0px solid $white;
+			}
+		}
+
+		& > .description {
+			h2 {
+				margin-top: 30px;
+			}
+			
+			small {
+				color: $dark_blue;
+				margin-bottom: 20px; 
+				display: inline-block;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 .board-single {
 	.description {
-		& > small {
+		small {
 			color: $dark_blue;
 			margin-bottom: 20px; 
 			display: inline-block;

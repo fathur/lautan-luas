@@ -15,13 +15,65 @@ block content
           a(href="about-us.html") About Us
         li.active Board of Directors
 
-  .white-bg
-    .container
-      .row
-        .board
+  .white-bg.board-of.padding-extra-large
+    each item in [1,2,3]
+      // Untuk table dan desktop version
+      .board-row.hidden-xs
+        .picture
           .gray-bg
-          .col-sm-6 ss
-          .col-sm-6 ssss
+          .container
+            .col-sm-6
+              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+            .col-sm-6
+              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
         .description
-      .row
-      .row
+          .container
+            .col-sm-6
+              h2 Indrawan Masrin
+              small
+                i President Director
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+            .col-sm-6 
+              h2 Indrawan Masrin
+              small
+                i President Director
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+
+      // Untuk mobile version
+      .board-row.hidden-sm.hidden-md.hidden-lg
+        // First person
+        .picture
+          .gray-bg
+          .container
+            .col-sm-12
+              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+        .description
+          .container
+            .col-sm-12
+              h2 Indrawan Masrin
+              small
+                i President Director
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+
+        // Second person
+        .picture
+          .gray-bg
+          .container
+            .col-sm-12
+              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+        .description
+          .container
+            .col-sm-12
+              h2 Indrawan Masrin
+              small
+                i President Director
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+         

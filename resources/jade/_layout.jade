@@ -34,8 +34,8 @@ html(lang='en')
             img.img-responsive(src="images/logo.png")
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
-            li.active
-              a(href='index.html') Home
+            //- li.active
+            //-   a(href='index.html') Home
             each menu in [{link: 'about-us.html', text:'About Us'}, {link: 'industries.html', text:'Industries'}, {link: 'investor-relations.html', text:'Investor Relations'}, {link: 'csr.html', text:'CSR'}, {link: 'careers.html', text:'Careers'}, {link: 'contact-us.html', text:'Contact Us'}]
               li
                 a(href=menu.link)= menu.text

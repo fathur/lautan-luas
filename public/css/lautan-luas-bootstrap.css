@@ -9597,6 +9597,13 @@ ul.list-unstyled > li {
   line-height: 1.8;
 }
 
+a {
+  color: #032077;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .btn-lautan {
   text-transform: uppercase;
 }
@@ -9666,17 +9673,26 @@ ul.list-unstyled > li {
 }
 
 .padding-small {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .padding-large {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .padding-extra-large {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .padding-extra-large {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .hero {
   height: 500px;
   margin-bottom: 0;
@@ -10054,6 +10070,7 @@ ul.list-unstyled > li {
   margin-top: 0px;
   line-height: 1.5em;
   font-weight: 600;
+  color: #FFFFFF;
 }
 .good-corporate .text-wrapper .bottom {
   position: absolute;
@@ -10065,7 +10082,32 @@ ul.list-unstyled > li {
   padding: 5px 0;
 }
 
-.board-single .description > small {
+.board-of .board-row:not(:last-child) {
+  margin-bottom: 50px;
+}
+.board-of .board-row > .picture {
+  position: relative;
+}
+.board-of .board-row > .picture > .gray-bg {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 200px;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 0px solid #FFFFFF;
+}
+.board-of .board-row > .description h2 {
+  margin-top: 30px;
+}
+.board-of .board-row > .description small {
+  color: #010E35;
+  margin-bottom: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.board-single .description small {
   color: #010E35;
   margin-bottom: 20px;
   display: inline-block;

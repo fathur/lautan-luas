@@ -36,6 +36,14 @@ ul {
 	}
 }
 
+a {
+	color: $light-blue;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 img {
 	// margin-bottom: 30px;
 }
@@ -128,15 +136,26 @@ img {
 }
 
 .padding-small {
-	padding: $section-padding-small 0;
+	padding-top: $section-padding-small;
+	padding-bottom: $section-padding-small;
 }
 
 .padding-large {
-	padding: $section-padding-large 0;
+	padding-top: $section-padding-large;
+	padding-bottom: $section-padding-large;
 }
 
 .padding-extra-large {
-	padding: $section-padding-extra-large 0;
+	padding-top: $section-padding-extra-large;
+	padding-bottom: $section-padding-extra-large;
+}
+
+@media screen and (max-width: 767px) {
+
+	.padding-extra-large {
+		padding-top: $section-padding-large;
+		padding-bottom: $section-padding-large;
+	}	
 }
 
 .hero {
