@@ -17,7 +17,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-base);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-luas);
   @include user-select(none);
 
   &,
@@ -78,6 +78,10 @@
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+// Button lautan
+.btn-lautan {
+  @include button-variant($btn-lautan-color, $btn-lautan-bg, $btn-lautan-border);
 }
 
 

@@ -5,12 +5,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
+	color: $light-blue;
 }
 
 h3 {
-	color: $light-blue;
 	font-weight: 300;
 	margin-top: 0px;
 	margin-bottom: 30px;
@@ -19,7 +19,6 @@ h3 {
 h5 {
 	font-weight: 700;
 	text-transform: uppercase;
-	color: $light-blue;
 	margin-bottom: 30px;
 }
 
@@ -37,7 +36,20 @@ ul {
 	}
 }
 
+img {
+	// margin-bottom: 30px;
+}
 
+.btn-lautan {
+	
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus {
+		background-color: $white;
+		color: $dark_blue;
+	}
+}
 
 @media screen and (max-width: 767px) {
 	.navbar-brand {
@@ -121,6 +133,10 @@ ul {
 
 .padding-large {
 	padding: $section-padding-large 0;
+}
+
+.padding-extra-large {
+	padding: $section-padding-extra-large 0;
 }
 
 .hero {
