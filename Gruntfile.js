@@ -41,6 +41,7 @@ module.exports = function(grunt) {
 		      "public/about-us--board-of-directors.html": "resources/jade/about-us--board-of-directors.jade",
 		      "public/about-us--board-of-directors--single.html": "resources/jade/about-us--board-of-directors--single.jade",
 		      "public/industries.html": "resources/jade/industries.jade",
+		      "public/industries--service-single.html": "resources/jade/industries--service-single.jade",
 		      "public/investor-relations.html": "resources/jade/investor-relations.jade"
 		    }]
 		  }

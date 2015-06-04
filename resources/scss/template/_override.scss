@@ -5,13 +5,27 @@ body {
 	font-family: 'Open Sans', sans-serif;
 
 }
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	color: $light-blue;
 }
 
-h3 {
+h1 {
+	font-size: 40px;
 	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: 700;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
@@ -126,7 +140,7 @@ img {
 }
 
 .gray-bg {
-	background-color: $gray_blue;
+	background-color: $light_white;
 	border-top: 1px solid $black_border;
 	border-bottom: 1px solid $black_border;
 }
@@ -169,7 +183,7 @@ img {
 }
 
 .breadcrumb-wrapper {
-	background-color: $gray_blue;
+	background-color: $light_white;
 	border-top: 1px solid #d7d7d7;
 	border-bottom: 1px solid #d7d7d7;
 }
