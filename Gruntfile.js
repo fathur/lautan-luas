@@ -42,7 +42,11 @@ module.exports = function(grunt) {
 		      "public/about-us--board-of-directors--single.html": "resources/jade/about-us--board-of-directors--single.jade",
 		      "public/industries.html": "resources/jade/industries.jade",
 		      "public/industries--service-single.html": "resources/jade/industries--service-single.jade",
-		      "public/investor-relations.html": "resources/jade/investor-relations.jade"
+		      "public/investor-relations.html": "resources/jade/investor-relations.jade",
+		      "public/investor-relations--stock-information.html": "resources/jade/investor-relations--stock-information.jade",
+		      "public/investor-relations--financial-information.html": "resources/jade/investor-relations--financial-information.jade",
+		      "public/investor-relations--news-events.html": "resources/jade/investor-relations--news-events.jade",
+		      "public/investor-relations--faq.html": "resources/jade/investor-relations--faq.jade"
 		    }]
 		  }
 		},

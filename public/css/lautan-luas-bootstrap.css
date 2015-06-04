@@ -9582,7 +9582,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -9598,6 +9598,7 @@ h5 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
+  letter-spacing: 0.25em;
 }
 
 p {
@@ -10157,18 +10158,237 @@ a:hover {
 .investor-menu ul {
   margin-bottom: 0px;
 }
-.investor-menu ul > li {
-  padding: 10px 0;
+.investor-menu ul > li.active > a {
+  color: #032077;
 }
 .investor-menu ul > li > a {
   color: #707070;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: .05em;
 }
 .investor-menu ul > li > a:hover, .investor-menu ul > li > a:focus {
   text-decoration: none;
   color: #032077;
+}
+@media screen and (max-width: 767px) {
+  .investor-menu ul > li {
+    width: 24%;
+    text-align: center;
+  }
+  .investor-menu ul > li > a {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .investor-menu ul > li > a {
+    margin-left: 30px;
+    letter-spacing: .15em;
+  }
+}
+
+.investor-contact {
+  font-size: 18px;
+}
+
+.latest-news .wrapper {
+  position: relative;
+  background-color: #edf1f2;
+  border-bottom: 2px solid #bebebe;
+  padding: 20px;
+}
+.latest-news .wrapper date, .latest-news .wrapper .date {
+  text-transform: uppercase;
+  opacity: .5;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .latest-news .wrapper {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .latest-news .wrapper {
+    min-height: 300px;
+  }
+}
+.investor-events .wrapper {
+  position: relative;
+  background-color: #edf1f2;
+  border-bottom: 2px solid #bebebe;
+  padding: 20px;
+}
+.investor-events .wrapper p:last-child {
+  margin-bottom: 120px;
+}
+.investor-events .wrapper .detail {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #BEBEBE;
+  right: 0;
+  left: 0;
+  margin: 20px;
+  color: #032077;
+  padding-top: 20px;
+}
+.investor-events .wrapper .detail .item .icon {
+  float: left;
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+  margin-right: 10px;
+}
+.investor-events .wrapper .detail .item .content,
+.investor-events .wrapper .detail .item .place {
+  padding-top: 3px;
+  float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .investor-events .wrapper {
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .investor-events .wrapper {
+    min-height: 300px;
+  }
+}
+.white-bg .block-stock-info {
+  border-bottom: 1px solid #FAFAFA;
+}
+.white-bg .block-stock-info > div {
+  border-right: 1px solid #FAFAFA;
+}
+.white-bg .block-stock-info > div:last-child {
+  border-right: 0px solid #FAFAFA;
+}
+@media screen and (max-width: 767px) {
+  .white-bg .block-stock-info > div {
+    border-bottom: 1px solid #FAFAFA;
+  }
+}
+
+.blue-bg .block-stock-info {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+.blue-bg .block-stock-info > div {
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+}
+.blue-bg .block-stock-info > div:last-child {
+  border-right: 0px solid rgba(255, 255, 255, 0.09);
+}
+@media screen and (max-width: 767px) {
+  .blue-bg .block-stock-info > div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  }
+}
+
+.block-stock-info > div .item {
+  height: 155px;
+  padding: 30px 40px;
+}
+.block-stock-info > div .item.big {
+  padding: 20px 16px;
+}
+.block-stock-info > div .item.big .money .nominal {
+  font-size: 36px;
+}
+.block-stock-info > div .item.success .money {
+  color: #34b98c;
+}
+.block-stock-info > div .item.danger .money {
+  color: #f02052;
+}
+.block-stock-info > div .item .title,
+.block-stock-info > div .item .date {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .2em;
+  font-weight: 600;
+  line-height: 30px;
+}
+.block-stock-info > div .item .money .currency {
+  font-size: 14px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+.block-stock-info > div .item .money .nominal {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.block-percentation > div .item {
+  height: 155px;
+  padding: 20px;
+  text-align: center;
+}
+.block-percentation > div .item.success .percentation {
+  color: #34b98c;
+}
+.block-percentation > div .item.danger .percentation {
+  color: #f02052;
+}
+.block-percentation > div .item .title {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .2em;
+  font-weight: 600;
+  line-height: 4;
+  color: #032077;
+}
+.block-percentation > div .item .percentation {
+  font-weight: 300;
+  font-size: 48px;
+  color: #032077;
+}
+
+.information-report .item .left {
+  height: 190px;
+}
+.information-report .item .left h2 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.information-report .item .left .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.information-report .item .left .date {
+  font-weight: bold;
+  color: #032077;
+}
+.information-report .item .left .download {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .information-report .item .left .download {
+    left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .information-report .item:first-child {
+    border-right: 1px solid #BEBEBE;
+    padding-right: 70px;
+  }
+  .information-report .item:last-child {
+    padding-left: 70px;
+  }
+  .information-report .item .left .download {
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .information-report .item:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=lautan-luas-bootstrap.css.map */

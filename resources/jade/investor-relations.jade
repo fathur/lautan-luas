@@ -18,9 +18,154 @@ block content
       .row.pull-right.investor-menu
         .col-xs-12
           ul.list-inline
-            each item in [{link: '#', text: 'STOCK INFORMATION'},{link: '#', text: 'FINANCIAL INFORMATION'},{link: '#', text: 'NEWS AND EVENTS'},{link: '#', text: 'FAQ'}]
+            each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
               li
                 a(href=item.link)= item.text
+
+  .white-bg.padding-large
+    .container.latest-news
+      .row
+        .col-xs-6
+          h5 Latest News
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
+      .row
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h2 
+                a(href="#") Lorem Ipsum
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              date May 15
+
+  //- Stock Information + Percentation
+  .blue-bg
+    .container-fluid
+      .row.block-stock-info
+        .col-sm-2.col-xs-6
+          .item.big
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+            .date May 15, 2015
+
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item.success
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item.danger
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+  .gray-bg
+    .container-fluid
+      .row.block-percentation
+        .col-sm-2.col-xs-6
+          .item.success
+            .title revenue growth
+            .percentation 2.94% 
+        .col-sm-2.col-xs-6
+          .item.success
+            .title revenue growth
+            .percentation 2.94% 
+        .col-sm-2.col-xs-6
+          .item.success
+            .title revenue growth
+            .percentation 2.94% 
+        .col-sm-2.col-xs-6
+          .item
+            .title revenue growth
+            .percentation 2.94% 
+        .col-sm-2.col-xs-6
+          .item
+            .title revenue growth
+            .percentation 2.94% 
+        .col-sm-2.col-xs-6
+          .item
+            .title revenue growth
+            .percentation 2.94% 
+
+
+  //- Events
+  .white-bg.padding-large
+    .container.investor-events
+      .row
+        .col-xs-6
+          h5 Events
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
+      .row
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h2 
+                a(href="#") Lorem Ipsum
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              .detail
+                .item
+                  .icon 
+                    i.fa.fa-clock-o
+                  .content
+                    .date May 15, 2015
+                    .hour 09:00 - 11:00
+                .clearfix
+                .item
+                  .icon
+                    i.fa.fa-map-marker
+                  .place Ballroom A, Hotel Mulia
+
+  .gray-bg.padding-extra-large
+    .container
+      .row.information-report
+        .col-sm-6.item
+          .row
+            .col-xs-7.left
+              span.title Lautan Luas 
+              h2 Annual Report
+              span.date 2013
+              .download 
+                a.btn.btn-lautan(href="#") Download PDF
+            .col-xs-5.right
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+        .col-sm-6.item
+          .row
+            .col-xs-7.left
+              span.title Lautan Luas 
+              h2 Investor Newsletter
+              span.date MAY 2013
+              .download 
+                a.btn.btn-lautan(href="#") Download PDF
+            .col-xs-5.right
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+        
+  .white-bg.padding-small
+    .container.investor-contact
+      .row.text-center
+        | For investor relation inquiries, please contact 
+        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
             
 
 block script
