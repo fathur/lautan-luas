@@ -1,0 +1,35 @@
+extends ./_layout.jade
+
+block title
+  title Investor Relations
+
+block content
+  .container-fluid.hero
+
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="investor-relations.html") Investor Relations
+        li.active FAQ
+
+  .gray-bg.padding-small
+    .container
+      .row.pull-right.investor-menu
+        .col-xs-12
+          ul.list-inline
+            each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS'},{link: 'investor-relations--faq.html', text: 'FAQ', state: 'active'}]
+              li(class=item.state)
+                a(href=item.link)= item.text
+                
+  .white-bg.padding-small
+    .container.investor-contact
+      .row.text-center
+        | For investor relation inquiries, please contact 
+        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+            
+            
+
+block script

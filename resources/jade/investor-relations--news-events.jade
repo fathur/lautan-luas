@@ -1,0 +1,67 @@
+extends ./_layout.jade
+
+block title
+  title News and Events
+
+block content
+  .container-fluid.hero
+
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="investor-relations.html") Investor Relations
+        li.active News and Events
+
+  .gray-bg.padding-small
+    .container
+      .row.pull-right.investor-menu
+        .col-xs-12
+          ul.list-inline
+            each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS', state: 'active'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
+              li(class=item.state)
+                a(href=item.link)= item.text
+
+  .white-bg.padding-large
+    .container.latest-news
+      .row
+        .col-xs-6
+          h5 Latest News
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
+      .row
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h2 
+                a(href="#") Lorem Ipsum
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              date May 15
+
+  .white-bg.padding-large
+    .container.investor-events
+      .row
+        .col-xs-6
+          h5 Latest News
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
+      .row
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h2 
+                a(href="#") Lorem Ipsum
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              date May 15
+
+  .white-bg.padding-small
+    .container.investor-contact
+      .row.text-center
+        | For investor relation inquiries, please contact 
+        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+                          
+            
+
+block script

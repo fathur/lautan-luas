@@ -1,0 +1,83 @@
+extends ./_layout.jade
+
+block title
+  title Stock Information
+
+block content
+  .container-fluid.hero
+
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="investor-relations.html") Investor Relations
+        li.active Stock Information
+
+  .gray-bg.padding-small
+    .container
+      .row.pull-right.investor-menu
+        .col-xs-12
+          ul.list-inline
+            each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION', state: 'active'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
+              li(class=item.state)
+                a(href=item.link)= item.text
+  //- Stock Information + Percentation
+  .white-bg
+    .container-fluid
+      .row.block-stock-info
+        .col-sm-2.col-xs-6
+          .item.big
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+            .date May 15, 2015
+
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item.success
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item.danger
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+        .col-sm-2.col-xs-6
+          .item
+            .title Share Price
+            .money
+              span.currency Rp.
+              span.nominal 830.00
+
+  .container 
+    .row
+      .col-xs-12
+        img.img-responsive.center-block(src="images/stock-graph-1.png")
+
+  
+  .white-bg.padding-small
+    .container.investor-contact
+      .row.text-center
+        | For investor relation inquiries, please contact 
+        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+            
+            
+
+block script
