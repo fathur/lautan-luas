@@ -403,19 +403,22 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#filter-year").dataTable({
-          "sPaginationType": "full_numbers",
+      
+        var $filterYear = $('#filter-year'),
+            $selectYear = $('#year-select');
+      
+        $filterYear.dataTable({
           "bFilter": true,
           "bPaginate": false,
           "bInfo" : false,
           "sDom":"lrtip" // default is lfrtip, where the f is the filter
         });
       
-        var oTable = $('#filter-year').dataTable();
+        var oTable = $filterYear.dataTable();
       
-        oTable.fnFilter(  $('#year-select').val() );
+        oTable.fnFilter( $selectYear.val() );
       
-        $('#year-select').change( function() { 
+        $selectYear.change( function() { 
           oTable.fnFilter( $(this).val() ); 
         });
       });
