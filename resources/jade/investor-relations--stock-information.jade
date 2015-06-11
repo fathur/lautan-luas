@@ -77,27 +77,66 @@ block content
         .col-xs-8.col-sm-6
           h5 Share Price History
         .col-xs-4.col-sm-2.col-sm-offset-4
-          select.form-control
+          select.form-control#year-select
             option 2000
             option 2001
             option 2002
             option 2003
             option 2004
-            option 2005
+            option(selected) 2005
       .row
         .col-xs-12
-          table.table.table-responsive
-            tr 
-              th Quarter
-              th High
-              th Low
-              th Average Volume
-            each item in ['Q1','Q2','Q3','Q4']
-              tr
-                td=item
-                td 1.700
-                td 1.450
-                td 1.800.000
+          table.table.table-responsive#filter-year
+            thead
+              tr 
+                th Quarter
+                th High
+                th Low
+                th Average Volume
+                th Year
+            tbody
+              each item in ['Q1','Q2','Q3','Q4']
+                tr
+                  td=item
+                  td 1.700
+                  td 1.450
+                  td 1.800.000
+                  td 2000
+              each item in ['Q1z','Q2z','Q3z','Q4z']
+                tr
+                  td=item
+                  td 1.700
+                  td 1.450
+                  td 1.800.000
+                  td 2001
+              each item in ['Q1x','Q2x','Q3x','Q4x']
+                tr
+                  td=item
+                  td 1.700
+                  td 1.450
+                  td 1.800.000
+                  td 2002
+              each item in ['Q1a','Q2a','Q3a','Q4a']
+                tr
+                  td=item
+                  td 1.700
+                  td 1.450
+                  td 1.800.000
+                  td 2003
+              each item in ['Q1t','Q2t','Q3t','Q4t']
+                tr
+                  td=item
+                  td 1.700
+                  td 1.450
+                  td 1.800.000
+                  td 2004
+              each item in ['Q1a','Q2a','Q3a','Q4a']
+                tr
+                  td=item
+                  td 1.704
+                  td 1.454
+                  td 1.800.000
+                  td 2005 
 
   
   .white-bg.padding-small
@@ -109,3 +148,21 @@ block content
             
 
 block script
+  script(type="text/javascript").
+    $(document).ready(function() {
+      $("#filter-year").dataTable({
+        "sPaginationType": "full_numbers",
+        "bFilter": true,
+        "bPaginate": false,
+        "bInfo" : false,
+        "sDom":"lrtip" // default is lfrtip, where the f is the filter
+      });
+
+      var oTable = $('#filter-year').dataTable();
+
+      oTable.fnFilter(  $('#year-select').val() );
+
+      $('#year-select').change( function() { 
+        oTable.fnFilter( $(this).val() ); 
+      });
+    });

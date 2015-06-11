@@ -63,6 +63,7 @@ img {
 	// margin-bottom: 30px;
 }
 
+table,
 .table {
   /* width: 100%;
   max-width: 100%;
@@ -72,6 +73,9 @@ img {
   > tbody,
   > tfoot {
     > tr {
+      
+      background-color: $light_white !important;
+
       > th,
       > td {
         padding: 30px 8px;
@@ -81,6 +85,12 @@ img {
       	color: $light_blue;
       }
     }
+  }
+
+  &.dataTable {
+  	&.no-footer {
+  		border-bottom: 1px solid $light_white;
+  	}
   }
 }
 
