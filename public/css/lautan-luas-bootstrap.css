@@ -9618,6 +9618,25 @@ a:hover {
   text-decoration: none;
 }
 
+.table {
+  /* width: 100%;
+  max-width: 100%;
+  margin-bottom: $line-height-computed; */
+}
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  padding: 30px 8px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+  color: #032077;
+}
+
 .btn-lautan {
   text-transform: uppercase;
 }
@@ -10389,6 +10408,16 @@ a:hover {
   .information-report .item:not(:last-child) {
     margin-bottom: 50px;
   }
+}
+
+.annnual-report .caption,
+.auditor-report .caption {
+  color: #032077;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=lautan-luas-bootstrap.css.map */

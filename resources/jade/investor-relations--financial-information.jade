@@ -51,8 +51,75 @@ block content
           .item
             .title revenue growth
             .percentation 2.94% 
+
+  .white-bg.padding-large
+    .container.key-performance-ratio
+      .row
+        .col-xs-8.col-sm-6
+          h5 Key Performance Ratio
+        .col-xs-4.col-sm-2.col-sm-offset-4
+          select.form-control
+            option 2000
+            option 2001
+            option 2002
+            option 2003
+            option 2004
+            option 2005
+      .row
+        .col-xs-12
+          table.table.table-responsive
+            tr 
+              th Quarter
+              th Revenue Growth 
+              th Gross Margin
+              th Operating Margin
+              th EBITDA/Net Int. Exp.
+              th Net Debt/Equity
+              th Current Ratio
+            each item in ['Q1','Q2','Q3','Q4']
+              tr
+                td=item
+                td 2.94%
+                td 17.41%
+                td 7.88%
+                td 4.55
+                td 0.97
+                td 1.28
+
+  .gray-bg.padding-large
+    .container.annnual-report
+      .row
+        .col-xs-6
+          h5 Annual Reports
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
+      .row
+        each item in [2010,2011,2012,2013]
+          .col-sm-3.text-center
+            a(href="#")
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+            .caption 
+              a(href="#") Annual Report 
+                =item
+
+  .white-bg.padding-large
+    .container.auditor-report
+      .row
+        .col-xs-6
+          h5 Auditor Reports
+        .col-xs-6.pull-right.text-right
+          a(href="#") View All
+      .row
+        each item in [2010,2011,2012,2013]
+          .col-sm-3.text-center
+            a(href="#")
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+            .caption 
+              a(href="#") Auditor Report 
+                =item
+
                 
-  .white-bg.padding-small
+  .gray-bg.padding-small
     .container.investor-contact
       .row.text-center
         | For investor relation inquiries, please contact 

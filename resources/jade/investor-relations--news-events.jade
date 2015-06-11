@@ -40,11 +40,11 @@ block content
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
               date May 15
 
-  .white-bg.padding-large
+  .gray-bg.padding-large
     .container.investor-events
       .row
         .col-xs-6
-          h5 Latest News
+          h5 Events
         .col-xs-6.pull-right.text-right
           a(href="#") View all
       .row
@@ -54,9 +54,36 @@ block content
               h2 
                 a(href="#") Lorem Ipsum
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
-              date May 15
+              .detail
+                .item
+                  .icon 
+                    i.fa.fa-clock-o
+                  .content
+                    .date May 15, 2015
+                    .hour 09:00 - 11:00
+                .clearfix
+                .item
+                  .icon
+                    i.fa.fa-map-marker
+                  .place Ballroom A, Hotel Mulia
 
-  .white-bg.padding-small
+  .white-bg.padding-large
+    .container.auditor-report
+      .row
+        .col-xs-6
+          h5 Investor Newsletter
+        .col-xs-6.pull-right.text-right
+          a(href="#") View All
+      .row
+        each item in [2010,2011,2012,2013]
+          .col-sm-3.text-center
+            a(href="#")
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+            .caption 
+              a(href="#") Investor Newsletter 
+                =item
+
+  .gray-bg.padding-small
     .container.investor-contact
       .row.text-center
         | For investor relation inquiries, please contact 

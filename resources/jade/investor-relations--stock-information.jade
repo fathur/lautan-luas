@@ -71,6 +71,34 @@ block content
       .col-xs-12
         img.img-responsive.center-block(src="images/stock-graph-1.png")
 
+  .gray-bg.padding-large
+    .container.share-price
+      .row
+        .col-xs-8.col-sm-6
+          h5 Share Price History
+        .col-xs-4.col-sm-2.col-sm-offset-4
+          select.form-control
+            option 2000
+            option 2001
+            option 2002
+            option 2003
+            option 2004
+            option 2005
+      .row
+        .col-xs-12
+          table.table.table-responsive
+            tr 
+              th Quarter
+              th High
+              th Low
+              th Average Volume
+            each item in ['Q1','Q2','Q3','Q4']
+              tr
+                td=item
+                td 1.700
+                td 1.450
+                td 1.800.000
+
   
   .white-bg.padding-small
     .container.investor-contact
