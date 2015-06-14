@@ -391,3 +391,26 @@
 		font-size: 14px;
 	}
 }
+
+.faq {
+	.questions {
+		li {
+			padding: 15px 0;
+		}
+	}
+
+	.devider {
+		margin: 100px 0;
+		border-bottom: 2px solid $gray;
+	}
+
+	.answers {
+		dt {
+			color: #010e35;
+		}
+		
+		dd {
+			margin-bottom: 30px;
+		}
+	}
+}

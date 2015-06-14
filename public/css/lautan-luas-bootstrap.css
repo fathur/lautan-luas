@@ -10380,6 +10380,23 @@ table.dataTable.no-footer,
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  .industry-item .image > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .industry-item .image > img {
+    margin: 0 auto;
+  }
+}
+
+.processes .steps .item .caption {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
 .investor-menu ul {
   margin-bottom: 0px;
 }
@@ -10628,6 +10645,20 @@ table.dataTable.no-footer,
   padding-left: 20px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.faq .questions li {
+  padding: 15px 0;
+}
+.faq .devider {
+  margin: 100px 0;
+  border-bottom: 2px solid #BEBEBE;
+}
+.faq .answers dt {
+  color: #010e35;
+}
+.faq .answers dd {
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=lautan-luas-bootstrap.css.map */

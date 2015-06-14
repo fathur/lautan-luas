@@ -43,3 +43,34 @@
 		}
 	}
 }
+
+.industry-item {
+	.image {
+
+		@media (min-width: 768px) {
+			& > img {
+				width: 100%;
+			}
+		}
+
+
+		@media screen and (max-width: 767px) {
+			& > img {
+				margin: 0 auto;
+			}
+		}
+
+	}
+}
+
+.processes {
+	.steps {
+		.item {
+			.caption {
+				font-size: 14px;
+				font-weight: bold;
+				padding-top: 10px;
+			}
+		}
+	}
+}
