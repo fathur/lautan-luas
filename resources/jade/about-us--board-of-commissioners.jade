@@ -1,0 +1,81 @@
+extends ./_layout.jade
+
+block title
+  title Board of Directors
+
+block content
+  .container-fluid.hero
+
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="about-us.html") About Us
+        li.active Board of Commissioners
+
+  .white-bg.board-of.padding-extra-large
+    //- each item in [1,2,3]
+    each item in [{name1: 'Joan Fudiana', title1: 'President Commissioner', picture1: 'images/joan-fudiana-1.png', name2: 'Pranata Hajadi', title2: 'Vice President Commissioner', picture2: 'images/pranata-hajadi-1.png'},{name1: 'Hari Slamet Widodo', title1: 'Independent Commissioner', picture1: 'images/hari-slamet-widodo-1.png', name2: 'Zaenal Arifin', title2: 'Independent Commissioner', picture2: 'images/zaenal-arifin-1.png'}]
+      
+      // Untuk table dan desktop version
+      .board-row.hidden-xs
+        .picture
+          .gray-bg
+          .container
+            .col-sm-6
+              img.img-responsive.center-block(src= item.picture1)
+            .col-sm-6
+              img.img-responsive.center-block(src= item.picture2)
+        .description
+          .container
+            .col-sm-6
+              h2= item.name1
+              small
+                i= item.title1
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+            .col-sm-6 
+              h2= item.name2
+              small
+                i= item.title2
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+
+      // Untuk mobile version
+      .board-row.hidden-sm.hidden-md.hidden-lg
+        // First person
+        .picture
+          .gray-bg
+          .container
+            .col-sm-12
+              img.img-responsive.center-block(src= item.picture1)
+        .description
+          .container
+            .col-sm-12
+              h2= item.name1
+              small
+                i= item.title1
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+
+        // Second person
+        .picture
+          .gray-bg
+          .container
+            .col-sm-12
+              img.img-responsive.center-block(src= item.picture2)
+        .description
+          .container
+            .col-sm-12
+              h2= item.name2
+              small
+                i= item.title2
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              p
+                a(href="about-us--board-of-directors--single.html") View Profile
+         

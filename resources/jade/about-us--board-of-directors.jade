@@ -16,29 +16,29 @@ block content
         li.active Board of Directors
 
   .white-bg.board-of.padding-extra-large
-    each item in [1,2,3]
+    each item in [{name1: 'Indrawan Masrin', title1: 'President Director', picture1: 'images/indrawa-masrin-1.png', name2: 'Jimmy Masrin', title2: 'Vice President Director', picture2: 'images/jimmy-masrin-1.png'},{name1: 'Joshua Chandraputra Asali', title1: 'Managing Director, Business Development Director', picture1: 'images/joshua-asali-1.png', name2: 'Herman Santoso', title2: 'Operations Director', picture2: 'images/herman-santoso-1.png'},{name1: 'Soewandhi Soekamto', title1: 'Commercial Director', picture1: 'images/soewandhi-soekamto-1.png', name2: 'Danny Adenan', title2: 'Manufacturing, Support and Services Director', picture2: 'images/danny-adenan-1.png'}]
       // Untuk table dan desktop version
       .board-row.hidden-xs
         .picture
           .gray-bg
           .container
             .col-sm-6
-              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+              img.img-responsive.center-block(src= item.picture1)
             .col-sm-6
-              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+              img.img-responsive.center-block(src= item.picture2)
         .description
           .container
             .col-sm-6
-              h2 Indrawan Masrin
+              h2= item.name1
               small
-                i President Director
+                i= item.title1
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
               p
                 a(href="about-us--board-of-directors--single.html") View Profile
             .col-sm-6 
-              h2 Indrawan Masrin
+              h2= item.name2
               small
-                i President Director
+                i= item.title2
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
               p
                 a(href="about-us--board-of-directors--single.html") View Profile
@@ -50,13 +50,13 @@ block content
           .gray-bg
           .container
             .col-sm-12
-              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+              img.img-responsive.center-block(src= item.picture1)
         .description
           .container
             .col-sm-12
-              h2 Indrawan Masrin
+              h2= item.name1
               small
-                i President Director
+                i= item.title1
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
               p
                 a(href="about-us--board-of-directors--single.html") View Profile
@@ -66,13 +66,13 @@ block content
           .gray-bg
           .container
             .col-sm-12
-              img.img-responsive.center-block(src="images/indrawa-masrin-1.png")
+              img.img-responsive.center-block(src= item.picture2)
         .description
           .container
             .col-sm-12
-              h2 Indrawan Masrin
+              h2= item.name2
               small
-                i President Director
+                i= item.title2
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
               p
                 a(href="about-us--board-of-directors--single.html") View Profile
