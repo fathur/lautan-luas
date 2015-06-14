@@ -5,7 +5,84 @@ block title
 
 block content
   .container-fluid.map
+    .row
+      .gmap#gmap
+      .contact-info
+        .address
+          h4 Address
+          div Graha Indramas
+            | <br> Jl. AIP II K. S. Tubun Raya No. 77
+            | <br> Jakarta 11410, Indonesia
+          h4 Phone
+          div +62 21 5367 7777
+          h4 Fax
+          div +62 21 5367 1120
+          h4 Email
+          div
+            a(href="mailto:info@lautan-luas.com" class="link") info@lautan-luas.com
 
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="#") Home
+        li.active Contact Us
+
+  .padding-extra-large
+    .container.contact-form 
+      .row
+        .col-sm-12
+          h1 Send us a message
+      .row
+        form(action="#")
+          .col-sm-6
+            .form-group
+              input.form-control.input-lg(type="text" placeholder="Name")
+            .form-group
+              input.form-control.input-lg(type="text" placeholder="Organization")
+            .form-group
+              input.form-control.input-lg(type="email" placeholder="Email")
+            .form-group
+              input.form-control.input-lg(type="text" placeholder="Subject")
+          .col-sm-6
+            .form-group
+              textarea.form-control
+            button.btn.btn-transparant.pull-right(type="submit") Send
   
 
 block script
+  script(type="text/javascript" src="http://maps.googleapis.com/maps/api/js")
+  script(type="text/javascript").
+    function initialize() {
+      var mapCoordinate = new google.maps.LatLng(-6.175045, 106.827142);
+    
+      var mapOptions = {
+        center: mapCoordinate,
+        zoom: 15,
+        scrollwheel: false,
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DEFAULT,
+          position: google.maps.ControlPosition.BOTTOM_LEFT
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+          style: google.maps.ZoomControlStyle.SMALL,
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        },
+        panControl: true,
+        panControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        }
+      };
+     
+      var map = new google.maps.Map(document.getElementById('gmap'),
+        mapOptions);
+    
+      var marker = new google.maps.Marker({
+        position: mapCoordinate,
+        map: map,
+        title: 'Lautan Luas'
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);

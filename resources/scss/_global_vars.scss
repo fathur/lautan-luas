@@ -24,9 +24,13 @@ $section-padding-extra-large: 100px;
 
 $border-radius-luas:        14px !default;
 
-$btn-lautan-color: $white !default;
-$btn-lautan-bg: $dark_blue !default;
-$btn-lautan-border: $white !default;
+$btn-blue-color: $white !default;
+$btn-blue-bg: $dark_blue !default;
+$btn-blue-border: $white !default;
+
+$btn-transparant-color: $dark_blue !default;
+$btn-transparant-bg: rgba(255,255,255,0) !default;
+$btn-transparant-border: $dark_blue !default;
 
 $open-sans-path: '';
 

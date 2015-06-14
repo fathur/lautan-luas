@@ -80,8 +80,11 @@
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 // Button lautan
-.btn-lautan {
-  @include button-variant($btn-lautan-color, $btn-lautan-bg, $btn-lautan-border);
+.btn-blue {
+  @include button-variant($btn-blue-color, $btn-blue-bg, $btn-blue-border);
+}
+.btn-transparant {
+  @include button-variant($btn-transparant-color, $btn-transparant-bg, $btn-transparant-border);
 }
 
 

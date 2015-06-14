@@ -18,62 +18,161 @@ block content
     .container
       .row
         .col-sm-12
-          h3 Life at Lautan Luas
+          h2 Life at Lautan Luas
           p Lautan Luas was founded in 1951 as an importer and distributor of basic chemicals. Today, the Company has evolved to become a distributor and manufacturer of basic and specialty chemicals, working with over 100 international principals, supplying more than 1,000 chemical products and serving some 2,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
             | To oversee its vast distribution networks, Lautan Luas, is headquartered in Jakarta, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
             |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
 
   //- Why join
   .padding-large.gray-bg
-    .container-fluid
+    .container-fluid.why-join
       .row.text-center
         .col-sm-12
-          h3 Why Join Lautan Luas
+          h2 Why Join Lautan Luas
       .row
         .col-sm-4
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-diamond.icon
+              span.text We processs core values
         .col-sm-4
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-certificate.icon
+              span.text We appreciate our employees
         .col-sm-4
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-arrows-alt.icon
+              span.text The posibility of mutation within the group
       .row
         .col-sm-3
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-flag-o.icon
+              span.text We are big company
         .col-sm-3
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-smile-o.icon
+              span.text You will earn benefits
         .col-sm-3
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-pencil.icon
+              span.text We have a good learning center
         .col-sm-3
+          .item.center-block.text-center
+            a(href="#")
+              i.fa.fa-line-chart.icon
+              span.text You will own a career path
 
   //- Form join
-  .image-bg.padding-extralarge
-    .container
+  .image-bg.padding-extra-large.search-job
+    .container-fluid
       .row
-        .col-sm-12
+        .col-sm-12.text-center
+          h2 Search Job Opportunities
+          form.form-inline
+            .form-group
+              input.form-control.input-lg(placeholder="Enter search term")
+            .form-group
+              select.form-control.input-lg
+                option Select functional area 
+                option First choice
+                option Second choice
+                option Third choice
+            .form-group
+              select.form-control.input-lg
+                option Select Location
+                option First choice
+                option Second choice
+                option Third choice
+            button.btn.btn-transparant(type="submit") Search
+      .row.counter.padding-extra-large
+        .col-sm-12.text-center There are currently 
+          strong 610 
+          | open positions.
+      .row.anchor
+        .col-sm-12.text-center
+          a.btn.btn-transparant(href="#") How To Apply
+          a.btn.btn-transparant(href="#") How To Apply
+
+
 
   //- Employee
   .padding-large.white-bg
     .container
       .row
-        .col-sm-6
+        .col-sm-6.employee
           .row
             .col-sm-12
               h5 Employee stories
           .row
             .col-sm-6
+              .item
+                .image 
+                  a(href="#")
+                    img(src="images/news-1.jpg")
+                .text
+                  a(href="#")
+                    h4 Lorem ipsum dolor sit amet consectetur
             .col-sm-6
-        .col-sm-6
+              .item
+                .image 
+                  a(href="#")
+                    img(src="images/news-1.jpg")
+                .text
+                  a(href="#")
+                    h4 Lorem ipsum dolor sit amet consectetur
+
+        .col-sm-6.employee
           .row
             .col-sm-12
               h5 Employee activities
           .row
             .col-sm-6
+              .item
+                .image 
+                  a(href="#")
+                    img(src="images/news-1.jpg")
+                .text
+                  a(href="#")
+                    h4 Lorem ipsum dolor sit amet consectetur
             .col-sm-6
-  //- Evens
-  .padding-large.gray-bg
-    .container
+              .item
+                .image 
+                  a(href="#")
+                    img(src="images/news-1.jpg")
+                .text
+                  a(href="#")
+                    h4 Lorem ipsum dolor sit amet consectetur
+  //- Events
+  .gray-bg.padding-large
+    .container.investor-events
       .row
-        .col-sm-6
+        .col-xs-6
           h5 Events
-        .col-sm-6.text-right
-          a(href="#") view all
+        .col-xs-6.pull-right.text-right
+          a(href="#") View all
       .row
-        .col-sm-4
-        .col-sm-4
-        .col-sm-4
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h2 
+                a(href="#") Lorem Ipsum
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              .detail
+                .item
+                  .icon 
+                    i.fa.fa-clock-o
+                  .content
+                    .date May 15, 2015
+                    .hour 09:00 - 11:00
+                .clearfix
+                .item
+                  .icon
+                    i.fa.fa-map-marker
+                  .place Ballroom A, Hotel Mulia
           
 block script

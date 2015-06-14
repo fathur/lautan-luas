@@ -33,7 +33,68 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid map"></div>
+    <div class="container-fluid map">
+      <div class="row">
+        <div id="gmap" class="gmap"></div>
+        <div class="contact-info">
+          <div class="address">
+            <h4>Address</h4>
+            <div>
+              Graha Indramas
+              <br> Jl. AIP II K. S. Tubun Raya No. 77
+              <br> Jakarta 11410, Indonesia
+            </div>
+            <h4>Phone</h4>
+            <div>+62 21 5367 7777</div>
+            <h4>Fax</h4>
+            <div>+62 21 5367 1120</div>
+            <h4>Email</h4>
+            <div><a href="mailto:info@lautan-luas.com" class="link">info@lautan-luas.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb-wrapper">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Contact Us</li>
+        </ol>
+      </div>
+    </div>
+    <div class="padding-extra-large">
+      <div class="container contact-form"> 
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Send us a message</h1>
+          </div>
+        </div>
+        <div class="row">
+          <form action="#">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input type="text" placeholder="Name" class="form-control input-lg">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Organization" class="form-control input-lg">
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" class="form-control input-lg">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" class="form-control input-lg">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <textarea class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-transparant pull-right">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="footer blue-bg">
       <div class="container hidden-xs hidden-sm">
         <div class="row padding-large footer-top">
@@ -119,5 +180,41 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapCoordinate = new google.maps.LatLng(-6.175045, 106.827142);
+      
+        var mapOptions = {
+          center: mapCoordinate,
+          zoom: 15,
+          scrollwheel: false,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DEFAULT,
+            position: google.maps.ControlPosition.BOTTOM_LEFT
+          },
+          zoomControl: true,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL,
+            position: google.maps.ControlPosition.RIGHT_BOTTOM
+          },
+          panControl: true,
+          panControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_BOTTOM
+          }
+        };
+       
+        var map = new google.maps.Map(document.getElementById('gmap'),
+          mapOptions);
+      
+        var marker = new google.maps.Marker({
+          position: mapCoordinate,
+          map: map,
+          title: 'Lautan Luas'
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   </body>
 </html>
