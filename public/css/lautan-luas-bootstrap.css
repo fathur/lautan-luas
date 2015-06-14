@@ -9644,11 +9644,26 @@ a:hover {
   text-decoration: none;
 }
 
+table,
 .table {
   /* width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed; */
 }
+table > thead > tr,
+table > tbody > tr,
+table > tfoot > tr,
+.table > thead > tr,
+.table > tbody > tr,
+.table > tfoot > tr {
+  background-color: #FAFAFA !important;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td,
 .table > thead > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > th,
@@ -9657,10 +9672,17 @@ a:hover {
 .table > tfoot > tr > td {
   padding: 30px 8px;
 }
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th {
   color: #032077;
+}
+table.dataTable.no-footer,
+.table.dataTable.no-footer {
+  border-bottom: 1px solid #FAFAFA;
 }
 
 .btn-blue {
