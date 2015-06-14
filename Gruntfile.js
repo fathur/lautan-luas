@@ -34,6 +34,7 @@ module.exports = function(grunt) {
 		      "public/csr.html": "resources/jade/csr.jade",
 		      "public/contact-us.html": "resources/jade/contact-us.jade",
 		      "public/careers.html": "resources/jade/careers.jade",
+		      "public/careers--how-to-apply.html": "resources/jade/careers--how-to-apply.jade",
 		      "public/about-us.html": "resources/jade/about-us.jade",
 		      "public/about-us--health-safety-and-environment.html": "resources/jade/about-us--health-safety-and-environment.jade",
 		      "public/about-us--good-corporate-governance.html": "resources/jade/about-us--good-corporate-governance.jade",
