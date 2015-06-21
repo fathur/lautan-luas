@@ -5,16 +5,16 @@
     form(method="post" action="#")
       .row
         .form-group.col-sm-7
-          input.form-control.input-lg(type="text" placeholder="Institution Name")
+          input.form-control(type="text" placeholder="Institution Name")
         .form-group.col-sm-5
-          select.form-control.input-lg
+          select.form-control
             each item in ['Type','SD','SMA']
               option= item
       .row
         .form-group.col-sm-7
-          input.form-control.input-lg(type="text" placeholder="Location")
+          input.form-control(type="text" placeholder="Location")
         .form-group.col-sm-5
-          select.form-control.input-lg
+          select.form-control
             each item in ['Certificate Year','SD','SMA']
               option= item
 

@@ -5,40 +5,40 @@
     form(method="post" action="#")
       .row
         .form-group.col-sm-7
-          input.form-control.input-lg(type="text" placeholder="Company Name")
+          input.form-control(type="text" placeholder="Company Name")
         .form-group.col-sm-5
-          select.form-control.input-lg
+          select.form-control
             each item in ['Indutriy Area','SD','SMA']
               option= item
       .row
         .form-group.col-sm-12
-          input.form-control.input-lg(type="text" placeholder="Company Adress")
+          input.form-control(type="text" placeholder="Company Adress")
           
           
       .row
         .col-sm-12.form-inline
           .form-group
             label(for="start-school") From
-            select#start-school.form-control.input-lg
+            select#start-school.form-control
               each item in ['Year',1980,1981]
                 option= item
-            select#start-school.form-control.input-lg
+            select#start-school.form-control
               each item in ['Year',1980,1981]
                 option= item
           .form-group
             label(for="end-school") to
-            select#end-school.form-control.input-lg
+            select#end-school.form-control
               each item in ['Year',1980,1981]
                 option= item
-            select#end-school.form-control.input-lg
+            select#end-school.form-control
               each item in ['Year',1980,1981]
                 option= item
       .row
         .form-group.col-sm-7
-          input.form-control.input-lg(type="text" placeholder="Position Title")
+          input.form-control(type="text" placeholder="Position Title")
           
         .form-group.col-sm-5
-          input.form-control.input-lg(type="text" placeholder="Number of Subordinates")
+          input.form-control(type="text" placeholder="Number of Subordinates")
 
       .row.padding-small
         .form-group.col-sm-12

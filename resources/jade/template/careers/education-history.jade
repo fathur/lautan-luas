@@ -5,7 +5,7 @@
     form(method="post" action="#")
       .row
         .form-group.col-sm-7
-          select.form-control.input-lg
+          select.form-control
             each item in ['Select Education Level','SD','SMA']
               option= item
         .form-group.col-sm-5
@@ -21,22 +21,22 @@
         .col-sm-12.form-inline
           .form-group
             label(for="start-school") Start /  End year:
-            select#start-school.form-control.input-lg
+            select#start-school.form-control
               each item in ['Year',1980,1981]
                 option= item
           .form-group
             label(for="end-school") to
-            select#end-school.form-control.input-lg
+            select#end-school.form-control
               each item in ['Year',1980,1981]
                 option= item
       .row
         .form-group.col-sm-7
-          //- input.form-control.input-lg(type="text" placeholder="City")
-          select.form-control.input-lg
+          //- input.form-control(type="text" placeholder="City")
+          select.form-control
             each item in ['Education Field','IT','Management']
               option= item
         .form-group.col-sm-5
-          input.form-control.input-lg(type="text" placeholder="GPA")
+          input.form-control(type="text" placeholder="GPA")
 
       .row.btn-action.padding-large
         a.btn.btn-transparant.pull-right(href="#") Cancel
