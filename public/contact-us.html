@@ -11,13 +11,14 @@
     <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="css/lautan-luas-bootstrap.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!--if lt IE 9
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" class="img-responsive"></a>
@@ -30,6 +31,13 @@
             <li><a href="csr.html">CSR</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
+            <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
+              <form class="form-search-menu">
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
@@ -66,63 +74,97 @@
     <div class="padding-extra-large">
       <div class="container contact-form"> 
         <div class="row">
-          <div class="col-sm-12">
-            <h1>Send us a message</h1>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Get in touch with us</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <dl class="dl-horizontal">
+                  <dt>Address</dt>
+                  <dd>
+                    Graha Indramas 
+                    Jl. AIP II K. S. Tubun Raya No. 77 
+                    Jakarta 11410
+                    Indonesia
+                  </dd>
+                  <dt>Phone</dt>
+                  <dd>+62 21 5367 7777</dd>
+                  <dt>Fax</dt>
+                  <dd>+62 21 5367 1120</dd>
+                  <dt>Email</dt>
+                  <dd>info@lautan-luas.com</dd>
+                </dl>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <form action="#">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input type="text" placeholder="Name" class="form-control input-lg">
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Organization" class="form-control input-lg">
-              </div>
-              <div class="form-group">
-                <input type="email" placeholder="Email" class="form-control input-lg">
-              </div>
-              <div class="form-group">
-                <input type="text" placeholder="Subject" class="form-control input-lg">
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-12">
+                <h2>Send us a message</h2>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <textarea class="form-control"></textarea>
-              </div>
-              <button type="submit" class="btn btn-transparant pull-right">Send</button>
+            <div class="row">
+              <form action="#">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Name" class="form-control input-lg">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Organization" class="form-control input-lg">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" placeholder="Email" class="form-control input-lg">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Subject" class="form-control input-lg">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <textarea class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-transparant pull-right">Send</button>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer blue-bg">
+    <div class="footer">
       <div class="container hidden-xs hidden-sm">
         <div class="row padding-large footer-top">
-          <div class="col-sm-3">
-            <h4>About Us</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Our Business</a></li>
-              <li><a href="#">Our History</a></li>
-              <li><a href="#">Board of Directors</a></li>
-              <li><a href="#">Board of Commissioners</a></li>
-              <li><a href="#">Health, Safety, and Environment</a></li>
-              <li><a href="#">Good Corporate Governance</a></li>
-              <li><a href="#">Our People</a></li>
-            </ul>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-7">
+                <h5>About Us</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Our Business</a></li>
+                  <li><a href="#">Our History</a></li>
+                  <li><a href="#">Board of Directors</a></li>
+                  <li><a href="#">Board of Commissioners</a></li>
+                  <li><a href="#">Health, Safety, and Environment</a></li>
+                  <li><a href="#">Good Corporate Governance</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <h5>Industries</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Distribution Channels</a></li>
+                  <li><a href="#">Lab Services and R&amp;D</a></li>
+                  <li><a href="#">Integrated Supply Chain</a></li>
+                  <li><a href="#">IT Solutions</a></li>
+                  <li><a href="#">Water Treatment</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="col-sm-3">
-            <h4>Product and Services</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Industries</a></li>
-              <li><a href="#">Lab Services and R&amp;D</a></li>
-              <li><a href="#">Supply Chain</a></li>
-              <li><a href="#">IT Solutions</a></li>
-              <li><a href="#">Water Treatment</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <h4>Investor Relations</h4>
+            <h5>Investor Relations</h5>
             <ul class="list-unstyled">
               <li><a href="#">Stock Information</a></li>
               <li><a href="#">Financial Information</a></li>
@@ -131,16 +173,16 @@
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>CSR</h4>
+            <h5>CSR</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Housing</a></li>
+              <li><a href="#">Serving the Poor</a></li>
               <li><a href="#">Education</a></li>
-              <li><a href="#">Environment</a></li>
+              <li><a href="#">Livelihood</a></li>
               <li><a href="#">Other</a></li>
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>Careers</h4>
+            <h5>Careers</h5>
             <ul class="list-unstyled">
               <li><a href="#">View All Jobs</a></li>
               <li><a href="#">How to Apply</a></li>
@@ -152,11 +194,11 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row footer-bottom padding-small">
-          <div class="container-fluid">
+      <div class="footer-bottom padding-small">
+        <div class="container">
+          <div class="row">
             <div class="col-sm-8">
-              <div class="hidden-xs hidden-sm">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-xs hidden-sm copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
               <ul class="menu">
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="#">Terms of Use</a></li>
@@ -165,12 +207,12 @@
                 <li> <a href="#">Disclaimer</a></li>
                 <li> <a href="contact-us.html">Contact Us</a></li>
               </ul>
-              <div class="hidden-md hidden-lg">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-md hidden-lg copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
             </div>
             <div class="col-sm-4 sosmed"><a href="#">
-                <div class="icon facebook"><i class="fa fa-facebook"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-twitter"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-linkedin"></i></div></a></div>
+                <div class="icon"><img src="images/icon-facebook-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-twitter-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-linkedin-1.png"></div></a></div>
           </div>
         </div>
       </div>
@@ -182,6 +224,39 @@
     <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+      $('#search-menu').click(function(e){
+        var x = 0;
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
+      
+        console.log(x);
+        if(x == 0) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+          x = 1;
+        }
+      
+        if(x == 1) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+          x = 0;
+        }
+      
+        console.log(x);
+      });
+      
+      //- $('#search-menu').toggle(function(e){
+      //-   e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'0px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+      //- }, function(){
+      //-   //e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'350px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+      
+      //- });
+      
+      
+    </script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
       function initialize() {

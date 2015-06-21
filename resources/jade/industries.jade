@@ -22,10 +22,7 @@ block content
             | To oversee its vast distribution networks, Lautan Luas, is headquartered in Jakarta, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
             |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
 
-          p Lautan Luas was founded in 1951 as an importer and distributor of basic chemicals. Today, the Company has evolved to become a distributor and manufacturer of basic and specialty chemicals, working with over 100 international principals, supplying more than 1,000 chemical products and serving some 2,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
-            | To oversee its vast distribution networks, Lautan Luas, is headquartered in Jakarta, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
-            |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
-
+        
   //- Industries
   .padding-large.gray-bg
     .container.industries-list
@@ -37,13 +34,15 @@ block content
           .col-sm-4
             .row.wrapper
               .col-xs-5
-                span 
-                  a(href="industries--distribution-channel.html") Distribution Channel 1
+                .box.white
+                  span Distribution Channel 1
+                  // a(href="industries--distribution-channel.html") Distribution Channel 1
               .col-xs-7
-                ul.list-unstyled
-                  each item in ['Soda Ash','Glass and Ceramic','Handling','Agriculture']
-                    li 
-                      a(href="#")= item
+                .box.blue
+                  ul.list-unstyled
+                    each item in ['Soda Ash','Glass and Ceramic','Handling','Agriculture']
+                      li 
+                        a(href="industries--distribution-channel--industry-single.html")= item
        
   //- Services
   .padding-large.white-bg

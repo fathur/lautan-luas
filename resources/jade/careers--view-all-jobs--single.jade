@@ -1,0 +1,39 @@
+extends ./_layout.jade
+
+block title
+  title Investor Relations
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.active Corporate Social Responsibility
+
+  .padding-large.white-bg
+    .container
+      .row
+        .col-sm-12
+          h5 Accounting Manager
+
+      .row
+        .col-sm-12
+          h3 Main Responsibility
+          p To be responsible for the orderly accumulation and consolidation of all financial data necessary - for an accurate accounting of the total business result.
+
+          h3 Requirements
+          ul
+            each item in ['S1 Degree in Accounting','Minimum of 5 years experience as Accounting combined with minimum 3 years experience as Accounting Manager','Having combined experiences from Public Accountant Consultant and Operating company']
+              li= item
+
+          h3 Specific Skills
+          ul
+            each item in ['Microsoft Office','English']
+              li= item
+          
+          h3 Location
+          span Slipi - Jakarta, Indonesia

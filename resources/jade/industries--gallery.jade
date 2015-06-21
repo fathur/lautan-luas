@@ -1,0 +1,46 @@
+extends ./_layout.jade
+
+block title
+  title Distribution Channels
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="industries.html") Product and Services
+        li.active Research and Development
+
+  .padding-extra-large.white-bg
+    .container.thumbmail-preview-one.archive 
+      .row
+        .col-xs-12
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna vel augue pellentesque sollicitudin. Nunc ut semper sem. Curabitur at lectus sodales, tristique nisi et, sodales urna. Vivamus in velit at lorem hendrerit pulvinar. Suspendisse ut malesuada purus. Mauris ullamcorper risus in lorem tristique, ut fringilla velit suscipit. In a arcu quis mi ultricies pulvinar in ac ex. Nulla consequat metus id turpis tincidunt pharetra. In sagittis, erat sit amet facilisis dignissim, urna orci tempus ligula, vitae elementum dolor urna ut dolor. Sed eu arcu vitae ligula malesuada egestas.
+
+      each item in [1,2,3,4]
+        .row.media-galleries
+          each item in [1,2,3,4]
+            .col-sm-3
+              .box
+                a.gallery(href="images/2003.jpg" title="(Eric Goncalves (cathing up again!))")
+                  img.img-responsive(src="images/2003.jpg" alt="")
+        
+
+  include ./template/investor/bottom-contact.jade
+
+block script
+  script(type="text/javascript").
+    $('.gallery').fancybox({
+      openEffect : 'none',
+      closeEffect : 'none',
+      helpers : {
+        title : {
+          type : 'outside'
+        }
+      }
+    });

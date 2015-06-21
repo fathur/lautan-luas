@@ -1,0 +1,94 @@
+.row.apply-now.education-history
+  .col-sm-12
+
+    .form-title.first Add / Edit Working Experience Record
+    form(method="post" action="#")
+      .row
+        .form-group.col-sm-7
+          input.form-control.input-lg(type="text" placeholder="Company Name")
+        .form-group.col-sm-5
+          select.form-control.input-lg
+            each item in ['Indutriy Area','SD','SMA']
+              option= item
+      .row
+        .form-group.col-sm-12
+          input.form-control.input-lg(type="text" placeholder="Company Adress")
+          
+          
+      .row
+        .col-sm-12.form-inline
+          .form-group
+            label(for="start-school") From
+            select#start-school.form-control.input-lg
+              each item in ['Year',1980,1981]
+                option= item
+            select#start-school.form-control.input-lg
+              each item in ['Year',1980,1981]
+                option= item
+          .form-group
+            label(for="end-school") to
+            select#end-school.form-control.input-lg
+              each item in ['Year',1980,1981]
+                option= item
+            select#end-school.form-control.input-lg
+              each item in ['Year',1980,1981]
+                option= item
+      .row
+        .form-group.col-sm-7
+          input.form-control.input-lg(type="text" placeholder="Position Title")
+          
+        .form-group.col-sm-5
+          input.form-control.input-lg(type="text" placeholder="Number of Subordinates")
+
+      .row.padding-small
+        .form-group.col-sm-12
+          textarea.form-control(placeholder="Job Description")
+
+      .row.btn-action.padding-large
+        a.btn.btn-transparant.pull-right(href="#") Cancel
+        button.btn.btn-blue.pull-right(type="submit") Add
+
+.row.apply-now.education-history--collections
+  .col-sm-12
+    a(href="#") + Add new working experience record
+    table.table
+      thead
+        tr 
+          th No
+          th Period
+          th Company Name
+          th Position Title 
+          th Description 
+          th Actions
+      tbody
+        tr 
+          td 1.
+          td 200 - 2003 
+          td Google
+          td Analyst
+          td Best empolyee
+          td  
+            a(href="#")
+              i.fa.fa-edit 
+              | Edit
+            a(href="#")
+              i.fa.fa-trash 
+              | Delete
+         tr 
+          td 1.
+          td 200 - 2003 
+          td Google
+          td Analyst
+          td Best empolyee
+          td  
+            a(href="#")
+              i.fa.fa-edit 
+              | Edit
+            a(href="#")
+              i.fa.fa-trash 
+              | Delete
+
+  .col-sm-12.btn-action
+    a.btn.btn-transparant.pull-right(href="#") Next
+    button.btn.btn-blue.pull-right(type="submit") Save
+    a.btn.btn-transparant.pull-right(href="#") Back

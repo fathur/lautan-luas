@@ -1,0 +1,29 @@
+extends ./_layout.jade
+
+block title
+  title Investor Relations
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.active Corporate Social Responsibility
+
+    //- Main content
+  .padding-extra-large.white-bg
+    .container
+      .row.text-center
+        .col-sm-12
+          h2 Thank you for signing up
+          p A confirmation request has been sent to your email:
+            | john.doe@email.com
+
+          p Please check your inbox. It may take a few minutes for the email to reach your inbox.
+            | Follow the instructions in the email to proceed to the next step.
+            | Important: please also check your spam folder.
+            

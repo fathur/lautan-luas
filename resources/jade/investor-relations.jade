@@ -28,58 +28,64 @@ block content
         .col-xs-6
           h5 Latest News
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--news-events--archives.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [1,2,3]
           .col-sm-4
             .wrapper
-              h2 
-                a(href="#") Lorem Ipsum
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur elit
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
-              date May 15
+              date May 15, 2015
 
   //- Stock Information + Percentation
-  .blue-bg
-    .container-fluid
-      .row.block-stock-info
-        .col-sm-2.col-xs-6
-          .item.big
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
-            .date May 15, 2015
+  a(href="investor-relations--stock-information.html")
+    .blue-bg
+      .container-fluid
+        .row.block-stock-info--title
+          .col-sm-6.text-left 
+            h5 stock information
+          .col-sm-6.text-right 
+            h5 may 15, 2015
+        .row.block-stock-info
+          .col-sm-4.col-xs-12.col-md-2
+            .item
+              .title Share Price
+              .money
+                span.currency IDR
+                span.nominal 830.00
 
-        .col-sm-2.col-xs-6
-          .item
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
-        .col-sm-2.col-xs-6
-          .item
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
-        .col-sm-2.col-xs-6
-          .item.success
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
-        .col-sm-2.col-xs-6
-          .item.danger
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
-        .col-sm-2.col-xs-6
-          .item
-            .title Share Price
-            .money
-              span.currency Rp.
-              span.nominal 830.00
+          .col-sm-4.col-xs-6.col-md-2
+            .item
+              .title open
+              .money
+                span.currency IDR
+                span.nominal 830.00
+          .col-sm-4.col-xs-6.col-md-2
+            .item
+              .title Prev Close
+              .money
+                span.currency IDR
+                span.nominal 830.00
+          .col-sm-4.col-xs-6.col-md-2
+            .item.success
+              .title day's high
+              .money
+                span.currency IDR
+                span.nominal 830.00
+          .col-sm-4.col-xs-6.col-md-2
+            .item.danger
+              .title day's low
+              .money
+                span.currency IDR
+                span.nominal 830.00
+          .col-sm-4.hidden-xs.col-md-2
+            .item
+              .title volume
+              .money
+                span.currency IDR
+                span.nominal 830.00
   .gray-bg
     .container-fluid
       .row.block-percentation
@@ -116,13 +122,14 @@ block content
         .col-xs-6
           h5 Events
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--events-archive.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [1,2,3]
           .col-sm-4
             .wrapper
-              h2 
-                a(href="#") Lorem Ipsum
+              h3 
+                a(href="#") Lorem ipsum dolor sit amet consectetur elit
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
               .detail
                 .item
@@ -137,35 +144,40 @@ block content
                     i.fa.fa-map-marker
                   .place Ballroom A, Hotel Mulia
 
-  .gray-bg.padding-extra-large
+  .padding-extra-large.gray-blue-bg
     .container
       .row.information-report
-        .col-sm-6.item
+        .col-sm-12.col-md-6.item
           .row
-            .col-xs-7.left
-              span.title Lautan Luas 
-              h2 Annual Report
-              span.date 2013
-              .download 
-                a.btn.btn-transparant(href="#") Download PDF
-            .col-xs-5.right
-              img.img-responsive.center-block(src="images/annual-report-1.png")
-        .col-sm-6.item
+            .box
+              .col-xs-12.col-sm-3.col-md-5.right
+                img.img-responsive.center-block(src="images/annual-report-1.png")
+              .col-xs-12.col-sm-9.col-md-7.left
+                h3 Investor Newsletter
+                span.date May 2013
+                p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                .download 
+                  a.blue.download(href="#") Download PDF
+                  span |
+                  a.view-all(href="#") View all 
+                    i.fa.fa-angle-right
+
+        .col-sm-12.col-md-6.item
           .row
-            .col-xs-7.left
-              span.title Lautan Luas 
-              h2 Investor Newsletter
-              span.date MAY 2013
-              .download 
-                a.btn.btn-transparant(href="#") Download PDF
-            .col-xs-5.right
-              img.img-responsive.center-block(src="images/annual-report-1.png")
+            .box
+              .col-xs-12.col-sm-3.col-md-5.right
+                img.img-responsive.center-block(src="images/investor-relations-1.jpg")
+              .col-xs-12.col-sm-9.col-md-7.left
+                h3 Investor Newsletter
+                span.date May 2013
+                p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                .download 
+                  a.blue.download(href="#") Download PDF
+                  span |
+                  a.view-all(href="#") View all 
+                    i.fa.fa-angle-right
         
-  .white-bg.padding-small
-    .container.investor-contact
-      .row.text-center
-        | For investor relation inquiries, please contact 
-        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+  include ./template/investor/bottom-contact-2w.jade
             
 
 block script

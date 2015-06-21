@@ -11,13 +11,14 @@
     <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="css/lautan-luas-bootstrap.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!--if lt IE 9
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" class="img-responsive"></a>
@@ -30,6 +31,13 @@
             <li><a href="csr.html">CSR</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
+            <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
+              <form class="form-search-menu">
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
@@ -60,54 +68,40 @@
     </div>
     <div class="white-bg padding-large">
       <div class="container faq">
-        <div class="row questions">
+        <div class="row">
           <div class="col-xs-12">
-            <h5>frequently asked questions</h5>
-            <ul class="list-unstyled">
-              <li><a href="#1">When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?</a></li>
-              <li><a href="#2">What is the Lautan Luas ticker symbol and where are shares traded?</a></li>
-              <li><a href="#3">Does Lautan Luas have a direct share program?</a></li>
-              <li><a href="#4">Has there been a stock split since IPO?</a></li>
-              <li><a href="#5">Has there been a bonus share since IPO?</a></li>
-              <li><a href="#6">Does Lautan Luas pay dividends? </a></li>
-              <li><a href="#7">What is the current Lautan Luas outstanding shares?</a></li>
-              <li><a href="#8">What percentage of outstanding shares is held by public?</a></li>
-              <li><a href="#9">Has Lautan Luas issued any bonds? </a></li>
-              <li><a href="#10">How many subsidiaries/affiliates are currently owned by Lautan Luas?</a></li>
-              <li><a href="#11">How does Lautan Luas serve customers from various industries with a wide range of needs?</a></li>
-              <li><a href="#12">How can I receive a copy of Lautan Luas Annual Report?</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row devider"></div>
-        <div class="row answers">
-          <div class="col-xs-12">
-            <dl>
-              <dt id="1">When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?</dt>
-              <dd>Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.</dd>
-              <dt id="2">What is the Lautan Luas ticker symbol and where are shares traded?</dt>
-              <dd>The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).</dd>
-              <dt id="3">Does Lautan Luas have a direct share program?</dt>
-              <dd>No, shares may not be purchased directly from Lautan Luas.</dd>
-              <dt id="4">Has there been a stock split since IPO?</dt>
-              <dd>Yes, Lautan Luas had a 1:2 stock split on 8th November 1999 and 9th January 2015.</dd>
-              <dt id="5">Has there been a bonus share since IPO?</dt>
-              <dd>Yes, Lautan Luas gave a 5:8 bonus share on 4th January 1999.</dd>
-              <dt id="6">Does Lautan Luas pay dividends? </dt>
-              <dd>Yes, Lautan Luas paid out dividends as and when declared by the Board of Directors at Annual General Shareholders meetings.</dd>
-              <dt id="7">What is the current Lautan Luas outstanding shares?</dt>
-              <dd>Lautan Luas currently has 1.560 million outstanding shares.</dd>
-              <dt id="8">What percentage of outstanding shares is held by public?</dt>
-              <dd>The public holds 41.33% of Lautan Luas outstanding shares.</dd>
-              <dt id="9">Has Lautan Luas issued any bonds? </dt>
-              <dd>To date, the Company has issued four five-year bonds. Bond I/2000 of Rp 200 billion was retired in 2005, Bond II/2003 of Rp 300 billion was retired in 2008, Bond III/2008 of Rp 500 billion was retired in 2013, while Bond IV/2013 of Rp 700 billion was issued in June 2013 and will retire in 2018. In 2014, Lautan Luas maintained its credit rating of idA- (single A minus, stable outlook) by Credit Rating Indonesia or PT Pemeringkat Efek Indonesia (Pefindo). 7 April 2014.</dd>
-              <dt id="10">How many subsidiaries/affiliates are currently owned by Lautan Luas?</dt>
-              <dd>Currently, Lautan Luas has 16 manufacturing subsidiaries and affiliates, 4 support & services subsidiaries and affiliates, a Singapore regional distribution subsidiary, 4 regional offices, and 3 regional manufacturing facilities.</dd>
-              <dt id="11">How does Lautan Luas serve customers from various industries with a wide range of needs?</dt>
-              <dd>Lautan Luas has a “one-stop-shop” approach to business, making it a total solutions provider for chemical industrial needs. Currently, Lautan Luas distributes over 1,000 products for more than 100 international principals to over 2,000 local and global industrial end-users.</dd>
-              <dt id="12">How can I receive a copy of Lautan Luas Annual Report?</dt>
-              <dd>Lautan Luas Annual Report and others are available in electronic format on this website in the Investor Relations section under financial updates, Annual Report.</dd>
-            </dl>
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+              <!-- 1-->
+              <div class="panel panel-default">
+                <div id="i1" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?</a></h4>
+                </div>
+                <div id="collapse1" role="tabpanel" aria-labelledby="i1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 2-->
+              <div class="panel panel-default">
+                <div id="i2" role="tab" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">What is the Lautan Luas ticker symbol and where are shares traded?</a></h4>
+                </div>
+                <div id="collapse2" role="tabpanel" aria-labelledby="i2" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -117,33 +111,37 @@
         <div class="row text-center">For investor relation inquiries, please contact <a href="mailto:investor.relations@lautan-luas.com">investor.relations[at]lautan-luas[dot]com</a></div>
       </div>
     </div>
-    <div class="footer blue-bg">
+    <div class="footer">
       <div class="container hidden-xs hidden-sm">
         <div class="row padding-large footer-top">
-          <div class="col-sm-3">
-            <h4>About Us</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Our Business</a></li>
-              <li><a href="#">Our History</a></li>
-              <li><a href="#">Board of Directors</a></li>
-              <li><a href="#">Board of Commissioners</a></li>
-              <li><a href="#">Health, Safety, and Environment</a></li>
-              <li><a href="#">Good Corporate Governance</a></li>
-              <li><a href="#">Our People</a></li>
-            </ul>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-7">
+                <h5>About Us</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Our Business</a></li>
+                  <li><a href="#">Our History</a></li>
+                  <li><a href="#">Board of Directors</a></li>
+                  <li><a href="#">Board of Commissioners</a></li>
+                  <li><a href="#">Health, Safety, and Environment</a></li>
+                  <li><a href="#">Good Corporate Governance</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <h5>Industries</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Distribution Channels</a></li>
+                  <li><a href="#">Lab Services and R&amp;D</a></li>
+                  <li><a href="#">Integrated Supply Chain</a></li>
+                  <li><a href="#">IT Solutions</a></li>
+                  <li><a href="#">Water Treatment</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="col-sm-3">
-            <h4>Product and Services</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Industries</a></li>
-              <li><a href="#">Lab Services and R&amp;D</a></li>
-              <li><a href="#">Supply Chain</a></li>
-              <li><a href="#">IT Solutions</a></li>
-              <li><a href="#">Water Treatment</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <h4>Investor Relations</h4>
+            <h5>Investor Relations</h5>
             <ul class="list-unstyled">
               <li><a href="#">Stock Information</a></li>
               <li><a href="#">Financial Information</a></li>
@@ -152,16 +150,16 @@
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>CSR</h4>
+            <h5>CSR</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Housing</a></li>
+              <li><a href="#">Serving the Poor</a></li>
               <li><a href="#">Education</a></li>
-              <li><a href="#">Environment</a></li>
+              <li><a href="#">Livelihood</a></li>
               <li><a href="#">Other</a></li>
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>Careers</h4>
+            <h5>Careers</h5>
             <ul class="list-unstyled">
               <li><a href="#">View All Jobs</a></li>
               <li><a href="#">How to Apply</a></li>
@@ -173,11 +171,11 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row footer-bottom padding-small">
-          <div class="container-fluid">
+      <div class="footer-bottom padding-small">
+        <div class="container">
+          <div class="row">
             <div class="col-sm-8">
-              <div class="hidden-xs hidden-sm">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-xs hidden-sm copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
               <ul class="menu">
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="#">Terms of Use</a></li>
@@ -186,12 +184,12 @@
                 <li> <a href="#">Disclaimer</a></li>
                 <li> <a href="contact-us.html">Contact Us</a></li>
               </ul>
-              <div class="hidden-md hidden-lg">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-md hidden-lg copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
             </div>
             <div class="col-sm-4 sosmed"><a href="#">
-                <div class="icon facebook"><i class="fa fa-facebook"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-twitter"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-linkedin"></i></div></a></div>
+                <div class="icon"><img src="images/icon-facebook-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-twitter-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-linkedin-1.png"></div></a></div>
           </div>
         </div>
       </div>
@@ -203,5 +201,38 @@
     <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+      $('#search-menu').click(function(e){
+        var x = 0;
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
+      
+        console.log(x);
+        if(x == 0) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+          x = 1;
+        }
+      
+        if(x == 1) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+          x = 0;
+        }
+      
+        console.log(x);
+      });
+      
+      //- $('#search-menu').toggle(function(e){
+      //-   e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'0px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+      //- }, function(){
+      //-   //e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'350px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+      
+      //- });
+      
+      
+    </script>
   </body>
 </html>

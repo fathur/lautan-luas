@@ -3,11 +3,32 @@
 		.wrapper {
 			height: 125px;
 			background-color: #edf1f2;
-			padding-top: $grid-gutter-width; 
-			padding-bottom: $grid-gutter-width; 
+			// -top: $grid-gutter-width; 
+			// padding-bottom: $grid-gutter-width; 
 			margin: ($grid-gutter-width / 2) 0px;
-			padding-right: $grid-gutter-width / 2; 
-			padding-left: $grid-gutter-width / 2; 
+			// padding-right: $grid-gutter-width / 2; 
+			// padding-left: $grid-gutter-width / 2; 
+
+			.box {
+				height: 125px;
+				margin-right: -15px;
+				margin-left: -15px;
+				padding-top: $grid-gutter-width; 
+				padding-bottom: $grid-gutter-width; 
+				padding-right: $grid-gutter-width; 
+				padding-left: $grid-gutter-width; 
+
+				&.white {
+					background-color: $white;
+					border: 1px solid #edf1f2;
+					font-family: 'PT Sans', sans-serif;
+					font-weight: bold;
+				}
+
+				&.blue {
+					background-color: #edf1f2;
+				}
+			}
 		}
 	}
 }
@@ -23,12 +44,12 @@
 			left: 10px;
 			right: 10px;
 			background-color: $dark_blue_74; 
-			opacity: 0;
+			opacity: .75;
 			transition: opacity .25s ease-in-out;
 
 			&:hover,
 			&:focus {
-				opacity: .75;
+				opacity: .0;
   				zoom: 1;
 			}
 		}
@@ -40,6 +61,46 @@
 			right: 0;
 			left: 0;
 			padding: 20px;
+			font-size: 14px;
+		}
+	}
+}
+
+.processes {
+
+	.content {
+
+		.row:not(:last-child) {
+			.item {
+				margin-bottom: 20px;
+			}
+		}
+	
+		.text-wrapper {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+			background-color: $dark_blue_74; 
+			opacity: .75;
+			transition: opacity .25s ease-in-out;
+
+			&:hover,
+			&:focus {
+				opacity: 0;
+  				zoom: 1;
+			}
+		}
+
+		.text {
+			color: $white;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			padding: 20px;
+			font-size: 14px;
 		}
 	}
 }
@@ -72,5 +133,44 @@
 				padding-top: 10px;
 			}
 		}
+	}
+}
+
+.thumbmail-preview-one {
+	.box {
+		background-color: $white;
+		@include hover-box-shadow;
+		.image {
+			position: relative;
+			height: 150px;
+			overflow: hidden;
+
+			& > a > img {
+				@include hidden-center-image;
+			}
+		}
+
+		.text {
+			padding: 15px 20px;
+			/* font-family: 'Open Sans', sans-serif;
+			color: $light-blue;
+			font-size: 14px; */
+		}
+	}
+}
+
+.white-bg {
+	.thumbmail-preview-one {
+		.box {
+			background-color: $blay;
+
+			@include hover-box-shadow();
+		}
+	}
+}
+
+.media-galleries {
+	.box {
+		@include hover-box-shadow;
 	}
 }

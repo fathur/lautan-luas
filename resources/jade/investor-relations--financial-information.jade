@@ -24,7 +24,7 @@ block content
               li(class=item.state)
                 a(href=item.link)= item.text
 
-  .gray-bg
+  .gray-blue-bg
     .container-fluid
       .row.block-percentation
         .col-sm-2
@@ -77,7 +77,7 @@ block content
                 th EBITDA/Net Int. Exp.
                 th Net Debt/Equity
                 th Current Ratio
-                th Year
+                th(style="display:none;") Year
             tbody
               each item in ['Q1','Q2','Q3','Q4']
                 tr
@@ -88,7 +88,7 @@ block content
                   td 4.55
                   td 0.97
                   td 1.28
-                  td 2000
+                  td(style="display:none;") 2000
               each item in ['Q1','Q2','Q3','Q4']
                 tr
                   td=item
@@ -98,7 +98,7 @@ block content
                   td 4.55
                   td 0.97
                   td 1.28
-                  td 2001
+                  td(style="display:none;") 2001
               each item in ['Q1','Q2','Q3','Q4']
                 tr
                   td=item
@@ -108,7 +108,17 @@ block content
                   td 4.55
                   td 0.97
                   td 1.28
-                  td 2002
+                  td(style="display:none;") 2002
+              each item in ['Q1','Q2','Q4443','Q4']
+                tr
+                  td=item
+                  td 2.94%
+                  td 17.41%
+                  td 7.88%
+                  td 4.55
+                  td 0.97
+                  td 1.28
+                  td(style="display:none;") 2003
               each item in ['Q1','Q2','Q3','Q4']
                 tr
                   td=item
@@ -118,7 +128,7 @@ block content
                   td 4.55
                   td 0.97
                   td 1.28
-                  td 2003
+                  td(style="display:none;") 2004
               each item in ['Q1','Q2','Q3','Q4']
                 tr
                   td=item
@@ -128,17 +138,7 @@ block content
                   td 4.55
                   td 0.97
                   td 1.28
-                  td 2004
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td 2005
+                  td(style="display:none;") 2005
 
   .gray-bg.padding-large
     .container.annnual-report
@@ -146,7 +146,8 @@ block content
         .col-xs-6
           h5 Annual Reports
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--reports-archive.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [2010,2011,2012,2013]
           .col-sm-3.text-center
@@ -162,8 +163,21 @@ block content
         .col-xs-6
           h5 Auditor Reports
         .col-xs-6.pull-right.text-right
-          a(href="#") View All
+          a.view-all(href="investor-relations--reports-archive.html") View All 
+            i.fa.fa-angle-right
       .row
+        .col-xs-12
+          .subtitle.first Quarterly
+        each item in [2010,2011,2012,2013]
+          .col-sm-3.text-center
+            a(href="#")
+              img.img-responsive.center-block(src="images/annual-report-1.png")
+            .caption 
+              a(href="#") Auditor Report 
+                =item
+      .row
+        .col-xs-12
+          .subtitle Yearly
         each item in [2010,2011,2012,2013]
           .col-sm-3.text-center
             a(href="#")
@@ -173,11 +187,7 @@ block content
                 =item
 
                 
-  .gray-bg.padding-small
-    .container.investor-contact
-      .row.text-center
-        | For investor relation inquiries, please contact 
-        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+  include ./template/investor/bottom-contact-2g.jade
             
             
 
@@ -192,6 +202,7 @@ block script
         "bFilter": true,
         "bPaginate": false,
         "bInfo" : false,
+        "bSort": false,
         "sDom":"lrtip" // default is lfrtip, where the f is the filter
       });
 

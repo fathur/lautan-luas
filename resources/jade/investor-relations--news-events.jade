@@ -30,15 +30,16 @@ block content
         .col-xs-6
           h5 Latest News
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--news-events--archives.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [1,2,3]
           .col-sm-4
             .wrapper
-              h2 
-                a(href="#") Lorem Ipsum
+              h3 
+                a(href="#") Lorem ipsum dolor sit amet consectetur elit
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
-              date May 15
+              date May 15, 2015
 
   .gray-bg.padding-large
     .container.investor-events
@@ -46,13 +47,14 @@ block content
         .col-xs-6
           h5 Events
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--events-archive.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [1,2,3]
           .col-sm-4
             .wrapper
-              h2 
-                a(href="#") Lorem Ipsum
+              h3 
+                a(href="#") Lorem ipsum dolor sit amet consectetur elit
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
               .detail
                 .item
@@ -73,7 +75,8 @@ block content
         .col-xs-6
           h5 Investor Newsletter
         .col-xs-6.pull-right.text-right
-          a(href="#") View All
+          a.view-all(href="#") View All 
+            i.fa.fa-angle-right
       .row
         each item in [2010,2011,2012,2013]
           .col-sm-3.text-center
@@ -83,11 +86,7 @@ block content
               a(href="#") Investor Newsletter 
                 =item
 
-  .gray-bg.padding-small
-    .container.investor-contact
-      .row.text-center
-        | For investor relation inquiries, please contact 
-        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+  include ./template/investor/bottom-contact-2g.jade
                           
             
 

@@ -11,13 +11,14 @@
     <link href="css/jquery.fancybox.css" rel="stylesheet">
     <link href="css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="css/lautan-luas-bootstrap.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!--if lt IE 9
     script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
     script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     -->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" class="img-responsive"></a>
@@ -30,38 +31,226 @@
             <li><a href="csr.html">CSR</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
+            <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
+              <form class="form-search-menu">
+                <div class="form-group has-feedback">
+                  <input type="text" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid map"></div>
-    <div class="footer blue-bg">
+    <div class="container-fluid home-image">
+      <div class="row text-center text">
+        <div class="col-sm-12">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <p><a href="#">Learn more about our expertise and the industries we serve &nbsp;<i class="fa fa-angle-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="padding-extra-large white-bg">
+      <div class="container our-business-lines">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row title">
+              <div class="col-sm-12">
+                <h5>Our Business Lines</h5>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <div class="item"> <a href="about-us.html"><img src="images/icon-distribution-1.png"></a><a href="about-us.html">
+                    <h2>Distribution</h2></a>
+                  <div class="hidden-xs hidden-sm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item"> <a href="about-us.html"><img src="images/icon-manufacturing-1.png"></a><a href="about-us.html">
+                    <h2>Manufacturing</h2></a>
+                  <div class="hidden-xs hidden-sm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="item"> <a href="about-us.html"><img src="images/icon-services-1.png"></a><a href="about-us.html">
+                    <h2>Support and Services</h2></a>
+                  <div class="hidden-xs hidden-sm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-large gray-blue-bg">
+      <div class="container home-latest-news">
+        <div class="row title">
+          <div class="col-sm-12">
+            <h5>Latest News</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-7 left">
+            <div class="row mobile-wrapper">
+              <div class="item big">
+                <div class="col-xs-12 col-sm-6 image"><a href="#"><img src="images/2008.jpg"></a></div>
+                <div class="col-xs-12 col-sm-6 text">
+                  <div href="#" class="category">investor relations</div><a href="#">
+                    <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
+                  <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p></p>
+                  <div class="date">May 15, 2008</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 right">
+            <div class="row">
+              <div class="top col-sm-6 col-md-12">
+                <div class="row mobile-wrapper">
+                  <div class="item small">
+                    <div class="col-sm-6 image"><a href="#"><img src="images/2003.jpg"></a></div>
+                    <div class="col-sm-6 text">
+                      <div href="#" class="category">water treatment</div><a href="#">
+                        <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
+                      <div class="date">May 15, 2008</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom col-sm-6 col-md-12">
+                <div class="row mobile-wrapper">
+                  <div class="item small">
+                    <div class="col-sm-12 text">
+                      <div href="#" class="category">agriculture</div><a href="#">
+                        <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
+                      <div class="date">May 15, 2008</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><a href="investor-relations--stock-information.html">
+      <div class="blue-bg">
+        <div class="container-fluid">
+          <div class="row block-stock-info--title">
+            <div class="col-sm-6 text-left"> 
+              <h5>stock information</h5>
+            </div>
+            <div class="col-sm-6 text-right"> 
+              <h5>may 15, 2015</h5>
+            </div>
+          </div>
+          <div class="row block-stock-info">
+            <div class="col-sm-4 col-xs-12 col-md-2">
+              <div class="item">
+                <div class="title">Share Price</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-2">
+              <div class="item">
+                <div class="title">open</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-2">
+              <div class="item">
+                <div class="title">Prev Close</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-2">
+              <div class="item success">
+                <div class="title">day's high</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-6 col-md-2">
+              <div class="item danger">
+                <div class="title">day's low</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+            <div class="col-sm-4 hidden-xs col-md-2">
+              <div class="item">
+                <div class="title">volume</div>
+                <div class="money"><span class="currency">IDR</span><span class="nominal">830.00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></a>
+    <div class="padding-extra-large white-bg">
+      <div class="container">
+        <div class="row information-report">
+          <div class="col-sm-12 col-md-6 item">
+            <div class="row">
+              <div class="box">
+                <div class="col-xs-12 col-sm-3 col-md-5 right"><img src="images/annual-report-1.png" class="img-responsive center-block"></div>
+                <div class="col-xs-12 col-sm-9 col-md-7 left">
+                  <h3>Annual Report</h3><span class="date">2013</span>
+                  <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
+                  <div class="download"> <a href="#" class="blue download">Download PDF</a><span>|</span><a href="investor-relations--reports-archive.html" class="view-all">View all <i class="fa fa-angle-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 item">
+            <div class="row">
+              <div class="box">
+                <div class="col-xs-12 col-sm-3 col-md-5 right"><img src="images/investor-relations-1.jpg" class="img-responsive center-block"></div>
+                <div class="col-xs-12 col-sm-9 col-md-7 left">
+                  <h3>Investor Newsletter</h3><span class="date">May 2013</span>
+                  <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
+                  <div class="download"> <a href="#" class="blue download">Download PDF</a><span>|</span><a href="investor-relations--reports-archive.html" class="view-all">View all <i class="fa fa-angle-right"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
       <div class="container hidden-xs hidden-sm">
         <div class="row padding-large footer-top">
-          <div class="col-sm-3">
-            <h4>About Us</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Our Business</a></li>
-              <li><a href="#">Our History</a></li>
-              <li><a href="#">Board of Directors</a></li>
-              <li><a href="#">Board of Commissioners</a></li>
-              <li><a href="#">Health, Safety, and Environment</a></li>
-              <li><a href="#">Good Corporate Governance</a></li>
-              <li><a href="#">Our People</a></li>
-            </ul>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-7">
+                <h5>About Us</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Our Business</a></li>
+                  <li><a href="#">Our History</a></li>
+                  <li><a href="#">Board of Directors</a></li>
+                  <li><a href="#">Board of Commissioners</a></li>
+                  <li><a href="#">Health, Safety, and Environment</a></li>
+                  <li><a href="#">Good Corporate Governance</a></li>
+                  <li><a href="#">Our People</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <h5>Industries</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Distribution Channels</a></li>
+                  <li><a href="#">Lab Services and R&amp;D</a></li>
+                  <li><a href="#">Integrated Supply Chain</a></li>
+                  <li><a href="#">IT Solutions</a></li>
+                  <li><a href="#">Water Treatment</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="col-sm-3">
-            <h4>Product and Services</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Industries</a></li>
-              <li><a href="#">Lab Services and R&amp;D</a></li>
-              <li><a href="#">Supply Chain</a></li>
-              <li><a href="#">IT Solutions</a></li>
-              <li><a href="#">Water Treatment</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-2">
-            <h4>Investor Relations</h4>
+            <h5>Investor Relations</h5>
             <ul class="list-unstyled">
               <li><a href="#">Stock Information</a></li>
               <li><a href="#">Financial Information</a></li>
@@ -70,16 +259,16 @@
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>CSR</h4>
+            <h5>CSR</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Housing</a></li>
+              <li><a href="#">Serving the Poor</a></li>
               <li><a href="#">Education</a></li>
-              <li><a href="#">Environment</a></li>
+              <li><a href="#">Livelihood</a></li>
               <li><a href="#">Other</a></li>
             </ul>
           </div>
           <div class="col-sm-2">
-            <h4>Careers</h4>
+            <h5>Careers</h5>
             <ul class="list-unstyled">
               <li><a href="#">View All Jobs</a></li>
               <li><a href="#">How to Apply</a></li>
@@ -91,11 +280,11 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row footer-bottom padding-small">
-          <div class="container-fluid">
+      <div class="footer-bottom padding-small">
+        <div class="container">
+          <div class="row">
             <div class="col-sm-8">
-              <div class="hidden-xs hidden-sm">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-xs hidden-sm copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
               <ul class="menu">
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="#">Terms of Use</a></li>
@@ -104,12 +293,12 @@
                 <li> <a href="#">Disclaimer</a></li>
                 <li> <a href="contact-us.html">Contact Us</a></li>
               </ul>
-              <div class="hidden-md hidden-lg">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="hidden-md hidden-lg copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
             </div>
             <div class="col-sm-4 sosmed"><a href="#">
-                <div class="icon facebook"><i class="fa fa-facebook"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-twitter"></i></div></a><a href="#">
-                <div class="icon"><i class="fa fa-linkedin"></i></div></a></div>
+                <div class="icon"><img src="images/icon-facebook-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-twitter-1.png"></div></a><a href="#">
+                <div class="icon"><img src="images/icon-linkedin-1.png"></div></a></div>
           </div>
         </div>
       </div>
@@ -121,5 +310,38 @@
     <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+      $('#search-menu').click(function(e){
+        var x = 0;
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
+      
+        console.log(x);
+        if(x == 0) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+          x = 1;
+        }
+      
+        if(x == 1) {
+          $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+          x = 0;
+        }
+      
+        console.log(x);
+      });
+      
+      //- $('#search-menu').toggle(function(e){
+      //-   e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'0px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-remove"></span>');
+      //- }, function(){
+      //-   //e.preventDefault();
+      //-   $('.form-search-menu').animate({width:'350px'});
+      //-   $(this).html('<span aria-hidden="true" class="glyphicon glyphicon-search"></span>');
+      
+      //- });
+      
+      
+    </script>
   </body>
 </html>

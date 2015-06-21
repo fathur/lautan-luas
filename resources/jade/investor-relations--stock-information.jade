@@ -23,53 +23,59 @@ block content
             each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION', state: 'active'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
               li(class=item.state)
                 a(href=item.link)= item.text
+
   //- Stock Information + Percentation
   .white-bg
     .container-fluid
+      .row.block-stock-info--title
+        .col-sm-6.text-left 
+          h5 ltls.jk
+        .col-sm-6.text-right 
+          h5 may 15, 2015
       .row.block-stock-info
-        .col-sm-2.col-xs-6
-          .item.big
+        .col-sm-4.col-xs-12.col-md-2
+          .item
             .title Share Price
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
-            .date May 15, 2015
 
-        .col-sm-2.col-xs-6
+        .col-sm-4.col-xs-6.col-md-2
           .item
-            .title Share Price
+            .title open
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
-        .col-sm-2.col-xs-6
+        .col-sm-4.col-xs-6.col-md-2
           .item
-            .title Share Price
+            .title Prev Close
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
-        .col-sm-2.col-xs-6
+        .col-sm-4.col-xs-6.col-md-2
           .item.success
-            .title Share Price
+            .title day's high
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
-        .col-sm-2.col-xs-6
+        .col-sm-4.col-xs-6.col-md-2
           .item.danger
-            .title Share Price
+            .title day's low
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
-        .col-sm-2.col-xs-6
+        .col-sm-4.hidden-xs.col-md-2
           .item
-            .title Share Price
+            .title volume
             .money
-              span.currency Rp.
+              span.currency IDR
               span.nominal 830.00
 
-  .container 
-    .row
-      .col-xs-12
-        img.img-responsive.center-block(src="images/stock-graph-1.png")
+  .white-bg.padding-extra-large
+    .container 
+      .row
+        .col-xs-12
+          img.img-responsive.center-block(src="images/graph.jpg")
 
   .gray-bg.padding-large
     .container.share-price
@@ -89,11 +95,11 @@ block content
           table.table.table-responsive#filter-year
             thead
               tr 
-                th Quarter
-                th High
-                th Low
-                th Average Volume
-                th Year
+                th(style="") Quarter
+                th(style="") High
+                th(style="") Low
+                th(style="") Average Volume
+                th(style="display:none;") Year
             tbody
               each item in ['Q1','Q2','Q3','Q4']
                 tr
@@ -101,49 +107,45 @@ block content
                   td 1.700
                   td 1.450
                   td 1.800.000
-                  td 2000
+                  td(style="display:none;") 2000
               each item in ['Q1z','Q2z','Q3z','Q4z']
                 tr
                   td=item
                   td 1.700
                   td 1.450
                   td 1.800.000
-                  td 2001
+                  td(style="display:none;") 2001
               each item in ['Q1x','Q2x','Q3x','Q4x']
                 tr
                   td=item
                   td 1.700
                   td 1.450
                   td 1.800.000
-                  td 2002
+                  td(style="display:none;") 2002
               each item in ['Q1a','Q2a','Q3a','Q4a']
                 tr
                   td=item
                   td 1.700
                   td 1.450
                   td 1.800.000
-                  td 2003
+                  td(style="display:none;") 2003
               each item in ['Q1t','Q2t','Q3t','Q4t']
                 tr
                   td=item
                   td 1.700
                   td 1.450
                   td 1.800.000
-                  td 2004
+                  td(style="display:none;") 2004
               each item in ['Q1a','Q2a','Q3a','Q4a']
                 tr
                   td=item
                   td 1.704
                   td 1.454
                   td 1.800.000
-                  td 2005 
+                  td(style="display:none;") 2005 
 
   
-  .white-bg.padding-small
-    .container.investor-contact
-      .row.text-center
-        | For investor relation inquiries, please contact 
-        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+  include ./template/investor/bottom-contact-2w.jade
             
             
 
@@ -158,7 +160,16 @@ block script
         "bFilter": true,
         "bPaginate": false,
         "bInfo" : false,
-        "sDom":"lrtip" // default is lfrtip, where the f is the filter
+        "bSort": false,
+        "sDom":"lrtip", // default is lfrtip, where the f is the filter
+        'bAutoWidth': false, 
+        'aoColumns' : [
+          { "sWidth": "25%"},
+          { "sWidth": "25%"},
+          { "sWidth": "24%"},
+          { "sWidth": "25%"},
+          { "sWidth": "1%"},
+                  ]
       });
 
       var oTable = $filterYear.dataTable();

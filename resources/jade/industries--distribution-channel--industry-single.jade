@@ -20,20 +20,121 @@ block content
     .container
       .row
         .col-sm-12
-          h2 Industry One
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices magna vel porttitor hendrerit. Suspendisse potenti. Sed eros lectus, tristique eget porta at, varius ac nunc. Nunc interdum, leo non convallis facilisis, felis dolor tristique enim, et maximus ligula purus nec sem. Maecenas sodales commodo justo a vulputate. Cras sit amet felis nec quam semper eleifend. Etiam fermentum volutpat faucibus. Aliquam est enim, sagittis eget mattis quis, mattis vitae nisi. Donec eu elit venenatis enim facilisis dictum malesuada eu dui. Pellentesque vulputate dui in maximus viverra. Integer at lectus sagittis, rutrum lorem non, tempor turpis.
-  
-  .gray-bg.padding-large
+          h2 Water Treatment
+          p We serve to almost all segment of water chemical business  in Indonesia such as raw and waste water treatment, boiler & cooling treatment, oil & gas, mining, sugar and others. We have highly experience water treatment team and laboratory facilities all across most big cities in Indonesia serving some 1,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
+
+
+  //- Services
+  .padding-large.gray-bg
     .container.processes
-      .row
+      .row.title
         .col-sm-12
-          h2 Processes
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultrices magna vel porttitor hendrerit. Suspendisse potenti. Sed eros lectus, tristique eget porta at, varius ac nunc. Nunc interdum, leo non convallis facilisis, felis dolor tristique enim, et maximus ligula purus nec sem. Maecenas sodales commodo justo a vulputate. Cras sit amet felis nec quam semper eleifend. Etiam fermentum volutpat faucibus. Aliquam est enim, sagittis eget mattis quis, mattis vitae nisi. Donec eu elit venenatis enim facilisis dictum malesuada eu dui. Pellentesque vulputate dui in maximus viverra. Integer at lectus sagittis, rutrum lorem non, tempor turpis.
-      .row.steps
-        each item in ['One', 'Two', 'Three', 'Four']
-          .col-sm-3.item
-            a(href="industries--distribution-channel--industry-single--process-single.html")
-              img.img-responsive.center-block(src="images/news-2.jpg")
-            .caption.text-center
-              a(href="industries--distribution-channel--industry-single--process-single.html") Process #{item}
+          h5 Services
+      .content
+        .row
+          each item in [{text:'Lorem',image:'images/2008.JPG'},{text:'Ipsum',image:'images/2003.jpg'},{text:'Dolor',image:'images/2001.png'}]
+            .col-sm-4.item
+              a(href="industries--distribution-channel--industry-single--process.html")
+                .text-wrapper
+                .text.text-center= item.text
+                img.img-responsive(src="#{item.image}")
+        .row
+          each item in [{text:'Lorem',image:'images/2008.JPG'},{text:'Ipsum',image:'images/2003.jpg'},{text:'Dolor',image:'images/2001.png'}]
+            .col-sm-4.item
+              a(href="industries--distribution-channel--industry-single--process.html")
+                .text-wrapper
+                .text.text-center= item.text
+                img.img-responsive(src="#{item.image}")
+
+  .white-bg.padding-large
+    .container.latest-news
+      .row
+        .col-xs-6
+          h5 Latest News
+        .col-xs-6.pull-right.text-right
+          a.view-all(href="investor-relations--news-events--archives.html") View all 
+            i.fa.fa-angle-right
+      .row
+        each item in [1,2,3]
+          .col-sm-4
+            .wrapper
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur elit
+              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+              date May 15, 2015
+
+  .gray-blue-bg.padding-large
+    .container.thumbmail-preview-one
+      .row
+        .col-xs-6
+          h5 case studies
+        .col-xs-6.text-right
+          a.view-all(href="industries--case-studies--archives.html") View all 
+            i.fa.fa-angle-right
+      .row
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/2008.JPG")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/2003.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/2008.JPG")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/2003.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+
+  .white-bg.padding-large
+    .container
+      .row
+        .col-xs-6
+          h5 media gallery
+        .col-xs-6.text-right
+          a.view-all(href="industries--gallery.html") View all 
+            i.fa.fa-angle-right
+      .row.media-galleries
+        each item in [1,2,3,4]
+          .col-sm-3
+            .box
+              a.gallery(href="images/2003.jpg" title="(Eric Goncalves (cathing up again!))")
+                img.img-responsive(src="images/2003.jpg" alt="")
+       
+
+  include ./template/investor/bottom-contact.jade
+
+
+block script
+  script(type="text/javascript").
+    $('.gallery').fancybox({
+      openEffect : 'none',
+      closeEffect : 'none',
+      helpers : {
+        title : {
+          type : 'outside'
+        }
+      }
+    });
+
+
           

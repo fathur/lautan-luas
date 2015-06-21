@@ -15,7 +15,7 @@
           .panel-body
             .row
               .col-sm-4
-                h4 Jakarta
+                .city Jakarta
                 .address Jl. Jend. Sudirman Blok Z3 No. 99 Jakarta
                 .contact
                   .icon
@@ -39,7 +39,7 @@
             .row
               each item in ['Surabaya', 'Bandung', 'Semarang']
                 .col-sm-4
-                  h4= item
+                  .city= item
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item
                   .contact
@@ -56,7 +56,7 @@
             .row
               each item in ['Medan', 'Pekanbaru']
                 .col-sm-4
-                  h4= item
+                  .city= item
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item
                   .contact
@@ -81,7 +81,7 @@
             .row
               each item in ['Bandar Lampung', 'Palembang', 'Solo']
                 .col-sm-4
-                  h4= item
+                  .city= item
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item
                   .contact
@@ -97,7 +97,7 @@
             .row
               each item in ['Samarinda', 'Makassar', 'Tangerang']
                 .col-sm-4
-                  h4= item
+                  .city= item
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item
                   .contact
@@ -114,7 +114,7 @@
             .row
               each item in ['Pontianak']
                 .col-sm-4
-                  h4= item
+                  .city= item
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item
                   .contact 
@@ -139,7 +139,7 @@
           .panel-body
             .row
               .col-sm-4
-                h4 Lautan Luas Singapore Pte. Ltd
+                .city Lautan Luas Singapore Pte. Ltd
                 .address Jl. Jend. Sudirman Blok Z3 No. 99 Singapore
                 .contact
                   .icon
@@ -164,7 +164,7 @@
             .row
               each item in [{title: 'Lautan Luas Thailand Co. Ltd,.', location: 'Bangkok, Thailand'},{title: 'Lautan Luas Shanghai Co. Ltd,.', location: 'Shanghai, China'},{title: 'Lautan Luas Vietnam Co. Ltd,.', location: 'Ho Chi Minh, Vietnam'}]
                 .col-sm-4
-                  h4= item.title
+                  .city= item.title
                   .address Jl. Jend. Sudirman Blok Z3 No. 99 
                     = item.location
                   .contact

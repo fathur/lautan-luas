@@ -1,0 +1,29 @@
+@mixin title-uppercase($font-size: 10px, $margin-bottom: 0px) {
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	font-size: $font-size;
+	margin-bottom: $margin-bottom;
+}
+
+@mixin hidden-center-image() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: auto;
+	max-width: none;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, 0%);
+}
+
+@mixin hover-box-shadow() {
+	transition: box-shadow .25s;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0px 0px 10px 0px $black_49;
+	}
+}

@@ -1,0 +1,45 @@
+extends ./_layout.jade
+
+block title
+  title Investor Relations
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.active Corporate Social Responsibility
+  
+  .padding-large.white-bg
+    .container
+      .row
+        .tabs-left
+          .col-xs-3
+            ul.nav.nav-tabs(role='tablist')
+              li.active(role='presentation')
+                a(href='#personal-information', aria-controls='personal-information', role='tab', data-toggle='tab') Personal Information
+              li(role='presentation')
+                a(href='#education-history', aria-controls='education-history', role='tab', data-toggle='tab') Education History
+              li(role='presentation')
+                a(href='#working-experience', aria-controls='working-experience', role='tab', data-toggle='tab') Working Experience
+              li(role='presentation')
+                a(href='#courses', aria-controls='courses', role='tab', data-toggle='tab') Courses
+              li(role='presentation')
+                a(href='#upload-files', aria-controls='upload-files', role='tab', data-toggle='tab') Upload Files
+
+
+          .tab-content.col-xs-9
+            #personal-information.tab-pane.fade.in.active(role='tabpanel')
+              include ./template/careers/personal-information.jade
+            #education-history.tab-pane.fade(role='tabpanel')
+              include ./template/careers/education-history.jade
+            #working-experience.tab-pane.fade(role='tabpanel')
+              include ./template/careers/working-experience.jade
+            #courses.tab-pane.fade(role='tabpanel')
+              include ./template/careers/courses.jade
+            #upload-files.tab-pane.fade(role='tabpanel')
+              include ./template/careers/upload-files.jade

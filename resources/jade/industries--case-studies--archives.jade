@@ -1,0 +1,38 @@
+extends ./_layout.jade
+
+block title
+  title Distribution Channels
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li
+          a(href="industries.html") Product and Services
+        li.active Research and Development
+
+  .padding-extra-large.white-bg
+    .container.thumbmail-preview-one.archive 
+      .row
+        .col-xs-12
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna vel augue pellentesque sollicitudin. Nunc ut semper sem. Curabitur at lectus sodales, tristique nisi et, sodales urna. Vivamus in velit at lorem hendrerit pulvinar. Suspendisse ut malesuada purus. Mauris ullamcorper risus in lorem tristique, ut fringilla velit suscipit. In a arcu quis mi ultricies pulvinar in ac ex. Nulla consequat metus id turpis tincidunt pharetra. In sagittis, erat sit amet facilisis dignissim, urna orci tempus ligula, vitae elementum dolor urna ut dolor. Sed eu arcu vitae ligula malesuada egestas.
+
+      each i in [1,2,3]
+        .row.case-studies
+          each item in [1,2,3,4]
+            .col-xs-3
+              .box
+                .image
+                  a(href="investor-relations--news--single.html")
+                    img(src="images/2008.JPG")
+                .text 
+                  h3
+                    a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+
+  include ./template/investor/bottom-contact.jade
+      

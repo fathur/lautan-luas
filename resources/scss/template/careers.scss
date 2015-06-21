@@ -94,3 +94,63 @@
 		border-bottom: 2px solid #bebebe;
 	}
 }
+
+.apply-now {
+
+	b {
+		color: $light_blue;
+	}
+
+	textarea {
+		height: 120px;
+	}
+
+	.btn-action {
+		.btn {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+	}
+
+	.form-title {
+		font-family: 'PT Sans', sans-serif;
+		font-weight: 600;
+		color: $light_blue;
+		font-size: 14px;
+		padding-bottom: 30px;
+		padding-top: 50px;
+
+		&.first {
+			padding-top: 0px;
+		}
+	}
+
+	.form-subtitle {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.form-inline {
+		.form-group {
+			margin-bottom: 15px;
+		}
+	}
+
+	&.education-history
+	&.upload-files {
+		// padding-bottom: 50px;
+		border-bottom: 1px solid $gray;
+
+		&--collections {
+			padding-top: 50px;
+
+			td > a {
+				display: block;
+
+				.fa {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
