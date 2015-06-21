@@ -28,4 +28,20 @@
 	textarea {
 		height: 214px;
 	}
+
+	dl {
+		font-family: 'PT Sans', sans-serif;
+
+		& > dt {
+			font-weight: bold;
+			color: $light-blue;
+			width: 50px;
+			line-height: 2;
+		}
+
+		& > dd {
+			margin-left: 70px;
+			line-height: 2;
+		}
+	}
 }

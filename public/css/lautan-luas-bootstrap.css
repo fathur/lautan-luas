@@ -10723,9 +10723,11 @@ a.btn-blue:hover, a.btn-blue:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
 }
 @media (min-width: 768px) {
-  .why-join .item {
-    width: 200px;
-    height: 265px;
+  .why-join {
+    /* .item {
+    	width: 200px;
+    	height: 265px;
+    } */
   }
 }
 .why-join .icon {
@@ -10853,6 +10855,19 @@ a.btn-blue:hover, a.btn-blue:focus {
 }
 .contact-form textarea {
   height: 214px;
+}
+.contact-form dl {
+  font-family: 'PT Sans', sans-serif;
+}
+.contact-form dl > dt {
+  font-weight: bold;
+  color: #032077;
+  width: 50px;
+  line-height: 2;
+}
+.contact-form dl > dd {
+  margin-left: 70px;
+  line-height: 2;
 }
 
 @media (min-width: 768px) {

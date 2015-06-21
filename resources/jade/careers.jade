@@ -25,47 +25,37 @@ block content
 
   //- Why join
   .padding-large.gray-bg
-    .container-fluid.why-join
+    .container.why-join
       .row.text-center
         .col-sm-12
           h2 Why Join Lautan Luas
-      .row
-        .col-sm-4
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-diamond.icon
-              span.text We processs core values
-        .col-sm-4
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-certificate.icon
-              span.text We appreciate our employees
-        .col-sm-4
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-arrows-alt.icon
-              span.text The posibility of mutation within the group
-      .row
-        .col-sm-3
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-flag-o.icon
-              span.text We are big company
-        .col-sm-3
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-smile-o.icon
-              span.text You will earn benefits
-        .col-sm-3
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-pencil.icon
-              span.text We have a good learning center
-        .col-sm-3
-          .item.center-block.text-center
-            a(href="#")
-              i.fa.fa-line-chart.icon
-              span.text You will own a career path
+      .row.manufacturing
+        .col-sm-12.logo-collection
+          .row.logo-item
+            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+              .col-sm-4.item
+                a(href="#")
+                  .image
+                    img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+                  .caption.text-center
+                    = item
+           
+          .row.logo-item
+            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+              .col-sm-4.item
+                a(href="#")
+                  .image
+                    img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+                  .caption.text-center
+                    = item
+          .row.logo-item
+            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+              .col-sm-4.item
+                a(href="#")
+                  .image
+                    img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+                  .caption.text-center
+                    = item
 
   //- Form join
   .image-bg.padding-extra-large.search-job
