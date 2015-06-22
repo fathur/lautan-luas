@@ -32,9 +32,9 @@
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
-              <form class="form-search-menu">
+              <form action="search-results.html" method="get" class="form-search-menu">
                 <div class="form-group has-feedback">
-                  <input type="text" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
               </form>
             </li>
@@ -57,51 +57,71 @@
         <div class="row questions">
           <div class="col-xs-12">
             <h5>how to apply?</h5>
-            <ul class="list-unstyled">
-              <li><a href="#1">How to apply and fill up  the application form?</a></li>
-              <li><a href="#2">What if I already graduated but have not received an education certificate?</a></li>
-              <li><a href="#3">I have filled the application form in the website and save it. But there is data that I want to review. How do I renew or revise my data?</a></li>
-              <li><a href="#4">I have filled up completely all the coloumn in the application form, but when I  want to attached the documents, the page cannot be saved. What should I do?</a></li>
-              <li><a href="#5">I have submitted the application sometimes ago, but have not been contacted and usually how long I will be contacted?</a></li>
-              <li><a href="#6">Is it possible to apply more than 1 (one) position?</a></li>
-              <li><a href="#7">How is the recruitment process in PT Lautan Luas Tbk?</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row devider"></div>
-        <div class="row answers">
-          <div class="col-xs-12">
-            <dl>
-              <dt id="1">How to apply and fill up  the application form?</dt>
-              <dd> 
-                <ol>
-                  <li>Open the career section dari website PT Lautan Luas Tbk : career.lautan-luas.com</li>
-                  <li>First, choose the position that you wish to apply, then click the button “apply”</li>
-                  <li>If you don’t have the account, you need to make “new account”, but if you already have  an account, you just need to login with your email and password that been registered before.</li>
-                  <li>Then fill up each coloumn completely.</li>
-                  <li>Don’t forget to prepare your documents : softcopy of photo, education certificate and education transcript.</li>
-                </ol>
-              </dd>
-              <dt id="2">What if I already graduated but have not received an education certificate?</dt>
-              <dd>You may use Surat Keterangan Lulus (SKL)</dd>
-              <dt id="3">I have filled the application form in the website and save it. But there is data that I want to review. How do I renew or revise my data?</dt>
-              <dd>First, you need to login with your email and password that been registered before. Then click “Update” and you may renew/revise the coloumn that you want to change. After you done, click “Next”.</dd>
-              <dt id="4">I have filled up completely all the coloumn in the application form, but when I  want to attached the documents, the page cannot be saved. What should I do?</dt>
-              <dd>First, close the page, then send the message to our email: lautan.luas@lautan-luas.com. Our support team will contact you to help further.</dd>
-              <dt id="5">I have submitted the application sometimes ago, but have not been contacted and usually how long I will be contacted?</dt>
-              <dd>Basically, we have received your application. If we have a position matched with your skills and experience, you’ll be contacted approximately in 2 (two) weeks to discuss the opportunity to work in PT Lautan Luas Tbk.  Otherwise we will save your resume into our database for any future openings.</dd>
-              <dt id="6">Is it possible to apply more than 1 (one) position?</dt>
-              <dd>Yes, you may apply for maximum 3 (three) positions.</dd>
-              <dt id="7">How is the recruitment process in PT Lautan Luas Tbk?</dt>
-              <dd>Upon receive your application and identify the right position, we will contact you for the psychological test and interview with Human Resources, continued with interview and skill test (if needed) with Department Head. The final interview will  be conducted with higher level authorities.</dd>
-            </dl>
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">How to apply and fill up the application form?</a></h4>
+                </div>
+                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Open the career section dari website PT Lautan Luas Tbk : career.lautan-luas.com. First, choose the position that you wish to apply, then click the button &quot;apply&quot;. If you don’t have the account, you need to make &quot;new account&quot;, but if you already have an account, you just need to login with your email and password that been registered before. Then fill up each coloumn completely. Don’t forget to prepare your documents : softcopy of photo, education certificate and education transcript.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What if I already graduated but have not received an education certificate?</a></h4>
+                </div>
+                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">You may use Surat Keterangan Lulus (SKL). </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">I have filled the application form in the website and save it. But there is data that I want to review. How do I renew or revise my data?</a></h4>
+                </div>
+                <div id="collapseThree" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">First, you need to login with your email and password that been registered before. Then click &quot;Update&quot; and you may renew/revise the coloumn that you want to change. After you done, click &quot;Next&quot;.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">I have filled up completely all the coloumn in the application form, but when I want to attached the documents, the page cannot be saved. What should I do?</a></h4>
+                </div>
+                <div id="collapseFour" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">First, close the page, then send the message to our email: lautan.luas@lautan-luas.com. Our support team will contact you to help further.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">I have submitted the application sometimes ago, but have not been contacted and usually how long I will be contacted?</a></h4>
+                </div>
+                <div id="collapseFive" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Basically, we have received your application. If we have a position matched with your skills and experience, you’ll be contacted approximately in 2 (two) weeks to discuss the opportunity to work in PT Lautan Luas Tbk. Otherwise we will save your resume into our database for any future openings.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Is it possible to apply more than 1 (one) position?</a></h4>
+                </div>
+                <div id="collapseSix" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Yes, you may apply for maximum 3 (three) positions.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">How is the recruitment process in PT Lautan Luas Tbk?</a></h4>
+                </div>
+                <div id="collapseSeven" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Upon receive your application and identify the right position, we will contact you for the psychological test and interview with Human Resources, continued with interview and skill test (if needed) with Department Head. The final interview will be conducted with higher level authorities.</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="gray-bg padding-small">
+    <div class="gray-blue-bg">
       <div class="container investor-contact">
-        <div class="row text-center">For investor relation inquiries, please contact <a href="mailto:investor.relations@lautan-luas.com">investor.relations[at]lautan-luas[dot]com</a></div>
+        <div class="row"><span>For investor relation inquiries, please contact us directly. </span><a href="contact-us.html" class="btn btn-blue pull-right">Contact Us</a></div>
       </div>
     </div>
     <div class="footer">

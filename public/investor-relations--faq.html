@@ -32,9 +32,9 @@
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
-              <form class="form-search-menu">
+              <form action="search-results.html" method="get" class="form-search-menu">
                 <div class="form-group has-feedback">
-                  <input type="text" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
               </form>
             </li>
@@ -70,35 +70,102 @@
       <div class="container faq">
         <div class="row">
           <div class="col-xs-12">
+            <h5>frequently asked questions</h5>
             <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
-              <!-- 1-->
               <div class="panel panel-default">
-                <div id="i1" role="tab" class="panel-heading">
-                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?</a></h4>
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?</a></h4>
                 </div>
-                <div id="collapse1" role="tabpanel" aria-labelledby="i1" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <p>Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.</p>
-                      </div>
-                    </div>
-                  </div>
+                <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.</div>
                 </div>
               </div>
-              <!-- 2-->
               <div class="panel panel-default">
-                <div id="i2" role="tab" class="panel-heading">
-                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">What is the Lautan Luas ticker symbol and where are shares traded?</a></h4>
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What is the Lautan Luas ticker symbol and where are shares traded?</a></h4>
                 </div>
-                <div id="collapse2" role="tabpanel" aria-labelledby="i2" class="panel-collapse collapse in">
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <p>The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).</p>
-                      </div>
-                    </div>
-                  </div>
+                <div id="collapseTwo" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Does Lautan Luas have a direct share program?</a></h4>
+                </div>
+                <div id="collapseThree" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">No, shares may not be purchased directly from Lautan Luas.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Has there been a stock split since IPO?</a></h4>
+                </div>
+                <div id="collapseFour" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Yes, Lautan Luas had a 1:2 stock split on 8th November 1999 and 9th January 2015.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Has there been a bonus share since IPO?</a></h4>
+                </div>
+                <div id="collapseFive" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Yes, Lautan Luas gave a 5:8 bonus share on 4th January 1999.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Does Lautan Luas pay dividends? </a></h4>
+                </div>
+                <div id="collapseSix" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Yes, Lautan Luas paid out dividends as and when declared by the Board of Directors at Annual General Shareholders meetings.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">What is the current Lautan Luas outstanding shares?</a></h4>
+                </div>
+                <div id="collapseSeven" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Lautan Luas currently has 1.560 million outstanding shares.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">What percentage of outstanding shares is held by public?</a></h4>
+                </div>
+                <div id="collapseEight" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">The public holds 41.33% of Lautan Luas outstanding shares.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Has Lautan Luas issued any bonds? </a></h4>
+                </div>
+                <div id="collapseNine" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">To date, the Company has issued four five-year bonds. Bond I/2000 of Rp 200 billion was retired in 2005, Bond II/2003 of Rp 300 billion was retired in 2008, Bond III/2008 of Rp 500 billion was retired in 2013, while Bond IV/2013 of Rp 700 billion was issued in June 2013 and will retire in 2018. In 2014, Lautan Luas maintained its credit rating of idA- (single A minus, stable outlook) by Credit Rating Indonesia or PT Pemeringkat Efek Indonesia (Pefindo). 7 April 2014.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">How many subsidiaries/affiliates are currently owned by Lautan Luas?</a></h4>
+                </div>
+                <div id="collapseTen" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Currently, Lautan Luas has 16 manufacturing subsidiaries and affiliates, 4 support &amp; services subsidiaries and affiliates, a Singapore regional distribution subsidiary, 4 regional offices, and 3 regional manufacturing facilities.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">How does Lautan Luas serve customers from various industries with a wide range of needs?</a></h4>
+                </div>
+                <div id="collapseEleven" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Lautan Luas has a “one-stop-shop” approach to business, making it a total solutions provider for chemical industrial needs. Currently, Lautan Luas distributes over 1,000 products for more than 100 international principals to over 2,000 local and global industrial end-users.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div role="tab" id="headingOne" class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">How can I receive a copy of Lautan Luas Annual Report?</a></h4>
+                </div>
+                <div id="collapseTwelve" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse">
+                  <div class="panel-body">Lautan Luas Annual Report and others are available in electronic format on this website in the Investor Relations section under financial updates, Annual Report.</div>
                 </div>
               </div>
             </div>
@@ -106,9 +173,9 @@
         </div>
       </div>
     </div>
-    <div class="gray-bg padding-small">
+    <div class="gray-blue-bg">
       <div class="container investor-contact">
-        <div class="row text-center">For investor relation inquiries, please contact <a href="mailto:investor.relations@lautan-luas.com">investor.relations[at]lautan-luas[dot]com</a></div>
+        <div class="row"><span>For investor relation inquiries, please contact us directly. </span><a href="contact-us.html" class="btn btn-blue pull-right">Contact Us</a></div>
       </div>
     </div>
     <div class="footer">

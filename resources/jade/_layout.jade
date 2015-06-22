@@ -44,9 +44,9 @@ html(lang='en')
             li 
               a#search-menu(href="#")
                 span#search-icon.glyphicon.glyphicon-search(aria-hidden="true")
-              form.form-search-menu
+              form.form-search-menu(action="search-results.html" method="get")
                 .form-group.has-feedback
-                  input.form-control(type="text")
+                  input.form-control(type="text" name="q")
                   span.glyphicon.glyphicon-search.form-control-feedback
          
             

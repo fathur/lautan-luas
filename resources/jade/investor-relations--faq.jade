@@ -28,40 +28,23 @@ block content
     .container.faq
       .row
         .col-xs-12
-          //- Head Office
+          h5 frequently asked questions
           #accordion.panel-group(role='tablist', aria-multiselectable='true')
 
-            // 1
-            .panel.panel-default
-              #i1.panel-heading(role='tab')
-                h4.panel-title
-                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse1', aria-expanded='true', aria-controls='collapse1')
-                    | When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?
-              #collapse1.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='i1')
-                .panel-body
-                  .row
-                    .col-sm-12
-                      p Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.
-            // 2
-            .panel.panel-default
-              #i2.panel-heading(role='tab')
-                h4.panel-title
-                  a(data-toggle='collapse', data-parent='#accordion', href='#collapse2', aria-expanded='false', aria-controls='collapse2')
-                    | What is the Lautan Luas ticker symbol and where are shares traded?
-              #collapse2.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='i2')
-                .panel-body
-                  .row
-                    .col-sm-12
-                      p The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).
-           
-
-
-                
-  .gray-bg.padding-small
-    .container.investor-contact
-      .row.text-center
-        | For investor relation inquiries, please contact 
-        a(href="mailto:investor.relations@lautan-luas.com") investor.relations[at]lautan-luas[dot]com
+            each item in [{id:'One', question:'When was the Lautan Luas Initial Public Offering (IPO) and what was the share price then?', answer:'Lautan Luas went public on 21 July 1997, offering 50 million shares of common stock to the public at Rp2,950.00 per share.'}, {id:'Two', question:'What is the Lautan Luas ticker symbol and where are shares traded?', answer:'The Lautan Luas ticker symbol is LTLS and the shares are traded on Indonesia Stock Exchange (IDX).'}, {id:'Three', question:'Does Lautan Luas have a direct share program?', answer:'No, shares may not be purchased directly from Lautan Luas.'}, {id:'Four', question:'Has there been a stock split since IPO?', answer:'Yes, Lautan Luas had a 1:2 stock split on 8th November 1999 and 9th January 2015.'}, {id:'Five', question:'Has there been a bonus share since IPO?', answer:'Yes, Lautan Luas gave a 5:8 bonus share on 4th January 1999.'}, {id:'Six', question:'Does Lautan Luas pay dividends? ', answer:'Yes, Lautan Luas paid out dividends as and when declared by the Board of Directors at Annual General Shareholders meetings.'}, {id:'Seven', question:'What is the current Lautan Luas outstanding shares?', answer:'Lautan Luas currently has 1.560 million outstanding shares.'}, {id:'Eight', question:'What percentage of outstanding shares is held by public?', answer:'The public holds 41.33% of Lautan Luas outstanding shares.'}, {id:'Nine', question:'Has Lautan Luas issued any bonds? ', answer:'To date, the Company has issued four five-year bonds. Bond I/2000 of Rp 200 billion was retired in 2005, Bond II/2003 of Rp 300 billion was retired in 2008, Bond III/2008 of Rp 500 billion was retired in 2013, while Bond IV/2013 of Rp 700 billion was issued in June 2013 and will retire in 2018. In 2014, Lautan Luas maintained its credit rating of idA- (single A minus, stable outlook) by Credit Rating Indonesia or PT Pemeringkat Efek Indonesia (Pefindo). 7 April 2014.'}, {id:'Ten', question:'How many subsidiaries/affiliates are currently owned by Lautan Luas?', answer:'Currently, Lautan Luas has 16 manufacturing subsidiaries and affiliates, 4 support & services subsidiaries and affiliates, a Singapore regional distribution subsidiary, 4 regional offices, and 3 regional manufacturing facilities.'}, {id:'Eleven', question:'How does Lautan Luas serve customers from various industries with a wide range of needs?', answer:'Lautan Luas has a “one-stop-shop” approach to business, making it a total solutions provider for chemical industrial needs. Currently, Lautan Luas distributes over 1,000 products for more than 100 international principals to over 2,000 local and global industrial end-users.'}, {id:'Twelve', question:'How can I receive a copy of Lautan Luas Annual Report?', answer:'Lautan Luas Annual Report and others are available in electronic format on this website in the Investor Relations section under financial updates, Annual Report.'}]
+              .panel.panel-default
+                .panel-heading(role="tab" id="headingOne")
+                  h4.panel-title
+                    a(data-toggle="collapse" data-parent="#accordion" href="#collapse#{item.id}" aria-expanded="false" aria-controls="collapse#{item.id}")
+                      | #{item.question}
+                    
+                  
+                .panel-collapse.collapse(id="collapse#{item.id}" role="tabpanel" aria-labelledby="headingOne")
+                  .panel-body
+                    | #{item.answer}
+              
+  
+  include ./template/investor/bottom-contact-2g.jade
             
             
 
