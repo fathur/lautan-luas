@@ -64,7 +64,10 @@ module.exports = function(grunt) {
 		      "public/investor-relations--faq.html": "resources/jade/investor-relations--faq.jade",
 		      "public/investor-relations--reports-archive.html": "resources/jade/investor-relations--reports-archive.jade",
 		      "public/investor-relations--events-archive.html": "resources/jade/investor-relations--events-archive.jade",
-		      "public/search-results.html": "resources/jade/search-results.jade"
+		      "public/investor-relations--events-single.html": "resources/jade/investor-relations--events-single.jade",
+		      "public/search-results.html": "resources/jade/search-results.jade",
+		      "public/article-single.html": "resources/jade/article-single.jade",
+		      "public/careers--why-join--single.html": "resources/jade/careers--why-join--single.jade"
 		    }]
 		  }
 		},

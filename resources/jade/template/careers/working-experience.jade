@@ -1,7 +1,7 @@
 .row.apply-now.education-history
   .col-sm-12
 
-    .form-title.first Add / Edit Working Experience Record
+    .form-title.padding-bottom-small Add / Edit Working Experience Record
     form(method="post" action="#")
       .row
         .form-group.col-sm-7
@@ -16,23 +16,45 @@
           
           
       .row
-        .col-sm-12.form-inline
-          .form-group
-            label(for="start-school") From
-            select#start-school.form-control
-              each item in ['Year',1980,1981]
-                option= item
-            select#start-school.form-control
-              each item in ['Year',1980,1981]
-                option= item
-          .form-group
-            label(for="end-school") to
-            select#end-school.form-control
-              each item in ['Year',1980,1981]
-                option= item
-            select#end-school.form-control
-              each item in ['Year',1980,1981]
-                option= item
+        //- .col-sm-12.form-inline
+        //-   .form-group
+        //-     label(for="start-school") From
+        //-     select#start-school.form-control
+        //-       each item in ['Year',1980,1981]
+        //-         option= item
+        //-     select#start-school.form-control
+        //-       each item in ['Year',1980,1981]
+        //-         option= item
+        //-   .form-group
+        //-     label(for="end-school") to
+        //-     select#end-school.form-control
+        //-       each item in ['Year',1980,1981]
+        //-         option= item
+        //-     select#end-school.form-control
+        //-       each item in ['Year',1980,1981]
+        //-         option= item
+        .col-sm-1.label-input
+          | From
+        .form-group.col-sm-3
+          select#start-month-working.form-control
+            each item in ['Month','January','February','March','April','May','June','July','April','August','September','October','December']
+              option= item
+        .form-group.col-sm-3
+          select#start-year-working.form-control
+            each item in ['Year',1980,1981]
+              option= item
+
+        .col-sm-1.label-input
+          | to
+        .form-group.col-sm-2
+          select#end-month-working.form-control
+            each item in ['Month','January','February','March','April','May','June','July','April','August','September','October','December']
+              option= item
+        .form-group.col-sm-2
+          select#end-year-working.form-control
+            each item in ['Year',1980,1981]
+              option= item
+
       .row
         .form-group.col-sm-7
           input.form-control(type="text" placeholder="Position Title")
@@ -40,13 +62,13 @@
         .form-group.col-sm-5
           input.form-control(type="text" placeholder="Number of Subordinates")
 
-      .row.padding-small
+      .row
         .form-group.col-sm-12
           textarea.form-control(placeholder="Job Description")
 
-      .row.btn-action.padding-large
-        a.btn.btn-transparant.pull-right(href="#") Cancel
+      .row.btn-action.padding-bottom-large.padding-top-small
         button.btn.btn-blue.pull-right(type="submit") Add
+        a.btn.btn-transparant.pull-right(href="#") Cancel
 
 .row.apply-now.education-history--collections
   .col-sm-12
@@ -67,12 +89,12 @@
           td Google
           td Analyst
           td Best empolyee
-          td  
+          td.action
             a(href="#")
-              i.fa.fa-edit 
+              i.fa.fa-pencil
               | Edit
             a(href="#")
-              i.fa.fa-trash 
+              i.fa.fa-trash-o
               | Delete
          tr 
           td 1.
@@ -80,15 +102,15 @@
           td Google
           td Analyst
           td Best empolyee
-          td  
+          td.action
             a(href="#")
-              i.fa.fa-edit 
+              i.fa.fa-pencil
               | Edit
             a(href="#")
-              i.fa.fa-trash 
+              i.fa.fa-trash-o
               | Delete
 
   .col-sm-12.btn-action
-    a.btn.btn-transparant.pull-right(href="#") Next
-    button.btn.btn-blue.pull-right(type="submit") Save
+    a.btn.btn-blue.pull-right(href="#") Next
+    button.btn.btn-transparant.pull-right(type="submit") Save
     a.btn.btn-transparant.pull-right(href="#") Back

@@ -12,24 +12,34 @@ block content
       ol.breadcrumb
         li
           a(href="index.html") Home
+        li.separator
         li.active Corporate Social Responsibility
   
   .padding-large.white-bg
     .container
+      .row.username-apply
+        .col-xs-8
+          .email Logged in as john.doe@email.com
+        .col-xs-4.text-right
+          a.btn.btn-blue(href="#") Logout
+      .row.padding-top-large.steps-apply
+        .col-xs-12
+          h2 Steps
+
       .row
         .tabs-left
           .col-xs-3
             ul.nav.nav-tabs(role='tablist')
               li.active(role='presentation')
-                a(href='#personal-information', aria-controls='personal-information', role='tab', data-toggle='tab') Personal Information
+                a(href='#personal-information', aria-controls='personal-information', role='tab', data-toggle='tab') 1. Personal Information
               li(role='presentation')
-                a(href='#education-history', aria-controls='education-history', role='tab', data-toggle='tab') Education History
+                a(href='#education-history', aria-controls='education-history', role='tab', data-toggle='tab') 2. Education History
               li(role='presentation')
-                a(href='#working-experience', aria-controls='working-experience', role='tab', data-toggle='tab') Working Experience
+                a(href='#working-experience', aria-controls='working-experience', role='tab', data-toggle='tab') 3. Working Experience
               li(role='presentation')
-                a(href='#courses', aria-controls='courses', role='tab', data-toggle='tab') Courses
+                a(href='#courses', aria-controls='courses', role='tab', data-toggle='tab') 4. Courses
               li(role='presentation')
-                a(href='#upload-files', aria-controls='upload-files', role='tab', data-toggle='tab') Upload Files
+                a(href='#upload-files', aria-controls='upload-files', role='tab', data-toggle='tab') 5. Upload Files
 
 
           .tab-content.col-xs-9

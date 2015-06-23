@@ -12,6 +12,7 @@ block content
       ol.breadcrumb
         li
           a(href="index.html") Home
+        li.separator
         li.active Corporate Social Responsibility
 
   //- Main content
@@ -19,7 +20,15 @@ block content
     .container.csr
       .row
         .col-sm-6.pull-right-desktop
-          img.img-responsive(src="images/1999.jpg")
+          // img.img-responsive(src="images/1999.jpg")
+          a.fancybox(href="images/1999.jpg")
+            img.img-responsive(src="images/1999.jpg" alt="")
+          .hidden
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
+
         .col-sm-6
           h3 Housing
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur magna at finibus tempor. Suspendisse consequat pharetra ipsum sit amet ultrices. Phasellus vestibulum pharetra malesuada. Quisque egestas massa vel nisi bibendum pellentesque. Mauris sed aliquam nisi, non interdum erat.
@@ -30,7 +39,13 @@ block content
     .container.csr
       .row
         .col-sm-6
-          img.img-responsive(src="images/1999.jpg")
+          a.fancybox(href="images/1999.jpg")
+            img.img-responsive(src="images/1999.jpg" alt="")
+          .hidden
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
         .col-sm-6
           h3 Housing
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur magna at finibus tempor. Suspendisse consequat pharetra ipsum sit amet ultrices. Phasellus vestibulum pharetra malesuada. Quisque egestas massa vel nisi bibendum pellentesque. Mauris sed aliquam nisi, non interdum erat.
@@ -41,7 +56,13 @@ block content
     .container.csr
       .row
         .col-sm-6.pull-right-desktop
-          img.img-responsive(src="images/1999.jpg")
+          a.fancybox(href="images/1999.jpg")
+            img.img-responsive(src="images/1999.jpg" alt="")
+          .hidden
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
+            a.fancybox(href="images/1999.jpg")
+              img(src="images/1999.jpg" alt="")
         .col-sm-6
           h3 Housing
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur magna at finibus tempor. Suspendisse consequat pharetra ipsum sit amet ultrices. Phasellus vestibulum pharetra malesuada. Quisque egestas massa vel nisi bibendum pellentesque. Mauris sed aliquam nisi, non interdum erat.
@@ -63,11 +84,22 @@ block content
                 .col-xs-6.image-wrapper
                   a(href="#")
                     .image
-                      img(src="images/1999.jpg")
+                      a.fancybox(href="images/1999.jpg")
+                        img(src="images/1999.jpg" alt="")
+                      .hidden
+                        a.fancybox(href="images/1999.jpg")
+                          img(src="images/1999.jpg" alt="")
+                        a.fancybox(href="images/1999.jpg")
+                          img(src="images/1999.jpg" alt="")
                 .col-xs-6.text
                   a(href="#")
                     h3 Lorem ipsum dolor sit amet consectetur elit
-                  .date 20 Way 2012
+                  .date 20 May 2012
 
         
 block script
+  script(type="text/javascript").
+    $('.fancybox').attr('rel', 'gallery')
+    .fancybox({
+        padding : 0
+    });

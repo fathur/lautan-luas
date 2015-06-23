@@ -11,6 +11,7 @@ block content
       ol.breadcrumb
         li
           a(href="index.html") Home
+        li.separator
         li.active Careers
 
   //- Intro paragraph
@@ -32,26 +33,26 @@ block content
       .row.manufacturing
         .col-sm-12.logo-collection
           .row.logo-item
-            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+            each item in ['The Lautan Luas core values guide our daily work','We are a big and fast growing company, rapidly becomming a global player','We highly appreciate and value our employees ']
               .col-sm-4.item
-                a(href="#")
+                a(href="careers--why-join--single.html#")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
                     = item
            
           .row.logo-item
-            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+            each item in ['We equip our employees with knowledge and skills ','Shared resources : transfer between departments and group','We offer you a career path  (overseas exposure)']
               .col-sm-4.item
-                a(href="#")
+                a(href="careers--why-join--single.html#")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
                     = item
           .row.logo-item
-            each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+            each item in ['Integrated Office ','Comfortable Working Facilities','A High Engagement, Comfortable Working Environment ']
               .col-sm-4.item
-                a(href="#")
+                a(href="careers--why-join--single.html#")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
@@ -65,78 +66,76 @@ block content
           h2 Search Job Opportunities
           form.form-inline(action="careers--view-all-jobs.html")
             .form-group
-              input.form-control.input-lg(placeholder="Enter search term")
+              input.form-control(placeholder="Enter search term")
             .form-group
-              select.form-control.input-lg
+              select.form-control
                 option Select functional area 
                 option First choice
                 option Second choice
                 option Third choice
             .form-group
-              select.form-control.input-lg
+              select.form-control
                 option Select Location
                 option First choice
                 option Second choice
                 option Third choice
             button.btn.btn-transparant(type="submit") Search
-      .row.counter.padding-extra-large
+      .row.counter.padding-large
         .col-sm-12.text-center There are currently 
           strong 610 
           | open positions.
       .row.anchor
         .col-sm-12.text-center
           a.btn.btn-transparant(href="careers--how-to-apply.html") How To Apply
-          a.btn.btn-transparant(href="careers--view-all-jobs.html") View all jobs
+          a.btn.btn-blue(href="careers--view-all-jobs.html") View all jobs
 
 
 
   //- Employee
   .padding-large.white-bg
-    .container
+    .container.thumbmail-preview-one
       .row
-        .col-sm-6.employee
-          .row
-            .col-sm-12
-              h5 Employee stories
-          .row
-            .col-sm-6
-              .item
-                .image 
-                  a(href="#")
-                    img(src="images/news-1.jpg")
-                .text
-                  a(href="#")
-                    h4 Lorem ipsum dolor sit amet consectetur
-            .col-sm-6
-              .item
-                .image 
-                  a(href="#")
-                    img(src="images/news-1.jpg")
-                .text
-                  a(href="#")
-                    h4 Lorem ipsum dolor sit amet consectetur
+        .col-xs-6
+          h5 EMPLOYEE ACTIVITIES
+        .col-xs-6.text-right
+          a.view-all(href="industries--case-studies--archives.html") View all 
+            i.fa.fa-angle-right
+      .row
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/news-1.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/news-1.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/news-1.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+        .col-xs-3
+          .box
+            .image
+              a(href="investor-relations--news--single.html")
+                img(src="images/news-1.jpg")
+            .text 
+              h3 
+                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
 
-        .col-sm-6.employee
-          .row
-            .col-sm-12
-              h5 Employee activities
-          .row
-            .col-sm-6
-              .item
-                .image 
-                  a(href="#")
-                    img(src="images/news-1.jpg")
-                .text
-                  a(href="#")
-                    h4 Lorem ipsum dolor sit amet consectetur
-            .col-sm-6
-              .item
-                .image 
-                  a(href="#")
-                    img(src="images/news-1.jpg")
-                .text
-                  a(href="#")
-                    h4 Lorem ipsum dolor sit amet consectetur
+
+    
   //- Events
   .gray-bg.padding-large
     .container.investor-events
@@ -144,13 +143,14 @@ block content
         .col-xs-6
           h5 Events
         .col-xs-6.pull-right.text-right
-          a(href="#") View all
+          a.view-all(href="investor-relations--events-archive.html") View all 
+            i.fa.fa-angle-right
       .row
         each item in [1,2,3]
           .col-sm-4
             .wrapper
-              h2 
-                a(href="#") Lorem Ipsum
+              h3 
+                a(href="investor-relations--events-single.html") Lorem ipsum dolor sit amet consectetur elit
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
               .detail
                 .item

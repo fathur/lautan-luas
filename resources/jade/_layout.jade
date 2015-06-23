@@ -45,9 +45,15 @@ html(lang='en')
               a#search-menu(href="#")
                 span#search-icon.glyphicon.glyphicon-search(aria-hidden="true")
               form.form-search-menu(action="search-results.html" method="get")
-                .form-group.has-feedback
+                .input-group
                   input.form-control(type="text" name="q")
-                  span.glyphicon.glyphicon-search.form-control-feedback
+                  .input-group-btn
+                    button.btn.btn-default.btn-search#search-close(type="buton")
+                      i.fa.fa-times
+                  
+                //- .form-group.has-feedback
+                //-   input.form-control(type="text" name="q")
+                //-   span.glyphicon.glyphicon-search.form-control-feedback
          
             
         //- /.nav-collapse
@@ -149,6 +155,11 @@ html(lang='en')
         }
 
         console.log(x);
+      });
+
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
 
       //- $('#search-menu').toggle(function(e){

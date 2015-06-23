@@ -12,16 +12,17 @@ block content
       ol.breadcrumb
         li
           a(href="index.html") Home
+        li.separator
         li.active Corporate Social Responsibility
 
     //- Main content
   .padding-extra-large.white-bg
-    .container
+    .container.logged
       .row.text-center
-        .col-sm-12
+        .col-sm-6.col-sm-offset-3
           h2 Thank you for signing up
           p A confirmation request has been sent to your email:
-            | john.doe@email.com
+            | <span class="email">john.doe@email.com</span>
 
           p Please check your inbox. It may take a few minutes for the email to reach your inbox.
             | Follow the instructions in the email to proceed to the next step.

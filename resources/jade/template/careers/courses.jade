@@ -1,7 +1,7 @@
 .row.apply-now.education-history
   .col-sm-12
 
-    .form-title.first Add / Edit training Record
+    .form-title.padding-bottom-small Add / Edit training Record
     form(method="post" action="#")
       .row
         .form-group.col-sm-7
@@ -18,9 +18,9 @@
             each item in ['Certificate Year','SD','SMA']
               option= item
 
-      .row.btn-action.padding-large
-        a.btn.btn-transparant.pull-right(href="#") Cancel
+      .row.btn-action.padding-bottom-large.padding-top-small
         button.btn.btn-blue.pull-right(type="submit") Add
+        a.btn.btn-transparant.pull-right(href="#") Cancel
 
 .row.apply-now.education-history--collections
   .col-sm-12
@@ -39,27 +39,27 @@
           td Bina Nusantara
           td Jakarta
           td 2015
-          td  
+          td.action
             a(href="#")
-              i.fa.fa-edit 
+              i.fa.fa-pencil
               | Edit
             a(href="#")
-              i.fa.fa-trash 
+              i.fa.fa-trash-o
               | Delete
          tr 
           td 1.
           td Bina Nusantara
           td Jakarta
           td 2015
-          td  
+          td.action
             a(href="#")
-              i.fa.fa-edit 
+              i.fa.fa-pencil
               | Edit
             a(href="#")
-              i.fa.fa-trash 
+              i.fa.fa-trash-o
               | Delete
 
   .col-sm-12.btn-action
-    a.btn.btn-transparant.pull-right(href="#") Next
-    button.btn.btn-blue.pull-right(type="submit") Save
+    a.btn.btn-blue.pull-right(href="#") Next
+    button.btn.btn-transparant.pull-right(type="submit") Save
     a.btn.btn-transparant.pull-right(href="#") Back

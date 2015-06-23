@@ -12,31 +12,32 @@ block content
       ol.breadcrumb
         li
           a(href="index.html") Home
+        li.separator
         li.active Corporate Social Responsibility
 
     //- Main content
   .padding-extra-large.white-bg
-    .container
+    .container.logged
       .row
         .col-sm-6
           h2 Log In
           p If you already have an account, please log in below.
-          form(action="#" method="post")
+          form(action="careers--apply-now.html" method="post")
             .form-group
-              input.form-control.input-lg#email(type="text" placeholder="Email")
+              input.form-control#email(type="text" placeholder="Email")
             .form-group
-              input.form-control.input-lg#password(type="text" placeholder="Password")
-            button.btn.btn-transparant(type="submit") Log In
-            a(href="#") Forgot Password
+              input.form-control#password(type="text" placeholder="Password")
+            button.btn.btn-blue(type="submit") Log In
+            a.forgot-password(href="#") Forgot Password
         .col-sm-6
           h2 Sign Up
           p Don’t have an account yet? Sign up now.
           form(action="login-thanks.html" method="post")
             .form-group
-              input.form-control.input-lg#email(type="text" placeholder="Email")
+              input.form-control#email(type="text" placeholder="Email")
             .form-group
-              input.form-control.input-lg#password(type="text" placeholder="Password")
+              input.form-control#password(type="text" placeholder="Password")
             .form-group
-              input.form-control.input-lg#confirm-password(type="text" placeholder="Confirm Password")
-            button.btn.btn-transparant(type="submit") Sign Up
+              input.form-control#confirm-password(type="text" placeholder="Confirm Password")
+            button.btn.btn-blue(type="submit") Sign Up
             

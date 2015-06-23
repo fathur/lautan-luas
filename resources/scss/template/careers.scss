@@ -105,6 +105,10 @@
 		height: 120px;
 	}
 
+	.label-input {
+		padding-top: 6px;
+	}
+
 	.btn-action {
 		.btn {
 			margin-right: 5px;
@@ -116,10 +120,10 @@
 		font-family: 'PT Sans', sans-serif;
 		font-weight: 600;
 		color: $light_blue;
-		font-size: 14px;
-		padding-bottom: 30px;
+		font-size: 12px;
+		/* padding-bottom: 30px;
 		padding-top: 50px;
-
+ */
 		&.first {
 			padding-top: 0px;
 		}
@@ -152,5 +156,64 @@
 				}
 			}
 		}
+	}
+
+	&.upload-files {
+		.intro {
+
+			border-bottom: 1px solid $gray;
+		}
+
+		.item {
+			padding: 30px 0;
+			border-bottom: 1px solid $gray;
+		}
+	}
+
+	.table {
+		td.action {
+			& > a {
+				display: block;
+				margin-bottom: 6px;
+
+				i.fa {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+
+.job-opportunities {
+	.title {
+		.form-group {
+			margin-right: 10px;
+		}
+	}
+
+	.content {
+
+	}
+}
+
+.logged {
+	.forgot-password {
+		margin: 0 20px;
+		display: inline-block;
+	}
+
+	.email {
+		color: $black;
+	}
+}
+
+.username-apply {
+	padding-bottom: 50px;
+	border-bottom: 1px solid $gray;
+}
+
+.steps-apply {
+	h2 {
+		margin-bottom: 10px;
 	}
 }

@@ -48,9 +48,22 @@ p {
 }
 
 ul {
+	
+	margin-bottom: 25px;
+
+	& > li {
+		line-height: 1.8;
+		font-weight: 400;
+		font-family: 'PT Sans', sans-serif;
+		font-size: 12px;
+	}
+
 	&.list-unstyled {
 		& > li {
 			line-height: 1.8;
+			font-weight: 400;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 12px;
 		}
 	}
 }
@@ -125,6 +138,26 @@ table,
   }
 }
 
+.breadcrumb {
+
+	padding: 0px;
+
+	li {
+		margin-top: 6px;
+  		vertical-align: top;
+
+		&.separator {
+			background-image: url('../images/breadcrumbs-arrow.png');
+			width: 13px;
+	  		height: 28px;
+  			vertical-align: middle;
+  			margin-top: 0px;
+  			margin-right: 10px;
+  			margin-left: 10px;
+		}
+	}
+	
+}
 .btn-blue {
 	
 	text-transform: uppercase;
@@ -132,8 +165,10 @@ table,
 
 	font-size: 11px;
 	letter-spacing: 2px;
-	padding: 10px 15px;
+	padding: 7px 15px;
 	border-radius: 20px;
+	border-color: $dark_blue;
+
 
 	&:hover,
 	&:focus {
@@ -143,6 +178,7 @@ table,
 	}
 
 }
+
 a.btn-blue {
 	color: $white !important;
 
@@ -155,16 +191,34 @@ a.btn-blue {
 
 .btn-transparant {
 	
-	letter-spacing: 1px;
+	// letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: background-color 400ms ease-out, color 400ms ease-out;
+
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding: 7px 15px;
+	border-radius: 20px;
+	border-color: $dark_blue;
+
 
 	&:hover,
 	&:focus {
 		background-color: $dark_blue;
 		color: $white;
+		border-color: $dark_blue;
 	}
 	
+}
+
+a.btn-transparant {
+	color: $dark_blue !important;
+
+	&:hover,
+	&:focus {
+		
+		color: $white !important;
+	}
 }
 
 .navbar {
@@ -205,6 +259,17 @@ a.btn-blue {
 	&:hover,
 	&:focus {
 		background-color: rgba(255,255,255,0);
+	}
+}
+
+.tabs-left {
+
+	.nav-tabs > li > a {
+		background-color: rgba(255,255,255,0) !important;
+		&:hover,
+		&:focus {
+			background-color: rgba(255,255,255,0);
+		}
 	}
 }
 .carousel-control {
@@ -288,13 +353,37 @@ a.btn-blue {
 	padding-bottom: $section-padding-small;
 }
 
+.padding-top-small {
+	padding-top: $section-padding-small;
+}
+
+.padding-bottom-small {
+	padding-bottom: $section-padding-small;
+}
+
 .padding-large {
 	padding-top: $section-padding-large;
 	padding-bottom: $section-padding-large;
 }
 
+.padding-top-large {
+	padding-top: $section-padding-large;
+}
+
+.padding-bottom-large {
+	padding-bottom: $section-padding-large;
+}
+
 .padding-extra-large {
 	padding-top: $section-padding-extra-large;
+	padding-bottom: $section-padding-extra-large;
+}
+
+.padding-top-extra-large {
+	padding-top: $section-padding-extra-large;
+}
+
+.padding-bottom-extra-large {
 	padding-bottom: $section-padding-extra-large;
 }
 
@@ -356,13 +445,24 @@ a.btn-blue {
 	display: none;
 	position: absolute;
 	top: 30px;
-  	right: 40px;
+  	right: 0px;
 
 	input.form-control {
 		height: 30px;
 		width: 500px;
-		padding-left: 33.75px;
+		padding-left: 5px;
 		padding-right: 5px;
+		border-right: 0px;
+	}
+
+	.btn-search {
+		border-radius: 0; height: 30px; border-left: 0px;
+
+		&:hover,
+		&:focus {
+
+			background-color: #FFFFFF;
+		}
 	}
 
 	.form-control-feedback {

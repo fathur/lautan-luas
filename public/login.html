@@ -33,9 +33,13 @@
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
-                <div class="form-group has-feedback">
-                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="input-group">
+                  <input type="text" name="q" class="form-control">
+                  <div class="input-group-btn">
+                    <button id="search-close" type="buton" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
+                  </div>
                 </div>
+                
               </form>
             </li>
           </ul>
@@ -47,24 +51,25 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
+          <li class="separator"></li>
           <li class="active">Corporate Social Responsibility</li>
         </ol>
       </div>
     </div>
     <div class="padding-extra-large white-bg">
-      <div class="container">
+      <div class="container logged">
         <div class="row">
           <div class="col-sm-6">
             <h2>Log In</h2>
             <p>If you already have an account, please log in below.</p>
-            <form action="#" method="post">
+            <form action="careers--apply-now.html" method="post">
               <div class="form-group">
-                <input id="email" type="text" placeholder="Email" class="form-control input-lg">
+                <input id="email" type="text" placeholder="Email" class="form-control">
               </div>
               <div class="form-group">
-                <input id="password" type="text" placeholder="Password" class="form-control input-lg">
+                <input id="password" type="text" placeholder="Password" class="form-control">
               </div>
-              <button type="submit" class="btn btn-transparant">Log In</button><a href="#">Forgot Password</a>
+              <button type="submit" class="btn btn-blue">Log In</button><a href="#" class="forgot-password">Forgot Password</a>
             </form>
           </div>
           <div class="col-sm-6">
@@ -72,15 +77,15 @@
             <p>Don’t have an account yet? Sign up now.</p>
             <form action="login-thanks.html" method="post">
               <div class="form-group">
-                <input id="email" type="text" placeholder="Email" class="form-control input-lg">
+                <input id="email" type="text" placeholder="Email" class="form-control">
               </div>
               <div class="form-group">
-                <input id="password" type="text" placeholder="Password" class="form-control input-lg">
+                <input id="password" type="text" placeholder="Password" class="form-control">
               </div>
               <div class="form-group">
-                <input id="confirm-password" type="text" placeholder="Confirm Password" class="form-control input-lg">
+                <input id="confirm-password" type="text" placeholder="Confirm Password" class="form-control">
               </div>
-              <button type="submit" class="btn btn-transparant">Sign Up</button>
+              <button type="submit" class="btn btn-blue">Sign Up</button>
             </form>
           </div>
         </div>
@@ -194,6 +199,11 @@
         }
       
         console.log(x);
+      });
+      
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
       
       //- $('#search-menu').toggle(function(e){

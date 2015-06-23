@@ -33,9 +33,13 @@
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
-                <div class="form-group has-feedback">
-                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="input-group">
+                  <input type="text" name="q" class="form-control">
+                  <div class="input-group-btn">
+                    <button id="search-close" type="buton" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
+                  </div>
                 </div>
+                
               </form>
             </li>
           </ul>
@@ -47,6 +51,7 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="#">Home</a></li>
+          <li class="separator"></li>
           <li class="active">Investor Relations</li>
         </ol>
       </div>
@@ -76,21 +81,21 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="article-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <date>May 15, 2015</date>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="article-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <date>May 15, 2015</date>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="article-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <date>May 15, 2015</date>
             </div>
@@ -201,7 +206,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="investor-relations--events-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <div class="detail">
                 <div class="item">
@@ -221,7 +226,7 @@
           </div>
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="investor-relations--events-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <div class="detail">
                 <div class="item">
@@ -241,7 +246,7 @@
           </div>
           <div class="col-sm-4">
             <div class="wrapper">
-              <h3> <a href="about-us--health-safety-and-environment.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
+              <h3> <a href="investor-relations--events-single.html">Lorem ipsum dolor sit amet consectetur elit</a></h3>
               <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p>
               <div class="detail">
                 <div class="item">
@@ -405,6 +410,11 @@
         }
       
         console.log(x);
+      });
+      
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
       
       //- $('#search-menu').toggle(function(e){

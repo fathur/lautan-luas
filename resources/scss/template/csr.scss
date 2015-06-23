@@ -35,7 +35,7 @@ $other_programs_item_height: 185px;
 						height: $other_programs_item_height; 
 						overflow: hidden; 
 
-						& > img {
+						& > a > img {
 							position: absolute;
 							top: 0;
 							bottom: 0;

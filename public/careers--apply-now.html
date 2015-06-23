@@ -33,9 +33,13 @@
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
-                <div class="form-group has-feedback">
-                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="input-group">
+                  <input type="text" name="q" class="form-control">
+                  <div class="input-group-btn">
+                    <button id="search-close" type="buton" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
+                  </div>
                 </div>
+                
               </form>
             </li>
           </ul>
@@ -47,28 +51,40 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
+          <li class="separator"></li>
           <li class="active">Corporate Social Responsibility</li>
         </ol>
       </div>
     </div>
     <div class="padding-large white-bg">
       <div class="container">
+        <div class="row username-apply">
+          <div class="col-xs-8">
+            <div class="email">Logged in as john.doe@email.com</div>
+          </div>
+          <div class="col-xs-4 text-right"><a href="#" class="btn btn-blue">Logout</a></div>
+        </div>
+        <div class="row padding-top-large steps-apply">
+          <div class="col-xs-12">
+            <h2>Steps</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="tabs-left">
             <div class="col-xs-3">
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#personal-information" aria-controls="personal-information" role="tab" data-toggle="tab">Personal Information</a></li>
-                <li role="presentation"><a href="#education-history" aria-controls="education-history" role="tab" data-toggle="tab">Education History</a></li>
-                <li role="presentation"><a href="#working-experience" aria-controls="working-experience" role="tab" data-toggle="tab">Working Experience</a></li>
-                <li role="presentation"><a href="#courses" aria-controls="courses" role="tab" data-toggle="tab">Courses</a></li>
-                <li role="presentation"><a href="#upload-files" aria-controls="upload-files" role="tab" data-toggle="tab">Upload Files</a></li>
+                <li role="presentation" class="active"><a href="#personal-information" aria-controls="personal-information" role="tab" data-toggle="tab">1. Personal Information</a></li>
+                <li role="presentation"><a href="#education-history" aria-controls="education-history" role="tab" data-toggle="tab">2. Education History</a></li>
+                <li role="presentation"><a href="#working-experience" aria-controls="working-experience" role="tab" data-toggle="tab">3. Working Experience</a></li>
+                <li role="presentation"><a href="#courses" aria-controls="courses" role="tab" data-toggle="tab">4. Courses</a></li>
+                <li role="presentation"><a href="#upload-files" aria-controls="upload-files" role="tab" data-toggle="tab">5. Upload Files</a></li>
               </ul>
             </div>
             <div class="tab-content col-xs-9">
               <div id="personal-information" role="tabpanel" class="tab-pane fade in active">
                 <div class="row apply-now personal-information">
                   <div class="col-sm-12">
-                    <div class="form-title first">Personal Details</div>
+                    <div class="form-title padding-bottom-small">Personal Details</div>
                     <p>Position Applied: <b>Business Consultant - DKI Jakarta</b></p>
                     <form method="post" action="#">
                       <div class="row">
@@ -198,7 +214,7 @@
                       <!-- Skills-->
                       <div class="row">
                         <div class="col-sm-12">
-                          <div class="form-title">Skills</div>
+                          <div class="form-title padding-bottom-small padding-top-large">Skills</div>
                         </div>
                       </div>
                       <div class="row">
@@ -420,20 +436,22 @@
                           </label>
                         </div>
                       </div>
-                      <div class="row padding-small">
+                      <div class="row padding-top-small">
                         <div class="form-group col-sm-12">
                           <textarea placeholder="Other job-related skills" class="form-control"></textarea>
                         </div>
                       </div>
                     </form>
-                    <button type="submit" class="btn btn-transparant">Save</button><a href="#" class="btn btn-blue">Next</a>
+                    <div class="btn-action padding-top-small"><a href="#" class="btn btn-blue pull-right">Next</a>
+                      <button type="submit" class="btn btn-transparant pull-right">Save</button>
+                    </div>
                   </div>
                 </div>
               </div>
               <div id="education-history" role="tabpanel" class="tab-pane fade">
                 <div class="row apply-now education-history">
                   <div class="col-sm-12">
-                    <div class="form-title first">Add / Edit Education Record</div>
+                    <div class="form-title padding-bottom-small">Add / Edit Education Record</div>
                     <form method="post" action="#">
                       <div class="row">
                         <div class="form-group col-sm-7">
@@ -453,23 +471,26 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-12 form-inline">
-                          <div class="form-group">
-                            <label for="start-school">Start /  End year:</label>
-                            <select id="start-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="end-school">to</label>
-                            <select id="end-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                          </div>
+                        <div class="form-group col-sm-12">
+                          <input type="text" placeholder="School name" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-2 label-input">Start /  End year:</div>
+                        <div class="form-group col-sm-5">
+                          <select id="start-school" class="form-control">
+                            <option>Start Year</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-1 label-input">to</div>
+                        <div class="form-group col-sm-4">
+                          <select id="end-school" class="form-control">
+                            <option>End Year</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                          </select>
                         </div>
                       </div>
                       <div class="row">
@@ -484,8 +505,8 @@
                           <input type="text" placeholder="GPA" class="form-control">
                         </div>
                       </div>
-                      <div class="row btn-action padding-large"><a href="#" class="btn btn-transparant pull-right">Cancel</a>
-                        <button type="submit" class="btn btn-blue pull-right">Add</button>
+                      <div class="row btn-action padding-bottom-large padding-top-small">
+                        <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
                       </div>
                     </form>
                   </div>
@@ -514,7 +535,7 @@
                           <td>General</td>
                           <td>3.1</td>
                           <td>Passsd</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                         <tr> 
                           <td>1.</td>
@@ -524,20 +545,20 @@
                           <td>General</td>
                           <td>3.1</td>
                           <td>Passsd</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"> </i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-transparant pull-right">Next</a>
-                    <button type="submit" class="btn btn-blue pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
                   </div>
                 </div>
               </div>
               <div id="working-experience" role="tabpanel" class="tab-pane fade">
                 <div class="row apply-now education-history">
                   <div class="col-sm-12">
-                    <div class="form-title first">Add / Edit Working Experience Record</div>
+                    <div class="form-title padding-bottom-small">Add / Edit Working Experience Record</div>
                     <form method="post" action="#">
                       <div class="row">
                         <div class="form-group col-sm-7">
@@ -557,33 +578,55 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-12 form-inline">
-                          <div class="form-group">
-                            <label for="start-school">From</label>
-                            <select id="start-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                            <select id="start-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="end-school">to</label>
-                            <select id="end-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                            <select id="end-school" class="form-control">
-                              <option>Year</option>
-                              <option>1980</option>
-                              <option>1981</option>
-                            </select>
-                          </div>
+                        <div class="col-sm-1 label-input">From</div>
+                        <div class="form-group col-sm-3">
+                          <select id="start-month-working" class="form-control">
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>April</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>December</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <select id="start-year-working" class="form-control">
+                            <option>Year</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-1 label-input">to</div>
+                        <div class="form-group col-sm-2">
+                          <select id="end-month-working" class="form-control">
+                            <option>Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>April</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>December</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                          <select id="end-year-working" class="form-control">
+                            <option>Year</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                          </select>
                         </div>
                       </div>
                       <div class="row">
@@ -594,13 +637,13 @@
                           <input type="text" placeholder="Number of Subordinates" class="form-control">
                         </div>
                       </div>
-                      <div class="row padding-small">
+                      <div class="row">
                         <div class="form-group col-sm-12">
                           <textarea placeholder="Job Description" class="form-control"></textarea>
                         </div>
                       </div>
-                      <div class="row btn-action padding-large"><a href="#" class="btn btn-transparant pull-right">Cancel</a>
-                        <button type="submit" class="btn btn-blue pull-right">Add</button>
+                      <div class="row btn-action padding-bottom-large padding-top-small">
+                        <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
                       </div>
                     </form>
                   </div>
@@ -625,7 +668,7 @@
                           <td>Google</td>
                           <td>Analyst</td>
                           <td>Best empolyee</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                         <tr> 
                           <td>1.</td>
@@ -633,20 +676,20 @@
                           <td>Google</td>
                           <td>Analyst</td>
                           <td>Best empolyee</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-transparant pull-right">Next</a>
-                    <button type="submit" class="btn btn-blue pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
                   </div>
                 </div>
               </div>
               <div id="courses" role="tabpanel" class="tab-pane fade">
                 <div class="row apply-now education-history">
                   <div class="col-sm-12">
-                    <div class="form-title first">Add / Edit training Record</div>
+                    <div class="form-title padding-bottom-small">Add / Edit training Record</div>
                     <form method="post" action="#">
                       <div class="row">
                         <div class="form-group col-sm-7">
@@ -672,8 +715,8 @@
                           </select>
                         </div>
                       </div>
-                      <div class="row btn-action padding-large"><a href="#" class="btn btn-transparant pull-right">Cancel</a>
-                        <button type="submit" class="btn btn-blue pull-right">Add</button>
+                      <div class="row btn-action padding-bottom-large padding-top-small">
+                        <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
                       </div>
                     </form>
                   </div>
@@ -696,34 +739,60 @@
                           <td>Bina Nusantara</td>
                           <td>Jakarta</td>
                           <td>2015</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                         <tr> 
                           <td>1.</td>
                           <td>Bina Nusantara</td>
                           <td>Jakarta</td>
                           <td>2015</td>
-                          <td> <a href="#"><i class="fa fa-edit"> </i>Edit</a><a href="#"><i class="fa fa-trash"> </i>Delete</a></td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-transparant pull-right">Next</a>
-                    <button type="submit" class="btn btn-blue pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
                   </div>
                 </div>
               </div>
               <div id="upload-files" role="tabpanel" class="tab-pane fade">
                 <div class="row apply-now upload-files">
-                  <div class="col-sm-12">
+                  <div class="col-sm-12 intro">
                     <p>
                       You must at least attach your photograph and your Certificate of Graduation below. <br>
                       You may only upload files with extension .jpg and .pdf with a max size of 500kb.
                     </p>
                   </div>
                 </div>
-                <div class="row apply-now upload-files padding-large">
-                  <div class="col-sm-12 form-title">Photograph (.jpg only)</div>
+                <div class="row apply-now upload-files">
+                  <div class="col-sm-12">
+                    <div class="row"></div>
+                    <div class="row item">
+                      <div class="col-sm-12 form-title padding-bottom-small">Photograph (.jpg only)</div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-blue">upload</button>
+                      </div>
+                      <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-sm-12 form-title padding-bottom-small">Certificate of Graduation</div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-blue">upload</button>
+                      </div>
+                      <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                    </div>
+                    <div class="row item">
+                      <div class="col-sm-12 form-title padding-bottom-small">Transcript</div>
+                      <div class="col-sm-8">
+                        <button class="btn btn-blue">upload</button>
+                      </div>
+                      <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 btn-action padding-top-large"><a href="#" class="btn btn-blue pull-right">Finish</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -839,6 +908,11 @@
         }
       
         console.log(x);
+      });
+      
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
       
       //- $('#search-menu').toggle(function(e){

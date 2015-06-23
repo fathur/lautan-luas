@@ -33,9 +33,13 @@
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
-                <div class="form-group has-feedback">
-                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="input-group">
+                  <input type="text" name="q" class="form-control">
+                  <div class="input-group-btn">
+                    <button id="search-close" type="buton" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
+                  </div>
                 </div>
+                
               </form>
             </li>
           </ul>
@@ -47,7 +51,9 @@
       <div class="container">
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
+          <li class="separator"></li>
           <li><a href="industries.html">Product and Services</a></li>
+          <li class="separator"></li>
           <li class="active">Research and Development</li>
         </ol>
       </div>
@@ -252,6 +258,11 @@
         }
       
         console.log(x);
+      });
+      
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
       
       //- $('#search-menu').toggle(function(e){

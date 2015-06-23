@@ -1,10 +1,24 @@
 
 .row.apply-now.upload-files
-  .col-sm-12
+  .col-sm-12.intro
     p You must at least attach your photograph and your Certificate of Graduation below. <br>
       | You may only upload files with extension .jpg and .pdf with a max size of 500kb.
 
-.row.apply-now.upload-files.padding-large
-  .col-sm-12.form-title Photograph (.jpg only)
+.row.apply-now.upload-files
+  .col-sm-12
+    .row
+
+    each item in ['Photograph (.jpg only)','Certificate of Graduation','Transcript']
+      .row.item
+        .col-sm-12.form-title.padding-bottom-small= item
+        .col-sm-8
+          button.btn.btn-blue upload
+        .col-sm-4
+          img.img-responsive.center-block(src="images/webclip-1.png")
+
+  .col-sm-12.btn-action.padding-top-large
+    a.btn.btn-blue.pull-right(href="#") Finish
+    button.btn.btn-transparant.pull-right(type="submit") Save
+    a.btn.btn-transparant.pull-right(href="#") Back
 
     

@@ -33,9 +33,13 @@
             <li><a href="contact-us.html">Contact Us</a></li>
             <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
-                <div class="form-group has-feedback">
-                  <input type="text" name="q" class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                <div class="input-group">
+                  <input type="text" name="q" class="form-control">
+                  <div class="input-group-btn">
+                    <button id="search-close" type="buton" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
+                  </div>
                 </div>
+                
               </form>
             </li>
           </ul>
@@ -102,7 +106,7 @@
               <div class="item big">
                 <div class="col-xs-12 col-sm-6 image"><a href="#"><img src="images/2008.jpg"></a></div>
                 <div class="col-xs-12 col-sm-6 text">
-                  <div href="#" class="category">investor relations</div><a href="#">
+                  <div href="#" class="category">investor relations</div><a href="article-single.html">
                     <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
                   <p>Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.</p></p>
                   <div class="date">May 15, 2008</div>
@@ -117,7 +121,7 @@
                   <div class="item small">
                     <div class="col-sm-6 image"><a href="#"><img src="images/2003.jpg"></a></div>
                     <div class="col-sm-6 text">
-                      <div href="#" class="category">water treatment</div><a href="#">
+                      <div href="#" class="category">water treatment</div><a href="article-single.html">
                         <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
                       <div class="date">May 15, 2008</div>
                     </div>
@@ -128,7 +132,7 @@
                 <div class="row mobile-wrapper">
                   <div class="item small">
                     <div class="col-sm-12 text">
-                      <div href="#" class="category">agriculture</div><a href="#">
+                      <div href="#" class="category">agriculture</div><a href="article-single.html">
                         <h3>Lorem ipsum dolor sit amet consectetur elit</h3></a>
                       <div class="date">May 15, 2008</div>
                     </div>
@@ -328,6 +332,11 @@
         }
       
         console.log(x);
+      });
+      
+      $('#search-close').click(function(e){
+        e.preventDefault();
+        $('.form-search-menu').animate({width:'toggle'}, 350);
       });
       
       //- $('#search-menu').toggle(function(e){

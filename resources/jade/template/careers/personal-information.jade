@@ -1,7 +1,7 @@
 .row.apply-now.personal-information
   .col-sm-12
 
-    .form-title.first Personal Details
+    .form-title.padding-bottom-small Personal Details
     p Position Applied: <b>Business Consultant - DKI Jakarta</b>
     form(method="post" action="#")
       .row
@@ -73,7 +73,7 @@
       // Skills
       .row
         .col-sm-12
-          .form-title Skills
+          .form-title.padding-bottom-small.padding-top-large Skills
       .row
         .form-group.col-sm-6
           input.form-control(type="text" placeholder="Mother Language")
@@ -185,9 +185,10 @@
           label.radio-inline
             input#driving-sim-c(type="radio" name="driving" value="c")
             | SIM C
-      .row.padding-small
+      .row.padding-top-small
         .form-group.col-sm-12
           textarea.form-control(placeholder="Other job-related skills")
 
-    button.btn.btn-transparant(type="submit") Save
-    a.btn.btn-blue(href="#") Next
+    .btn-action.padding-top-small
+      a.btn.btn-blue.pull-right(href="#") Next
+      button.btn.btn-transparant.pull-right(type="submit") Save
