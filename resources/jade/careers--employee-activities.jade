@@ -1,0 +1,37 @@
+extends ./_layout.jade
+
+block title
+  title Lautan Luas - Careers - Employee Activities
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.separator
+        li
+          a(href="careers.html") Careers
+        li.separator
+        li.active Employee Activities
+
+  .padding-extra-large.white-bg
+    .container.thumbmail-preview-one.archive 
+      .row
+        .col-xs-12
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna vel augue pellentesque sollicitudin. Nunc ut semper sem. Curabitur at lectus sodales, tristique nisi et, sodales urna. Vivamus in velit at lorem hendrerit pulvinar. Suspendisse ut malesuada purus. Mauris ullamcorper risus in lorem tristique, ut fringilla velit suscipit. In a arcu quis mi ultricies pulvinar in ac ex. Nulla consequat metus id turpis tincidunt pharetra. In sagittis, erat sit amet facilisis dignissim, urna orci tempus ligula, vitae elementum dolor urna ut dolor. Sed eu arcu vitae ligula malesuada egestas.
+
+      each i in [1,2,3]
+        .row.case-studies
+          each item in [1,2,3,4]
+            .col-md-3.col-sm-6.col-xs-12.item
+              .box
+                .image
+                  a(href="article-single.html")
+                    img(src="images/2008.JPG")
+                .text 
+                  h3
+                    a(href="article-single.html") Lorem ipsum dolor sit amet consectetur

@@ -40,6 +40,8 @@ module.exports = function(grunt) {
 		      "public/careers--how-to-apply.html": "resources/jade/careers--how-to-apply.jade",
 		      "public/careers--view-all-jobs.html": "resources/jade/careers--view-all-jobs.jade",
 		      "public/careers--view-all-jobs--single.html": "resources/jade/careers--view-all-jobs--single.jade",
+		      "public/careers--employee-activities.html": "resources/jade/careers--employee-activities.jade",
+
 		      "public/about-us.html": "resources/jade/about-us.jade",
 		      "public/about-us--health-safety-and-environment.html": "resources/jade/about-us--health-safety-and-environment.jade",
 		      "public/about-us--our-poeple.html": "resources/jade/about-us--our-poeple.jade",
