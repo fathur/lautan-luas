@@ -1,5 +1,7 @@
 .footer {
 
+	font-size: 12px;
+
 	background: #032077; /* Old browsers */
 	background: -moz-linear-gradient(top,  #032077 0%, #010e35 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#032077), color-stop(100%,#010e35)); /* Chrome,Safari4+ */
@@ -10,12 +12,22 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032077', endColorstr='#010e35',GradientType=0 ); /* IE6-9 */
 
 
-	ul.list-unstyled {
-		margin-bottom: 0px;
+	ul {
+		margin-bottom: 0px;	
 		li {
 			& > a {
-				display: inline-block;
-				padding: 7px 0;
+				font-size: 12px;
+
+			}
+		}
+			
+		&.list-unstyled {
+			li {
+				& > a {
+					display: inline-block;
+					padding: 7px 0;
+
+				}
 			}
 		}
 	}
