@@ -10064,7 +10064,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media (min-width: 992px) {
   .home-image {
-    height: 650px;
+    height: 560px;
   }
   .home-image .text {
     width: 650px;
@@ -10311,6 +10311,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin: 3px 5px;
   font-size: 17px;
 }
+.footer-bottom .sosmed a > .icon:hover {
+  opacity: 0.5;
+}
 
 @media screen and (max-width: 767px) {
   .footer-bottom {
@@ -10368,6 +10371,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   color: #707070;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .2em;
+}
+.about-nav-tab .nav-tabs > li > a:hover, .about-nav-tab .nav-tabs > li > a:focus {
+  color: #032077;
 }
 @media screen and (max-width: 767px) {
   .about-nav-tab .nav-tabs > li > a {
@@ -11262,6 +11268,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
 }
 
+.investor-relation-submenu {
+  border-bottom: 1px solid #bebebe;
+}
+
 .investor-menu ul {
   margin-bottom: 0px;
 }
@@ -11293,7 +11303,6 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 @media (min-width: 768px) {
   .investor-menu ul > li > a {
     margin-left: 30px;
-    letter-spacing: .15em;
   }
 }
 
