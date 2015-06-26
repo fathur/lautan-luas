@@ -6,9 +6,9 @@
 .row.services
   .col-sm-12.logo-collection
     .row.logo-item
-      each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+      each item in [{image:'1-PT-Cipta-Mapan-Logistik.png',title:'PT. Cipta Mapan Logistik'},{image:'2-PT-Lautan-Jasaindo.png',title:'PT. Lautan Jasaindo'},{image:'3-PT-Strategy-Partner-Solution.png',title:'PT. Strategy Partner Solution'}]
         .col-sm-4.item
           .image.center-block
-            img.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+            img.img-responsive(src="images/#{item.image}")
           .caption.text-center
-            = item
+            = item.title

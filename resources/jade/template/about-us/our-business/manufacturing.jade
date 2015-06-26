@@ -6,24 +6,38 @@
 .row.manufacturing
   .col-sm-12.logo-collection
     .row.logo-item
-      each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+      each item in [{image:'1-PT-Advance-Stabilindo-Industry.png', title:'PT. Advance Stabilindo Industry'},{image:'2-PT-Dunia-Kimia-Jaya.png', title:'PT Dunia Kimia Jaya'},{image:'3-PT-Dunia-Kimia-Utama.png', title:'PT Dunia Kimia Utama'}]
         .col-sm-4.item
           .image
-            img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+            img.center-block.img-responsive(src="images/#{item.image}")
           .caption.text-center
-            = item
+            = item.title
      
     .row.logo-item
-      each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+      each item in [{image:'4-PT-Indonesian-Acids-Industry.png',title:'PT. Indonesian Acids Industry'},{image:'5-PT-Lautan-Natural-Krimerindo.png',title:'PT. Lautan Natural Krimerindo'},{image:'6-PT-Lautan-Sulfamat-Lestari.png',title:'PT. Lautan Sulfamat Lestari'}]
         .col-sm-4.item
           .image
-            img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+            img.center-block.img-responsive(src="images/#{item.image}")
           .caption.text-center
-            = item
+            = item.title
     .row.logo-item
-      each item in ['PT. Advance Stabilindo Industry','PT Dunia Kimia Jaya','PT Dunia Kimia Utama']
+      each item in [{image:'7-PT-Liku-Telaga.png',title:'PT. Liku Telaga'},{image:'8-PT-Mahkota-Indonesia.png',title:'PT. Mahkota Indonesia'},{image:'9-PT-Metabisulphite-Nusantara.png',title:'PT Metabisulphite Nusantara'}]
         .col-sm-4.item
           .image
-            img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
+            img.center-block.img-responsive(src="images/#{item.image}")
           .caption.text-center
-            = item
+            = item.title
+    .row.logo-item
+      each item in [{image:'10-PT-Pacinesia-Chemical-Industry.png',title:'PT. Pacinesia Chemical Industry'},{image:'11-PT-White-Oil-Nusantara.png',title:'PT. White Oil Nusantara'},{image:'12-Lautan-Luas-Vietnam-Co-Ltd.png',title:'Lautan Luas Vietnam Co. Ltd.'}]
+        .col-sm-4.item
+          .image
+            img.center-block.img-responsive(src="images/#{item.image}")
+          .caption.text-center
+            = item.title
+    .row.logo-item
+      each item in [{image:'13-PT-Lautan-Sweetener-Indonesia.png',title:'PT. Lautan Sweetener Indonesia'}]
+        .col-sm-4.item
+          .image
+            img.center-block.img-responsive(src="images/#{item.image}")
+          .caption.text-center
+            = item.title

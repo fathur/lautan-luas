@@ -11619,7 +11619,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 
 .block-percentation > div .item {
   height: 120px;
-  padding: 20px;
+  padding: 20px 10px;
   text-align: center;
 }
 .block-percentation > div .item.success .percentation {
