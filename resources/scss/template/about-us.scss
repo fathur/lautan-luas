@@ -111,8 +111,19 @@
 			font-weight: 300;
 		}
 		
-		.description {
-			margin-top: 70px;
+		@media screen and (max-width: 767px) {
+			.year > h1 {
+				margin-top: 0px;
+			}
+			.description {
+				margin-top: 0px;
+			}	
+		}
+
+		@media (min-width: 768px) {
+			.description {
+				margin-top: 70px;
+			}
 		}
 	}
 
@@ -153,6 +164,19 @@
 
 	.download {
 		@include title-uppercase();
+	}
+
+	@media screen and (max-width: 767px) {
+		.download {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.company-profile {
+		text-align: center;
 	}
 }
 

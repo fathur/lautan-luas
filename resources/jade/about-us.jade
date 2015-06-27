@@ -24,7 +24,9 @@ block content
             |support & services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
 
   //- Tab - tab
-  div#about-us-tab
+  //- About us tab akan dibagi menjadi dua, yang pertama adalah versi desktop dan yang kedua adalah versi mobile.
+  //- ABOUT US DESKTOP
+  .hidden-xs#about-us-tab
     .container
       div.about-nav-tab(role='tabpanel')
         //- Nav tabs
@@ -34,10 +36,9 @@ block content
           li.col-xs-4.text-center(role='presentation')
             a(href='#ourhistory', aria-controls='ourhistory', role='tab', data-toggle='tab') Our History
           li.col-xs-4.text-center(role='presentation')
-            a(href='#companyprofile', aria-controls='companyprofile', role='tab', data-toggle='tab') COmpany Profile
-         
+            a(href='#companyprofile', aria-controls='companyprofile', role='tab', data-toggle='tab') Company Profile
     //- Tab panes
-    .gray-bg.padding-large.about-content-tab
+    .gray-bg.padding-large.about-content-tab.hidden-xs
       .container
         .row
           .col-sm-12
@@ -48,6 +49,40 @@ block content
                 include ./template/about-us/our-history.jade
               #companyprofile.tab-pane.fade(role='tabpanel')
                 include ./template/about-us/company-profile.jade
+
+  
+  .gray-bg.padding-large.hidden-sm.hidden-md.hidden-lg
+    .container
+      #about-us-tab-mobile.dl-menuwrapper
+        button.dl-trigger Open Menu
+        ul.dl-menu
+          li
+            a(href='#' ke="#distribution-mobile") Our Business
+            ul.dl-submenu
+              li
+                a(href='#' ke="#distribution-mobile") Distribution 
+              li
+                a(href='#' ke="#manufacturing-mobile") Manufacturing
+              li
+                a(href='#' ke="#services-mobile") Services 
+          li 
+            a(href="#" ke="#ourhistory-mobile") Our History
+          li 
+            a(href="#" ke="#companyprofile-mobile") Company Profile
+
+      .padding-large
+        .tab-in-mobile#distribution-mobile(style="")
+          include ./template/about-us/our-business/distribution.jade
+        .tab-in-mobile#manufacturing-mobile(style="display: none;") 
+          include ./template/about-us/our-business/manufacturing.jade
+        .tab-in-mobile#services-mobile(style="display: none;") 
+          include ./template/about-us/our-business/services.jade
+        .tab-in-mobile#ourhistory-mobile(style="display: none;") 
+          include ./template/about-us/our-history-mobile.jade
+        .tab-in-mobile#companyprofile-mobile(style="display: none;")
+          include ./template/about-us/company-profile.jade
+
+
 
   //- Visi misi
   .padding-large
@@ -154,5 +189,14 @@ block script
           next: '',
           prev: ''
         }
+      });
+
+      $( '#about-us-tab-mobile' ).dlmenu();
+      $( '#about-us-tab-mobile a' ).click(function(e){
+        e.preventDefault();
+        var ke = $(this).attr('ke');
+        $('.tab-in-mobile').fadeOut('fast', function(){
+          $(ke).fadeIn('fast');
+        });
       });
     });

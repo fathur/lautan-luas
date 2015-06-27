@@ -1,0 +1,729 @@
+//colors
+$color_celeste_approx: #ccc;
+$color_silver_chalice_approx: #aaa;
+$white: #fff;
+$color_milk_punch_10_approx: rgba(255,248,213,0.1);
+$black_10: rgba(0,0,0,0.1);
+$color_swirl_30_approx: rgba(212,204,198,0.3);
+$black_15: rgba(0,0,0,0.15);
+$color_hibiscus_approx: #c62860;
+$color_disco_approx: #9e1847;
+$color_christine_approx: #e86814;
+$color_tenn_approx: #d35400;
+$color_robins_egg_blue_approx: #08cbc4;
+$color_persian_green_approx: #00b4ae;
+$color_pistachio_approx: #90b912;
+$color_limeade_approx: #79a002;
+$color_affair_approx: #744783;
+$color_eminence_approx: #643771;
+
+
+/* @font-face {
+	font-family: icomoon;
+	src: url(../fonts/icomoon.eot);
+	src: url(../fonts/icomoon.eot?#iefix) format('embedded-opentype'), url(../fonts/icomoon.woff) format('woff'), url(../fonts/icomoon.ttf) format('truetype'), url(../fonts/icomoon.svg#icomoon) format('svg');
+	font-weight: normal;
+	font-style: normal;
+} */
+.dl-menuwrapper {
+	&:first-child {
+		margin-right: 100px;
+	}
+	button {
+		background: $color_celeste_approx;
+		border: none;
+		width: 48px;
+		height: 45px;
+		text-indent: -900em;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		&:hover {
+			background: $color_silver_chalice_approx;
+		}
+		&.dl-active {
+			background: $color_silver_chalice_approx;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 68%;
+			height: 5px;
+			background: $white;
+			top: 10px;
+			left: 16%;
+			//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 10px 0 $white, 0 20px 0 $white;
+		}
+	}
+	ul {
+		background: $color_silver_chalice_approx;
+		padding: 0;
+		list-style: none;
+		//Instead of the line below you could use @includetransform-style($style)
+		transform-style: preserve-3d;
+	}
+	li {
+		position: relative;
+		a {
+			display: block;
+			position: relative;
+			padding: 15px 20px;
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 300;
+			color: $white;
+			outline: none;
+		}
+		&.dl-back {
+			/* &:after {
+				position: absolute;
+				top: 0;
+				line-height: 50px;
+				font-family: icomoon;
+				speak: none;
+				content: "\e000";
+				left: 10px;
+				color: $color_swirl_30_approx;
+				//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: rotate(180deg);
+			} */
+			> a {
+				padding-left: 30px;
+				background: $black_10;
+			}
+		}
+		.dl-submenu {
+			display: none;
+		}
+		> a {
+			&:after {
+				right: 10px;
+				color: $black_15;
+			}
+			/* &:not(:only-child):after {
+				position: absolute;
+				top: 0;
+				line-height: 50px;
+				font-family: icomoon;
+				speak: none;
+				content: "\e000";
+			} */
+		}
+	}
+	.dl-menu {
+		margin: 5px 0 0;
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		opacity: 0;
+		pointer-events: none;
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(10px);
+		//Instead of the line below you could use @includebackface-visibility($visibility)
+		backface-visibility: hidden;
+		&.dl-menu-toggle {
+			//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all 0.3s ease;
+		}
+		&.dl-menuopen {
+			opacity: 1;
+			pointer-events: auto;
+			//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: translateY(0px);
+		}
+	}
+	> .dl-submenu {
+		position: absolute;
+		width: 100%;
+		top: 50px;
+		left: 0;
+		margin: 0;
+		&.dl-animate-in-1 {
+			animation: SubMenuAnimIn1 0.4s ease;
+		}
+		&.dl-animate-in-2 {
+			animation: SubMenuAnimIn2 0.3s ease-in-out;
+		}
+		&.dl-animate-in-3 {
+			animation: SubMenuAnimIn3 0.4s ease;
+		}
+		&.dl-animate-in-4 {
+			animation: SubMenuAnimIn4 0.4s ease;
+		}
+		&.dl-animate-in-5 {
+			animation: SubMenuAnimIn5 0.4s ease;
+		}
+		&.dl-animate-out-1 {
+			animation: SubMenuAnimOut1 0.4s ease;
+		}
+		&.dl-animate-out-2 {
+			animation: SubMenuAnimOut2 0.3s ease-in-out;
+		}
+		&.dl-animate-out-3 {
+			animation: SubMenuAnimOut3 0.4s ease;
+		}
+		&.dl-animate-out-4 {
+			animation: SubMenuAnimOut4 0.4s ease;
+		}
+		&.dl-animate-out-5 {
+			animation: SubMenuAnimOut5 0.4s ease;
+		}
+	}
+}
+.dl-menu {
+	&.dl-animate-out-1 {
+		animation: MenuAnimOut1 0.4s;
+	}
+	&.dl-animate-out-2 {
+		animation: MenuAnimOut2 0.3s ease-in-out;
+	}
+	&.dl-animate-out-3 {
+		animation: MenuAnimOut3 0.4s ease;
+	}
+	&.dl-animate-out-4 {
+		animation: MenuAnimOut4 0.4s ease;
+	}
+	&.dl-animate-out-5 {
+		animation: MenuAnimOut5 0.4s ease;
+	}
+	&.dl-animate-in-1 {
+		animation: MenuAnimIn1 0.3s;
+	}
+	&.dl-animate-in-2 {
+		animation: MenuAnimIn2 0.3s ease-in-out;
+	}
+	&.dl-animate-in-3 {
+		animation: MenuAnimIn3 0.4s ease;
+	}
+	&.dl-animate-in-4 {
+		animation: MenuAnimIn4 0.4s ease;
+	}
+	&.dl-animate-in-5 {
+		animation: MenuAnimIn5 0.4s ease;
+	}
+	&.dl-subview li {
+		display: none;
+		&.dl-subviewopen {
+			display: block;
+			> {
+				a {
+					display: none;
+				}
+				.dl-submenu {
+					display: block;
+					> li {
+						display: block;
+					}
+				}
+			}
+		}
+		&.dl-subview {
+			display: block;
+			.dl-submenu {
+				display: block;
+			}
+			> a {
+				display: none;
+			}
+		}
+	}
+}
+@-webkit-keyframes MenuAnimOut1 {
+	0% {
+	}
+	50% {
+	}
+	75% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes MenuAnimOut2 {
+	0% {
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes MenuAnimOut3 {
+	0% {
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes MenuAnimOut4 {
+	0% {
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes MenuAnimOut5 {
+	0% {
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes MenuAnimOut1 {
+	0% {
+	}
+	50% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-250px) rotateY(30deg);
+	}
+	75% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-372.5px) rotateY(15deg);
+		opacity: .5;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-500px) rotateY(0deg);
+		opacity: 0;
+	}
+}
+@keyframes MenuAnimOut2 {
+	0% {
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+}
+@keyframes MenuAnimOut3 {
+	0% {
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(300px);
+		opacity: 0;
+	}
+}
+@keyframes MenuAnimOut4 {
+	0% {
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-300px);
+		opacity: 0;
+	}
+}
+@keyframes MenuAnimOut5 {
+	0% {
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(40%);
+		opacity: 0;
+	}
+}
+@-webkit-keyframes MenuAnimIn1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes MenuAnimIn2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes MenuAnimIn3 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes MenuAnimIn4 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes MenuAnimIn5 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes MenuAnimIn1 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-500px) rotateY(0deg);
+		opacity: 0;
+	}
+	20% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-250px) rotateY(30deg);
+		opacity: 0.5;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px) rotateY(0deg);
+		opacity: 1;
+	}
+}
+@keyframes MenuAnimIn2 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes MenuAnimIn3 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(300px);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+}
+@keyframes MenuAnimIn4 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-300px);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+}
+@keyframes MenuAnimIn5 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(40%);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimIn1 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimIn2 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimIn3 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimIn4 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimIn5 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes SubMenuAnimIn1 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(50%);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes SubMenuAnimIn2 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes SubMenuAnimIn3 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-300px);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+}
+@keyframes SubMenuAnimIn4 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(300px);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+}
+@keyframes SubMenuAnimIn5 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-200px);
+		opacity: 0;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes SubMenuAnimOut1 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes SubMenuAnimOut2 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes SubMenuAnimOut3 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes SubMenuAnimOut4 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes SubMenuAnimOut5 {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes SubMenuAnimOut1 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(50%);
+		opacity: 0;
+	}
+}
+@keyframes SubMenuAnimOut2 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
+@keyframes SubMenuAnimOut3 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-300px);
+		opacity: 0;
+	}
+}
+@keyframes SubMenuAnimOut4 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0px);
+		opacity: 1;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(300px);
+		opacity: 0;
+	}
+}
+@keyframes SubMenuAnimOut5 {
+	0% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(0);
+		opacity: 1;
+	}
+	100% {
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translateZ(-200px);
+		opacity: 0;
+	}
+}
+.no-touch .dl-menuwrapper li a:hover {
+	background: $color_milk_punch_10_approx;
+}
+.no-js .dl-menuwrapper {
+	.dl-menu {
+		position: relative;
+		opacity: 1;
+		//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: none;
+	}
+	li {
+		.dl-submenu {
+			display: block;
+		}
+		&.dl-back {
+			display: none;
+		}
+		> a:not(:only-child) {
+			background: $black_10;
+			&:after {
+				content: '';
+			}
+		}
+	}
+}
+.demo-1 .dl-menuwrapper {
+	button {
+		background: $color_hibiscus_approx;
+		&:hover {
+			background: $color_disco_approx;
+		}
+		&.dl-active {
+			background: $color_disco_approx;
+		}
+	}
+	ul {
+		background: $color_disco_approx;
+	}
+}
+.demo-2 .dl-menuwrapper {
+	button {
+		background: $color_christine_approx;
+		&:hover {
+			background: $color_tenn_approx;
+		}
+		&.dl-active {
+			background: $color_tenn_approx;
+		}
+	}
+	ul {
+		background: $color_tenn_approx;
+	}
+}
+.demo-3 .dl-menuwrapper {
+	button {
+		background: $color_robins_egg_blue_approx;
+		&:hover {
+			background: $color_persian_green_approx;
+		}
+		&.dl-active {
+			background: $color_persian_green_approx;
+		}
+	}
+	ul {
+		background: $color_persian_green_approx;
+	}
+}
+.demo-4 .dl-menuwrapper {
+	button {
+		background: $color_pistachio_approx;
+		&:hover {
+			background: $color_limeade_approx;
+		}
+		&.dl-active {
+			background: $color_limeade_approx;
+		}
+	}
+	ul {
+		background: $color_limeade_approx;
+	}
+}
+.demo-5 .dl-menuwrapper {
+	button {
+		background: $color_affair_approx;
+		&:hover {
+			background: $color_eminence_approx;
+		}
+		&.dl-active {
+			background: $color_eminence_approx;
+		}
+	}
+	ul {
+		background: $color_eminence_approx;
+	}
+}
