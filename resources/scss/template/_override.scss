@@ -511,3 +511,18 @@ a.btn-transparant {
 		left: 0;
 	}
 }
+
+.pagination {
+	& > li {
+		& > a {
+			border: none;
+			color: $light_blue;
+		} 
+	}
+
+	& > .active {
+		& > a {
+			background-color: $light_blue;
+		}
+	}
+}

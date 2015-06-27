@@ -10023,6 +10023,14 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   left: 0;
 }
 
+.pagination > li > a {
+  border: none;
+  color: #032077;
+}
+.pagination > .active > a {
+  background-color: #032077;
+}
+
 .home-image {
   margin-bottom: 0;
   background-image: url("../images/chemical-plant-web.jpg");
