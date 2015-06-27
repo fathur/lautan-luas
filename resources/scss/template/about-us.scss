@@ -192,7 +192,7 @@
 				.contact {
 					padding-top: 33px;
 					padding-bottom: 33px;
-				
+
 
 					& > .icon {
 						padding: 5px 0;
@@ -221,9 +221,9 @@
 
 			a {
 				display: block;
-  				padding: 5px 0;
-  				font-family: 'PT Sans', sans-serif;
-  				font-size: 12px;
+				padding: 5px 0;
+				font-family: 'PT Sans', sans-serif;
+				font-size: 12px;
 
 				&:hover,
 				&:focus {
@@ -350,7 +350,7 @@
 			@media (max-width: 991px) {
 				& > a > img {
 					@include hidden-center-image;
-					max-width: 100%;
+					// max-width: 100%;
 				}
 			}
 
@@ -387,7 +387,7 @@
 			left: 0px;
 			right: 0px;
 			background-color: $black_49;
-  			z-index: 10;
+			z-index: 10;
 
 
 			i.fa,
@@ -410,19 +410,19 @@
 @media screen and (max-width: 767px) {
 	.about-video {
 		.row-video {
-		
+
 
 			.right {
 				padding-left: 0px;
-			
+
 				.play-wrapper {
 					left: 0;
-				
+
 				}
 			}
 
 			.left {
-			
+
 				padding-right: 0px;
 				margin-bottom: 20px;
 
@@ -443,63 +443,94 @@
 	}
 }
 .pendiri {
-  padding: 20px 0px;
+	padding: 20px 0px;
 
-  .container-fluid {
+	.container-fluid {
   	/* padding-right: 0px;
     padding-left: 0px; */
-  }
+}
 
-  .row-pendiri {
-    .wrapper-2 {
-      padding: 0 10px;
-      margin-bottom: 20px;
-      height: 400px;
-  	  overflow: hidden;
+.row-pendiri {
+	.wrapper-2 {
+		padding: 0 0px;
+		margin-bottom: 20px;
+		
+		overflow: hidden;
+		position: relative;
 
-      .text-wrapper {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 10px;
-        right: 10px;
-        background-color: $black_49;
-        color: $white;
-        font-weight: 300;
-        font-size: 25px;
-        padding-right: 20px;
-        padding-left: 20px;
-      }
-    }
+		@media (min-width: 768px) {
+			height: 400px;
+			& > a > img {
+				@include hidden-center-image;
+				width: 100% !important;
+			}
+		}
 
-    .wrapper-3 {
-      padding: 0 10px;
-      height: 255px;
-  	  overflow: hidden;
+		@media (max-width: 767px) {
 
-      @media screen and (max-width: 767px) {
-        margin-bottom: 20px;
+			& > a > img {
+				@include img-responsive;
+			}
+		}  
 
-        &:last-child {
-          margin-bottom: 0px;
-        }
-      }
+		.text-wrapper {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0px;
+			right: 0px;
+			background-color: $black_49;
+			color: $white;
+			font-weight: 300;
+			font-size: 25px;
+			padding-right: 20px;
+			padding-left: 20px;
+			z-index: 10;
+		}
+	}
 
-      .text-wrapper {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 10px;
-        right: 10px;
-        background-color: $black_49;
-        color: $white;
-        font-weight: 300;
-        font-size: 25px;
-        padding-right: 20px;
-        padding-left: 20px;
-      }
-    }
-  }
+	.wrapper-3 {
+		padding: 0 0px;
+
+		overflow: hidden;
+		position: relative;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 20px;
+
+		}
+
+		@media (min-width: 768px) {
+			height: 255px;
+
+			& > a > img {
+				@include hidden-center-image;
+			}
+		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+
+			& > a > img {
+				@include img-responsive;
+			}
+		}  
+
+		.text-wrapper {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0px;
+			right: 0px;
+			background-color: $black_49;
+			color: $white;
+			font-weight: 300;
+			font-size: 25px;
+			padding-right: 20px;
+			padding-left: 20px;
+			z-index: 10;
+		}
+	}
 }
 
 .certificate {
@@ -507,7 +538,7 @@
 
 	.caption {
 		padding: 20px 0 0 0;
-  		display: inline-block;
+		display: inline-block;
 	}
 }
 
@@ -572,7 +603,7 @@
 		&:not(:last-child) {
 			margin-bottom: 50px;
 		}
-	
+
 
 		& > .picture {
 			position: relative;
