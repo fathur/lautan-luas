@@ -10585,9 +10585,17 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   position: relative;
   padding: 10px;
 }
+.about-video .row-video .top {
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 530px;
+  overflow: hidden;
+}
 .about-video .row-video .right {
   padding-left: 10px;
   padding-right: 0px;
+  height: 260px;
+  overflow: hidden;
 }
 .about-video .row-video .right .play-wrapper {
   top: 0;
@@ -10598,6 +10606,8 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .about-video .row-video .left {
   padding-right: 10px;
   padding-left: 0px;
+  height: 260px;
+  overflow: hidden;
 }
 .about-video .row-video .left .play-wrapper {
   top: 0;
@@ -10607,10 +10617,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .about-video .row-video .play-wrapper {
   position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   background-color: rgba(0, 0, 0, 0.49);
 }
 .about-video .row-video .play-wrapper i.fa,
@@ -10640,11 +10650,17 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   }
 }
 .pendiri {
-  padding: 20px 5px;
+  padding: 20px 0px;
+}
+.pendiri .container-fluid {
+  	/* padding-right: 0px;
+    padding-left: 0px; */
 }
 .pendiri .row-pendiri .wrapper-2 {
   padding: 0 10px;
   margin-bottom: 20px;
+  height: 400px;
+  overflow: hidden;
 }
 .pendiri .row-pendiri .wrapper-2 .text-wrapper {
   position: absolute;
@@ -10661,6 +10677,8 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .pendiri .row-pendiri .wrapper-3 {
   padding: 0 10px;
+  height: 255px;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .pendiri .row-pendiri .wrapper-3 {

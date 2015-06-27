@@ -49,6 +49,7 @@ module.exports = function(grunt) {
 		      "public/about-us--board-of-commissioners.html": "resources/jade/about-us--board-of-commissioners.jade",
 		      "public/about-us--board-of-directors.html": "resources/jade/about-us--board-of-directors.jade",
 		      "public/about-us--board-of-directors--single.html": "resources/jade/about-us--board-of-directors--single.jade",
+		      "public/about-us--board-of-commissioners--single.html": "resources/jade/about-us--board-of-commissioners--single.jade",
 		      "public/industries.html": "resources/jade/industries.jade",
 		      "public/industries--gallery.html": "resources/jade/industries--gallery.jade",
 		      "public/industries--case-studies--archives.html": "resources/jade/industries--case-studies--archives.jade",

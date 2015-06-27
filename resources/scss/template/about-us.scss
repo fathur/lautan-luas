@@ -319,9 +319,21 @@
 		position: relative;
 		padding: 10px;
 
+		.top {
+			 
+			padding-right: 0px;
+			padding-left: 0px;
+			height: 530px;
+			overflow: hidden;
+		}
+
 		.right {
 			padding-left: 10px;
 			padding-right: 0px;
+
+			height: 260px;
+			overflow: hidden;
+			
 
 			.play-wrapper {
 				top: 0;
@@ -335,6 +347,10 @@
 			padding-right: 10px;
 			padding-left: 0px;
 
+			height: 260px;
+			overflow: hidden;
+		
+
 			.play-wrapper {
 				top: 0;
 				bottom: 0;
@@ -345,10 +361,10 @@
 
 		.play-wrapper {
 			position: absolute;
-			top:10px;
-			bottom: 10px;
-			left: 10px;
-			right: 10px;
+			top:0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
 			background-color: $black_49;
 
 			i.fa,
@@ -404,12 +420,19 @@
 	}
 }
 .pendiri {
-  padding: 20px 5px;
+  padding: 20px 0px;
+
+  .container-fluid {
+  	/* padding-right: 0px;
+    padding-left: 0px; */
+  }
 
   .row-pendiri {
     .wrapper-2 {
       padding: 0 10px;
       margin-bottom: 20px;
+      height: 400px;
+  	  overflow: hidden;
 
       .text-wrapper {
         position: absolute;
@@ -428,6 +451,8 @@
 
     .wrapper-3 {
       padding: 0 10px;
+      height: 255px;
+  	  overflow: hidden;
 
       @media screen and (max-width: 767px) {
         margin-bottom: 20px;
