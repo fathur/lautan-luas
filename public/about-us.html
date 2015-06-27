@@ -672,7 +672,7 @@
             <li> <a href="#" ke="#companyprofile-mobile">Company Profile</a></li>
           </ul>
         </div>
-        <div class="padding-large">
+        <div class="padding-large about-us-tab-mobile-content">
           <div id="distribution-mobile" style="" class="tab-in-mobile">
             <div class="row distribution">
               <div class="col-sm-12">
@@ -1435,6 +1435,17 @@
       
     </script>
     <script type="text/javascript">
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+      }
+      
       $(document).ready(function() {
         $(".fancybox").fancybox({
           maxWidth  : 800,
@@ -1460,6 +1471,14 @@
             $(ke).fadeIn('fast');
           });
         });
+      
+        var ourBusinessTab = getCookie('aboutus');
+      
+        $('#about-us-tab a[href="#ourbusiness"]').tab('show');
+        $('#about-us-tab a[href="#'+ourBusinessTab+'"]').tab('show');
+      
+        $('.about-us-tab-mobile-content .tab-in-mobile').hide();
+        $('.about-us-tab-mobile-content #'+ourBusinessTab+'-mobile').show();
       });
     </script>
   </body>
