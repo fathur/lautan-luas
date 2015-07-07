@@ -1,3 +1,7 @@
+$box_industries_desktop_height: 160px;
+$box_industries_tablet_height: 180px;
+$box_industries_phone_height: 135px;
+
 .industries-list {
 	.content {
 		.wrapper {
@@ -35,9 +39,9 @@
 
 		@media screen and (max-width: 767px) {
 			.wrapper {
-				height: 140px;
+				height: $box_industries_phone_height;
 				.box {
-					height: 140px;
+					height: $box_industries_phone_height;
 					padding-right: 10px;
   					padding-left: 10px;
 
@@ -55,9 +59,9 @@
 
 		@media (min-width: 768px) and (max-width: 991px) {
 			.wrapper {
-				height: 140px;
+				height: $box_industries_tablet_height;
 					.box {
-					height: 140px;
+					height: $box_industries_tablet_height;
 					padding-right: 10px;
   					padding-left: 10px;
 
@@ -75,9 +79,9 @@
 
 		@media (min-width: 992px) {
 			.wrapper {
-				height: 125px;
+				height: $box_industries_desktop_height;
 				.box {
-					height: 125px;
+					height: $box_industries_desktop_height;
 					padding-right: $grid-gutter-width; 
 					padding-left: $grid-gutter-width; 
 

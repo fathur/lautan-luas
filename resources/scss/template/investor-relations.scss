@@ -691,6 +691,41 @@
 	}
 }
 
+.auditor-report {
+	.tab {
+		
+		border: none;
+
+		li {
+			&.item {
+
+				width: 49%;
+			}
+
+			a {
+				@include title-uppercase;
+
+				border: none;
+				padding-top: 9px;
+
+				&:hover,
+				&:active {
+					border: none;
+					background-color: rgba(255,255,255,0);
+				}
+			}
+
+			&.active {
+				a {
+					border: none;
+					
+				}
+			}	
+			
+		}
+	}
+}
+
 .faq {
 	/* .questions {
 		li {

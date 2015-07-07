@@ -11205,10 +11205,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media screen and (max-width: 767px) {
   .industries-list .content .wrapper {
-    height: 140px;
+    height: 135px;
   }
   .industries-list .content .wrapper .box {
-    height: 140px;
+    height: 135px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -11222,10 +11222,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .industries-list .content .wrapper {
-    height: 140px;
+    height: 180px;
   }
   .industries-list .content .wrapper .box {
-    height: 140px;
+    height: 180px;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -11239,10 +11239,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media (min-width: 992px) {
   .industries-list .content .wrapper {
-    height: 125px;
+    height: 160px;
   }
   .industries-list .content .wrapper .box {
-    height: 125px;
+    height: 160px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -11895,6 +11895,30 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .annnual-report .subtitle.first,
 .auditor-report .subtitle.first {
   padding-top: 0px !important;
+}
+
+.auditor-report .tab {
+  border: none;
+}
+.auditor-report .tab li.item {
+  width: 49%;
+}
+.auditor-report .tab li a {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 10px;
+  margin-bottom: 0px;
+  border: none;
+  padding-top: 9px;
+}
+.auditor-report .tab li a:hover, .auditor-report .tab li a:active {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.auditor-report .tab li.active a {
+  border: none;
 }
 
 .faq {
