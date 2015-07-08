@@ -10586,6 +10586,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding: 20px;
 }
 @media (min-width: 768px) {
+  .manufacturing .logo-collection .logo-item .item {
+    height: 270px;
+  }
+  .manufacturing .logo-collection .logo-item .item:first-child {
+    border-right: 1px solid #BEBEBE;
+  }
   .manufacturing .logo-collection .logo-item .item:not(:last-child) {
     border-right: 1px solid #BEBEBE;
   }
