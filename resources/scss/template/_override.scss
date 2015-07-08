@@ -514,6 +514,10 @@ a.btn-transparant {
 }
 
 .pagination {
+	
+	@include title-uppercase;
+	font-family: 'Open Sans', sans-serif;
+
 	& > li {
 		& > a {
 			border: none;

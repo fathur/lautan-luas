@@ -492,10 +492,11 @@
 			position: relative;
 
 			@media (min-width: 768px) {
-				height: 400px;
+				// height: 400px;
 				& > a > img {
-					@include hidden-center-image;
-					width: 100% !important;
+					@include img-responsive;
+					// @include hidden-center-image;
+					// width: 100% !important;
 				}
 			}
 
