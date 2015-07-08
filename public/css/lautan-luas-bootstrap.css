@@ -9721,6 +9721,7 @@ table.dataTable.no-footer,
 .breadcrumb {
   padding: 0px;
   font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
 }
 .breadcrumb li {
   margin-top: 6px;
@@ -10318,8 +10319,15 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   width: 30px;
   margin: 3px 5px;
   font-size: 17px;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .footer-bottom .sosmed a > .icon:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
   opacity: 0.5;
 }
 
@@ -11412,6 +11420,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border-bottom: 1px solid #bebebe;
 }
 
+.investor-menu {
+  border-bottom: 1px solid #BEBEBE;
+}
 .investor-menu ul {
   margin-bottom: 0px;
 }
@@ -11420,6 +11431,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .investor-menu ul > li > a {
   color: #707070;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
@@ -11634,6 +11646,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .investor-events .wrapper .detail .item .place {
   padding-top: 3px;
   float: left;
+  font-family: 'PT Sans', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
