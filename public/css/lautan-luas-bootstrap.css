@@ -11425,9 +11425,6 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border-bottom: 1px solid #bebebe;
 }
 
-.investor-menu {
-  border-bottom: 1px solid #BEBEBE;
-}
 .investor-menu ul {
   margin-bottom: 0px;
 }
@@ -11915,6 +11912,13 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding-top: 0px !important;
 }
 
+.auditor-report.archive .tab-row {
+  margin-bottom: 30px;
+}
+.auditor-report.archive .tab-row-content .caption {
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
 .auditor-report .tab {
   border: none;
 }
@@ -11930,6 +11934,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin-bottom: 0px;
   border: none;
   padding-top: 9px;
+  color: #BEBEBE;
 }
 .auditor-report .tab li a:hover, .auditor-report .tab li a:active {
   border: none;
@@ -11937,6 +11942,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .auditor-report .tab li.active a {
   border: none;
+  color: #032077;
 }
 
 .faq {

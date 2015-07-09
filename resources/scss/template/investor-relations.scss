@@ -4,7 +4,7 @@
 
 .investor-menu {
 
-	border-bottom: 1px solid $gray;
+	// border-bottom: 1px solid $gray;
 
 	ul {
 		margin-bottom: 0px;
@@ -698,6 +698,21 @@
 }
 
 .auditor-report {
+
+	&.archive {
+		.tab-row {
+			margin-bottom: 30px;
+		}
+
+		.tab-row-content {
+			.caption {
+				padding-top: 15px;
+				padding-bottom: 40px;
+			}
+		}
+
+	}
+
 	.tab {
 		
 		border: none;
@@ -713,6 +728,7 @@
 
 				border: none;
 				padding-top: 9px;
+				color: $gray;
 
 				&:hover,
 				&:active {
@@ -724,7 +740,7 @@
 			&.active {
 				a {
 					border: none;
-					
+					color: $light_blue;
 				}
 			}	
 			
