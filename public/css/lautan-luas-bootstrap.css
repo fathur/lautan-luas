@@ -9721,6 +9721,7 @@ table.dataTable.no-footer,
 .breadcrumb {
   padding: 0px;
   font-size: 12px;
+  font-family: 'PT Sans', sans-serif;
 }
 .breadcrumb li {
   margin-top: 6px;
@@ -10023,6 +10024,15 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   left: 0;
 }
 
+.pagination {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 10px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
 .pagination > li > a {
   border: none;
   color: #032077;
@@ -10318,8 +10328,15 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   width: 30px;
   margin: 3px 5px;
   font-size: 17px;
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -ms-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
 }
 .footer-bottom .sosmed a > .icon:hover {
+  zoom: 1;
+  filter: alpha(opacity=50);
   opacity: 0.5;
 }
 
@@ -10578,6 +10595,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding: 20px;
 }
 @media (min-width: 768px) {
+  .manufacturing .logo-collection .logo-item .item {
+    height: 270px;
+  }
+  .manufacturing .logo-collection .logo-item .item:first-child {
+    border-right: 1px solid #BEBEBE;
+  }
   .manufacturing .logo-collection .logo-item .item:not(:last-child) {
     border-right: 1px solid #BEBEBE;
   }
@@ -10736,20 +10759,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   position: relative;
 }
 @media (min-width: 768px) {
-  .pendiri .row-pendiri .wrapper-2 {
-    height: 400px;
-  }
   .pendiri .row-pendiri .wrapper-2 > a > img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: auto;
-    max-width: none;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0%);
-    width: 100% !important;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -11412,6 +11425,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border-bottom: 1px solid #bebebe;
 }
 
+.investor-menu {
+  border-bottom: 1px solid #BEBEBE;
+}
 .investor-menu ul {
   margin-bottom: 0px;
 }
@@ -11420,6 +11436,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .investor-menu ul > li > a {
   color: #707070;
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   font-weight: 700;
   text-transform: uppercase;
@@ -11634,6 +11651,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .investor-events .wrapper .detail .item .place {
   padding-top: 3px;
   float: left;
+  font-family: 'PT Sans', sans-serif;
 }
 
 @media screen and (max-width: 767px) {

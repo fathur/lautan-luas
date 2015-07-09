@@ -3,6 +3,9 @@
 }
 
 .investor-menu {
+
+	border-bottom: 1px solid $gray;
+
 	ul {
 		margin-bottom: 0px;
 
@@ -16,8 +19,10 @@
 				}
 			}
 
+
 			& > a {
 				color: $black_font;
+				font-family: 'Open Sans', sans-serif;
 				@include title-uppercase();
 
 				&:hover, 
@@ -288,6 +293,7 @@
 				.place {
 					padding-top: 3px;
 					float: left;
+					font-family: 'PT Sans', sans-serif;
 				}
 
 				.place {

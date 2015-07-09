@@ -33,30 +33,30 @@ block content
       .row.manufacturing
         .col-sm-12.logo-collection
           .row.logo-item
-            each item in ['The Lautan Luas core values guide our daily work','We are a big and fast growing company, rapidly becomming a global player','We highly appreciate and value our employees ']
+            each item in [{text: 'The Lautan Luas core values guide our daily work', anchor: '#1'},{text: 'We are a big and fast growing company, rapidly becomming a global player', anchor: '#2'},{text: 'We highly appreciate and value our employees ', anchor: '#3'}]
               .col-sm-4.item
-                a(href="careers--why-join--single.html#")
+                a(href="careers--why-join--single.html#{item.anchor}")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
-                    = item
+                    = item.text
            
           .row.logo-item
-            each item in ['We equip our employees with knowledge and skills ','Shared resources : transfer between departments and group','We offer you a career path  (overseas exposure)']
+            each item in [{text: 'We equip our employees with knowledge and skills ', anchor: '#4'},{text: 'Shared resources : transfer between departments and group', anchor: '#5'},{text: 'We offer you a career path  (overseas exposure)', anchor: '#6'}]
               .col-sm-4.item
-                a(href="careers--why-join--single.html#")
+                a(href="careers--why-join--single.html#{item.anchor}")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
-                    = item
+                    = item.text
           .row.logo-item
-            each item in ['Integrated Office ','Comfortable Working Facilities','A High Engagement, Comfortable Working Environment ']
+            each item in [{text: 'Integrated Office ', anchor: '#7'},{text: 'Comfortable Working Facilities', anchor: '#8'},{text: 'A High Engagement, Comfortable Working Environment ', anchor: '#9'}]
               .col-sm-4.item
-                a(href="careers--why-join--single.html#")
+                a(href="careers--why-join--single.html#{item.anchor}")
                   .image
                     img.center-block.img-responsive(src="images/PT-Advance-Stabilindo-Industry.png")
                   .caption.text-center
-                    = item
+                    = item.text
 
   //- Form join
   .image-bg.padding-extra-large.search-job
@@ -104,35 +104,35 @@ block content
         .col-xs-3
           .box
             .image
-              a(href="investor-relations--news--single.html")
+              a(href="article-single.html")
                 img(src="images/news-1.jpg")
             .text 
               h3 
-                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+                a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
         .col-xs-3
           .box
             .image
-              a(href="investor-relations--news--single.html")
+              a(href="article-single.html")
                 img(src="images/news-1.jpg")
             .text 
               h3 
-                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+                a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
         .col-xs-3
           .box
             .image
-              a(href="investor-relations--news--single.html")
+              a(href="article-single.html")
                 img(src="images/news-1.jpg")
             .text 
               h3 
-                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+                a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
         .col-xs-3
           .box
             .image
-              a(href="investor-relations--news--single.html")
+              a(href="article-single.html")
                 img(src="images/news-1.jpg")
             .text 
               h3 
-                a(href="investor-relations--news--single.html") Lorem ipsum dolor sit amet consectetur
+                a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
 
 
     

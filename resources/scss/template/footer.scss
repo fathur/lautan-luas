@@ -77,7 +77,15 @@
 				margin: 3px 5px;
 		  		font-size: 17px;
 
+		  		-webkit-transition: opacity 500ms ease-in-out;
+				-moz-transition: opacity 500ms ease-in-out;
+				-ms-transition: opacity 500ms ease-in-out;
+				-o-transition: opacity 500ms ease-in-out;
+				transition: opacity 500ms ease-in-out;
+
 		  		&:hover {
+		  			zoom: 1;
+  					filter: alpha(opacity=50);
 		  			opacity: 0.5;
 		  		}
 				
