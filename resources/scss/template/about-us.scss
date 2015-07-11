@@ -78,6 +78,17 @@
 			border: none;
 			color: $black_font;
 			padding: 4px 0px 4px 25px;
+
+			-webkit-transition: color 500ms ease-out;
+			-moz-transition: color 500ms ease-out;
+			-ms-transition: color 500ms ease-out;
+			-o-transition: color 500ms ease-out;
+			transition: color 500ms ease-out;
+		 
+
+			&:hover {
+				color: $dark_blue;
+			}
 		}
 
 		@media screen and (max-width: 767px) {
@@ -275,7 +286,6 @@
 			@media (min-width: 768px) {
 
 
-
 				&:not(:last-child) {
 					border-bottom: 1px solid $black_border;
 				}
@@ -367,7 +377,10 @@
 
 			@media (min-width: 992px) {
 				& > a > img {
+					width: 100%;
 					@include img-responsive;
+					// @include hidden-center-image;
+
 				}
 			}
 		}
@@ -389,6 +402,7 @@
 
 			@media (min-width: 992px) {
 				& > a > img {
+					width: 100%;
 					@include img-responsive;
 				}
 			}
@@ -520,6 +534,15 @@
 				padding-right: 20px;
 				padding-left: 20px;
 				z-index: 10;
+
+				& > h2 {
+					color: $white;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+
+				}
 			}
 		}
 
@@ -563,6 +586,14 @@
 				padding-right: 20px;
 				padding-left: 20px;
 				z-index: 10;
+
+				& > h2 {
+					color: $white;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+				}
 			}
 		}
 	}

@@ -222,7 +222,11 @@ a.btn-transparant {
 		color: $white !important;
 	}
 }
-
+.form-control {
+	font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+	font-size: $font-size-base;
+}
 .navbar {
 	margin-bottom: 0px;
 	border-radius: 0px;

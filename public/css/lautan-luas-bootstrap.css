@@ -9781,6 +9781,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   color: #FFFFFF !important;
 }
 
+.form-control {
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
 .navbar {
   margin-bottom: 0px;
   border-radius: 0px;
@@ -10446,6 +10452,14 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border: none;
   color: #707070;
   padding: 4px 0px 4px 25px;
+  -webkit-transition: color 500ms ease-out;
+  -moz-transition: color 500ms ease-out;
+  -ms-transition: color 500ms ease-out;
+  -o-transition: color 500ms ease-out;
+  transition: color 500ms ease-out;
+}
+.tabs-left .nav-tabs > li > a:hover {
+  color: #032077;
 }
 @media screen and (max-width: 767px) {
   .tabs-left .nav-tabs > li > a {
@@ -10661,6 +10675,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media (min-width: 992px) {
   .about-video .row-video .top > a > img {
+    width: 100%;
     display: block;
     max-width: 100%;
     height: auto;
@@ -10690,6 +10705,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 @media (min-width: 992px) {
   .about-video .row-video .right > a > img,
   .about-video .row-video .left > a > img {
+    width: 100%;
     display: block;
     max-width: 100%;
     height: auto;
@@ -10788,6 +10804,13 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding-left: 20px;
   z-index: 10;
 }
+.pendiri .row-pendiri .wrapper-2 .text-wrapper > h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 .pendiri .row-pendiri .wrapper-3 {
   padding: 0 0px;
   overflow: hidden;
@@ -10837,6 +10860,13 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding-right: 20px;
   padding-left: 20px;
   z-index: 10;
+}
+.pendiri .row-pendiri .wrapper-3 .text-wrapper > h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .certificate {
@@ -10974,6 +11004,31 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .why-join .text {
   display: block;
   font-size: 18px;
+  color: #032077;
+}
+.why-join .logo-collection {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .why-join .logo-collection .logo-item:not(:last-child) {
+    border-bottom: 1px solid #BEBEBE;
+  }
+}
+.why-join .logo-collection .logo-item .item {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .why-join .logo-collection .logo-item .item {
+    height: 320px;
+  }
+  .why-join .logo-collection .logo-item .item:first-child {
+    border-right: 1px solid #BEBEBE;
+  }
+  .why-join .logo-collection .logo-item .item:not(:last-child) {
+    border-right: 1px solid #BEBEBE;
+  }
+}
+.why-join .logo-collection .logo-item .item .caption {
   color: #032077;
 }
 
@@ -11128,7 +11183,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin-bottom: 30px;
 }
 .contact-form textarea {
-  height: 155px;
+  height: 165px;
 }
 .contact-form dl {
   font-family: 'PT Sans', sans-serif;
@@ -12664,6 +12719,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .demo-5 .dl-menuwrapper ul {
   background: #643771;
+}
+
+.search-count {
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=lautan-luas-bootstrap.css.map */
