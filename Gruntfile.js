@@ -66,6 +66,7 @@ module.exports = function(grunt) {
 		      "public/investor-relations--news-events--archives.html": "resources/jade/investor-relations--news-events--archives.jade",
 		      "public/investor-relations--faq.html": "resources/jade/investor-relations--faq.jade",
 		      "public/investor-relations--reports-archive.html": "resources/jade/investor-relations--reports-archive.jade",
+		      "public/investor-relations--auditor-reports-archive.html": "resources/jade/investor-relations--auditor-reports-archive.jade",
 		      "public/investor-relations--events-archive.html": "resources/jade/investor-relations--events-archive.jade",
 		      "public/investor-relations--events-single.html": "resources/jade/investor-relations--events-single.jade",
 		      "public/search-results.html": "resources/jade/search-results.jade",

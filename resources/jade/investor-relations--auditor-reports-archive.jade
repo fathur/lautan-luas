@@ -1,0 +1,80 @@
+extends ./_layout.jade
+
+block title
+  title Lautan Luas - Investor Relations - Auditor Reports
+
+block content
+  .container-fluid.hero
+
+  //- Breadcrumb
+  .breadcrumb-wrapper
+    .container
+      ol.breadcrumb
+        li
+          a(href="index.html") Home
+        li.separator
+        li
+          a(href="investor-relations.html") Investor Relations
+        li.separator
+        li
+          a(href="investor-relations--financial-information.html") Financial Information
+        li.separator
+        li.active Auditor Reports
+
+  .padding-extra-large.white-bg
+    .container.auditor-report.archive
+      .row
+        .col-xs-12
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna vel augue pellentesque sollicitudin. Nunc ut semper sem. Curabitur at lectus sodales, tristique nisi et, sodales urna. Vivamus in velit at lorem hendrerit pulvinar. Suspendisse ut malesuada purus. Mauris ullamcorper risus in lorem tristique, ut fringilla velit suscipit. In a arcu quis mi ultricies pulvinar in ac ex. Nulla consequat metus id turpis tincidunt pharetra. In sagittis, erat sit amet facilisis dignissim, urna orci tempus ligula, vitae elementum dolor urna ut dolor. Sed eu arcu vitae ligula malesuada egestas.
+
+      //- each i in [1,2,3]
+      //-   .row.annnual-report
+      //-     each item in [2010,2011,2012,2013]
+      //-       .col-md-3.col-sm-6.col-xs-12.item.text-center
+      //-         a(href="#")
+      //-           img.img-responsive.center-block(src="images/annual-report-1.png")
+      //-         .caption 
+      //-           a(href="#") Annual Report 
+      //-             =item
+
+      .row.tab-row
+        .col-xs-12
+          ul.nav.nav-tabs.tab(role="tablist")
+            li.item.text-right.active(role="presentation")
+              a(href="#quarterly" aria-controls="quarterly" role="tab" data-toggle="tab") Quarterly
+            li.separator(style="margin-top: 4px;") /
+            li.text-left.item(role="presentation")
+              a(href="#yearly" aria-controls="yearly" role="tab" data-toggle="tab") Yearly
+      .row.tab-row-content
+        .col-xs-12
+          div(role="tabpanel")
+            .tab-content
+              #quarterly.tab-pane.fade.in.active(role="tabpanel")
+                each i in [1,2,3]
+                  .row
+                    each item in [2010,2011,2012,2013]
+                      .col-md-3.col-sm-6.col-xs-12.item.text-center
+                        a(href="#")
+                          img.img-responsive.center-block(src="images/annual-report-1.png")
+                        .caption 
+                          a(href="#") Annual Report 
+                            =item
+                  
+              #yearly.tab-pane.fade(role="tabpanel")
+                each i in [1,2,3]
+                  .row
+                    each item in [2014,2015,2016,2017]
+                      .col-md-3.col-sm-6.col-xs-12.item.text-center
+                        a(href="#")
+                          img.img-responsive.center-block(src="images/annual-report-1.png")
+                        .caption 
+                          a(href="#") Annual Report 
+                            =item
+
+
+      include ./template/pagination.jade
+
+
+
+  include ./template/investor/bottom-contact-2g.jade
+      
