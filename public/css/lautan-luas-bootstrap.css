@@ -10036,6 +10036,8 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .pagination > li > a {
   border: none;
   color: #032077;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .pagination > .active > a {
   background-color: #032077;
