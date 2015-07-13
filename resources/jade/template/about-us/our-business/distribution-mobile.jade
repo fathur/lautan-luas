@@ -1,0 +1,179 @@
+.row.distribution
+  .col-sm-12
+    p Lautan Luas was founded in 1951 as an importer and distributor of basic chemicals. Today, the Company has evolved to become a distributor and manufacturer of basic and specialty chemicals, working with over 100 international principals, supplying more than 1,000 chemical products and serving some 2,000 industrial end-users throughout Indonesia and the Asia-Pacific region.
+      | To oversee its vast distribution networks, Lautan Luas, is headquartered in headOffice-mobile, operates five branches and seven representative offices located in major cities throughout the Indonesian archipelago. A regional office in Singapore overlooks the Company’s activities in China, Thailand, and Vietnam. Lautan Luas currently has a stake in sixteen manufacturing facilities in Indonesia, two in China, and a water treatment chemical manufacturing plant in Vietnam. The Lautan Luas
+      |support  services business is comprised of five entities providing laboratory services, supply chain, information technology, water treatment solutions, and industrial estate – to provide value-added services to customers.
+
+    //- Head Office
+    #accordion-mobile.panel-group(role='tablist', aria-multiselectable='true')
+      .panel.panel-default
+        #headOffice-mobile.panel-heading(role='tab')
+          h4.panel-title
+            a(data-toggle='collapse', data-parent='#accordion-mobile', href='#collapseheadOffice-mobile', aria-expanded='true', aria-controls='collapseheadOffice-mobile')
+              | Head Office
+        #collapseheadOffice-mobile.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headOffice-mobile')
+          .panel-body
+            .row
+              .col-sm-4
+                .city Jakarta
+                .address Jl. Jend. Sudirman Blok Z3 No. 99 Jakarta
+                .contact
+                  .icon
+                    i.fa.fa-phone 
+                    a(href="tel:+62 21 765 4321") +62 21 765 4321
+                  .icon
+                    i.fa.fa-print 
+                    a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                  .icon
+                    i.fa.fa-envelope-o 
+                    a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+                
+      //- Branch Offices
+      .panel.panel-default
+        #branchOffice-mobile.panel-heading(role='tab')
+          h4.panel-title
+            a.collapsed(data-toggle='collapse', data-parent='#accordion-mobile', href='#collapseBranchOffice-mobile', aria-expanded='false', aria-controls='collapseBranchOffice-mobile')
+              | Branch Offices
+        #collapseBranchOffice-mobile.panel-collapse.collapse(role='tabpanel', aria-labelledby='branchOffice-mobile')
+          .panel-body
+            .row
+              each item in ['Surabaya', 'Bandung', 'Semarang']
+                .col-sm-4
+                  .city= item
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item
+                  .contact
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+
+            .row
+              each item in ['Medan', 'Pekanbaru']
+                .col-sm-4
+                  .city= item
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item
+                  .contact
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+
+      //- Representative office
+      .panel.panel-default
+        #representativeOffice-mobile.panel-heading(role='tab')
+          h4.panel-title
+            a.collapsed(data-toggle='collapse', data-parent='#accordion-mobile', href='#collapserepresentativeOffice-mobile', aria-expanded='false', aria-controls='collapserepresentativeOffice-mobile')
+              | Representative Offices
+        #collapserepresentativeOffice-mobile.panel-collapse.collapse(role='tabpanel', aria-labelledby='representativeOffice-mobile')
+          .panel-body
+            .row
+              each item in ['Bandar Lampung', 'Palembang', 'Solo']
+                .col-sm-4
+                  .city= item
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item
+                  .contact
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+            .row
+              each item in ['Samarinda', 'Makassar', 'Tangerang']
+                .col-sm-4
+                  .city= item
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item
+                  .contact
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+                      
+            .row
+              each item in ['Pontianak']
+                .col-sm-4
+                  .city= item
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item
+                  .contact 
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+                      
+
+      //- Regional Subsidiaries
+      .panel.panel-default
+        #regionalSubsidiaries-mobile.panel-heading(role='tab')
+          h4.panel-title
+            a.collapsed(data-toggle='collapse', data-parent='#accordion-mobile', href='#collapseregionalSubsidiaries-mobile', aria-expanded='false', aria-controls='collapseregionalSubsidiaries-mobile')
+              | Regional Subsidiaries
+        #collapseregionalSubsidiaries-mobile.panel-collapse.collapse(role='tabpanel', aria-labelledby='regionalSubsidiaries-mobile')
+          .panel-body
+            .row
+              .col-sm-4
+                .city Lautan Luas Singapore Pte. Ltd
+                .address Jl. Jend. Sudirman Blok Z3 No. 99 Singapore
+                .contact
+                  .icon
+                    i.fa.fa-phone 
+                    a(href="tel:+62 21 765 4321") +62 21 765 4321
+                  .icon
+                    i.fa.fa-print 
+                    a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                  .icon
+                    i.fa.fa-envelope-o 
+                    a(href="mailto:info@lautan-luas.com") info@lautan-luas.com
+                      
+
+      //- Regional Representative Offices
+      .panel.panel-default
+        #regionalrepresentativeOffice-mobile.panel-heading(role='tab')
+          h4.panel-title
+            a.collapsed(data-toggle='collapse', data-parent='#accordion-mobile', href='#collapseRegionalrepresentativeOffice-mobile', aria-expanded='false', aria-controls='collapseRegionalrepresentativeOffice-mobile')
+              | Regional Representative Offices
+        #collapseRegionalrepresentativeOffice-mobile.panel-collapse.collapse(role='tabpanel', aria-labelledby='regionalrepresentativeOffice-mobile')
+          .panel-body
+            .row
+              each item in [{title: 'Lautan Luas Thailand Co. Ltd,.', location: 'Bangkok, Thailand'},{title: 'Lautan Luas Shanghai Co. Ltd,.', location: 'Shanghai, China'},{title: 'Lautan Luas Vietnam Co. Ltd,.', location: 'Ho Chi Minh, Vietnam'}]
+                .col-sm-4
+                  .city= item.title
+                  .address Jl. Jend. Sudirman Blok Z3 No. 99 
+                    = item.location
+                  .contact
+                    .icon
+                      i.fa.fa-phone 
+                      a(href="tel:+62 21 765 4321") +62 21 765 4321
+                    .icon
+                      i.fa.fa-print 
+                      a(href="tel:+62 21 765 4322 ") +62 21 765 4322 
+                    .icon
+                      i.fa.fa-envelope-o 
+                      a(href="mailto:info@lautan-luas.com") info@lautan-luas.com

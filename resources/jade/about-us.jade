@@ -73,7 +73,7 @@ block content
 
         .padding-large.about-us-tab-mobile-content
           .tab-in-mobile#distribution-mobile(style="")
-            include ./template/about-us/our-business/distribution.jade
+            include ./template/about-us/our-business/distribution-mobile.jade
           .tab-in-mobile#manufacturing-mobile(style="display: none;") 
             include ./template/about-us/our-business/manufacturing.jade
           .tab-in-mobile#services-mobile(style="display: none;") 
@@ -230,5 +230,5 @@ block script
       if(getCookie('aboutus') == '') {
         $('#distribution-mobile').show();
       }
-      
+
     });
