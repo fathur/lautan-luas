@@ -1,6 +1,6 @@
 //colors
 $color_celeste_approx: #ccc;
-$color_silver_chalice_approx: #aaa;
+$color_silver_chalice_approx: #ededed;
 $white: #fff;
 $color_milk_punch_10_approx: rgba(255,248,213,0.1);
 $black_10: rgba(0,0,0,0.1);
@@ -70,11 +70,12 @@ $color_eminence_approx: #643771;
 			display: block;
 			position: relative;
 			padding: 15px 20px;
-			font-size: 16px;
 			line-height: 20px;
-			font-weight: 300;
-			color: $white;
+			color: $light-blue;
 			outline: none;
+			font-weight: 400;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 14px;
 		}
 		&.dl-back {
 			/* &:after {
@@ -90,8 +91,13 @@ $color_eminence_approx: #643771;
 				transform: rotate(180deg);
 			} */
 			> a {
-				padding-left: 30px;
+				// padding-left: 30px;
 				background: $black_10;
+
+				&:hover {
+					background: $black_10 !important;
+
+				}
 			}
 		}
 		.dl-submenu {

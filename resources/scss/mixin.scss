@@ -7,16 +7,33 @@
 	margin-bottom: $margin-bottom;
 }
 
-@mixin hidden-center-image() {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	height: 100%;
-	width: auto;
-	max-width: none;
-	left: 50%;
-	right: 50%;
-	transform: translate(-50%, 0%);
+@mixin hidden-center-image($position: 'horizontal') {
+
+	@if $position == 'horizontal' {
+
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		width: auto;
+		max-width: none;
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, 0%);
+	}
+
+	@else if $position == 'vertical' {
+		position: absolute;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		max-height: none;
+		top: 50%;
+		bottom: 50%;
+		transform: translate(0%, -50%);
+
+	}
 }
 
 @mixin hover-box-shadow() {

@@ -77,7 +77,7 @@
 			this.$trigger = this.$el.children( '.dl-trigger' );
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
-			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">' + this.options.backLabel + '</a></li>' );
+			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#"><i class="fa fa-chevron-left"></i> ' + this.options.backLabel + '</a></li>' );
 			this.$back = this.$menu.find( 'li.dl-back' );
 
 			// Set the label text for the back link.

@@ -35,14 +35,34 @@
 		& > dt {
 			font-weight: bold;
 			color: $light-blue;
-			width: 50px;
+			width: 70px;
 			line-height: 2;
 		}
 
 		& > dd {
-			margin-left: 70px;
 			margin-bottom: 13px;
 			line-height: 2;
 		}
+
+		@media screen and (max-width: 767px) {
+			& > dd {
+
+			}
+		}
+
+		@media (min-width: 768px) {
+			& > dd {
+				margin-left: 80px;
+				
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.send-us-message {
+		margin-top: 40px;
 	}
 }

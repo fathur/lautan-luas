@@ -366,10 +366,22 @@
 			position: relative;
 			padding-right: 0px;
 			padding-left: 0px;
-			height: 530px;
+			
 			overflow: hidden;
 
-			@media screen and (max-width: 991px) {
+			& > a > img {
+				width: 100%;
+				@include img-responsive;
+			}
+/* 
+			@media screen and (max-width: 767px) {
+				& > a > img {
+					width: 100%;
+					@include img-responsive;
+				}
+			}
+
+			@media (min-width: 768px) and (max-width: 991px) {
 				& > a > img {
 					@include hidden-center-image;
 				}
@@ -379,11 +391,11 @@
 				& > a > img {
 					width: 100%;
 					@include img-responsive;
-					// @include hidden-center-image;
 
 				}
 			}
-		}
+ */		}
+
 
 		.right, 
 		.left {
@@ -393,10 +405,14 @@
 			
 			overflow: hidden;
 
-			@media (max-width: 991px) {
+			& > a > img {
+				width: 100%;
+				@include img-responsive;
+			}
+
+/* 			@media (max-width: 991px) {
 				& > a > img {
 					@include hidden-center-image;
-					// max-width: 100%;
 				}
 			}
 
@@ -407,7 +423,7 @@
 				}
 			}
 
-			.play-wrapper {
+ */			.play-wrapper {
 				top: 0;
 				bottom: 0;
 				left: 0;
@@ -416,14 +432,20 @@
 		}
 
 		@media screen and (max-width: 767px) {
+			.top {
+				// height: 300px;
+			}
 			.right, .left {
-				height: 530px;
+				// height: 300px;
 			}
 		}
 
 		@media (min-width: 768px) {
+			.top {
+				// height: 530px;
+			}
 			.right, .left {
-				height: 260px;
+				// height: 260px;
 			}
 		}
 
@@ -489,6 +511,7 @@
 		}
 	}
 }
+
 .pendiri {
 	padding: 20px 0px;
 

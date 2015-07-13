@@ -35,7 +35,8 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
           a.navbar-brand(href='index.html')
-            img.img-responsive(src="images/logo.png")
+            img.hidden-xs.hidden-sm.img-responsive(src="images/logo.png")
+            img.visible-xs-block.visible-sm-block.img-responsive(src="images/logo-mobile.png")
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             //- li.active
@@ -43,7 +44,7 @@ html(lang='en')
             each menu in [{link: 'about-us.html', text:'About Us'}, {link: 'industries.html', text:'Industries'}, {link: 'investor-relations.html', text:'Investor Relations'}, {link: 'csr.html', text:'CSR'}, {link: 'careers.html', text:'Careers'}, {link: 'contact-us.html', text:'Contact Us'}]
               li
                 a(href=menu.link)= menu.text
-            li 
+            li.hidden-xs 
               a#search-menu(href="#")
                 span#search-icon.glyphicon.glyphicon-search(aria-hidden="true")
               form.form-search-menu(action="search-results.html" method="get")
@@ -52,6 +53,10 @@ html(lang='en')
                   .input-group-btn
                     button.btn.btn-default.btn-search#search-close(type="button")
                       i.fa.fa-times
+            li.visible-xs-block
+              form.form-search-menu(action="search-results.html" method="get")
+                input.form-control(type="text" name="q" placeholder="Enter search term")
+                  
                   
                 //- .form-group.has-feedback
                 //-   input.form-control(type="text" name="q")
@@ -62,38 +67,43 @@ html(lang='en')
     block content
 
     .footer
-      .container.hidden-xs.hidden-sm
+      .container
         .row.padding-large.footer-top
 
           .col-sm-5
             .row
               .col-sm-7
-                h5 About Us
-                ul.list-unstyled
+                a(href="#")
+                  h5 About Us
+                ul.list-unstyled.hidden-xs.hidden-sm
                   each item in [{link: 'about-us.html', text: 'About Lautan Luas'},{link: 'about-us--board-of-directors.html', text: 'Board of Directors'},{link: 'about-us--board-of-commissioners.html', text: 'Board of Commissioners'},{link: 'about-us--health-safety-and-environment.html', text: 'Health, Safety, and Environment'},{link: 'about-us--good-corporate-governance.html', text: 'Good Corporate Governance'},{link: 'about-us--our-poeple.html', text: 'Our People'}]
                     li
                       a(href=item.link)= item.text
               .col-sm-5
-                h5 Industries
-                ul.list-unstyled
+                a(href="#")
+                  h5 Industries
+                ul.list-unstyled.hidden-xs.hidden-sm
                   each item in [{link: 'industries.html', text: 'Distribution Channels'},{link: 'industries--service-single.html', text: 'Lab Services and R&D'},{link: 'industries--service-single.html', text: 'Integrated Supply Chain'},{link: 'industries--service-single.html', text: 'IT Solutions'},{link: 'industries--service-single.html', text: 'Water Treatment'}]
                     li
                       a(href=item.link)= item.text
           .col-sm-3
-            h5 Investor Relations
-            ul.list-unstyled
+            a(href="#")
+              h5 Investor Relations
+            ul.list-unstyled.hidden-xs.hidden-sm
               each item in [{link: 'investor-relations--stock-information.html', text: 'Stock Information'},{link: 'investor-relations--financial-information.html', text: 'Financial Information'},{link: 'investor-relations--news-events.html', text: 'News and Events'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
                 li
                   a(href=item.link)= item.text
           .col-sm-2
-            h5 CSR
-            ul.list-unstyled
+            a(href="#")
+              h5 CSR
+            ul.list-unstyled.hidden-xs.hidden-sm
               each item in [{link: 'csr.html#serving-the-poor', text: 'Serving the Poor'},{link: 'csr.html#education', text: 'Education'},{link: 'csr.html#livelihood', text: 'Livelihood'},{link: 'csr.html#others', text: 'Others'}]
                 li
                   a(href=item.link)= item.text
           .col-sm-2
-            h5 Careers
-            ul.list-unstyled
+            a(href="#")
+              h5 Careers
+            ul.list-unstyled.hidden-xs.hidden-sm
               each item in [{link: 'careers--view-all-jobs.html', text: 'View All Jobs'},{link: 'careers--how-to-apply.html', text: 'How to Apply'},{link: 'careers.html#why-join', text: 'Why Join Lautan Luas'},{link: 'industries--case-studies--archives.html', text: 'Employee Activities'},{link: 'investor-relations--events-archive.html', text: 'Events'}]
                 li
                   a(href=item.link)= item.text
@@ -102,7 +112,7 @@ html(lang='en')
         .container
           .row
             .col-sm-8
-              .hidden-xs.hidden-sm.copyright Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.
+              .copyright Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.
               ul.menu
                 li 
                   a(href="index.html") Home
@@ -116,7 +126,6 @@ html(lang='en')
                   a(href="#") Disclaimer
                 li 
                   a(href="contact-us.html") Contact Us
-              .hidden-md.hidden-lg.copyright Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.
             .col-sm-4.sosmed
               a(href="#")
                 .icon

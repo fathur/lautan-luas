@@ -23,7 +23,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" class="img-responsive"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="images/logo.png" class="hidden-xs hidden-sm img-responsive"><img src="images/logo-mobile.png" class="visible-xs-block visible-sm-block img-responsive"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -33,7 +33,7 @@
             <li><a href="csr.html">CSR</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
-            <li> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
+            <li class="hidden-xs"> <a id="search-menu" href="#"><span id="search-icon" aria-hidden="true" class="glyphicon glyphicon-search"></span></a>
               <form action="search-results.html" method="get" class="form-search-menu">
                 <div class="input-group">
                   <input type="text" name="q" placeholder="Enter search term" class="form-control">
@@ -41,6 +41,11 @@
                     <button id="search-close" type="button" class="btn btn-default btn-search"><i class="fa fa-times"></i></button>
                   </div>
                 </div>
+              </form>
+            </li>
+            <li class="visible-xs-block">
+              <form action="search-results.html" method="get" class="form-search-menu">
+                <input type="text" name="q" placeholder="Enter search term" class="form-control">
                 
               </form>
             </li>
@@ -241,13 +246,13 @@
       </div>
     </div>
     <div class="footer">
-      <div class="container hidden-xs hidden-sm">
+      <div class="container">
         <div class="row padding-large footer-top">
           <div class="col-sm-5">
             <div class="row">
-              <div class="col-sm-7">
-                <h5>About Us</h5>
-                <ul class="list-unstyled">
+              <div class="col-sm-7"><a href="#">
+                  <h5>About Us</h5></a>
+                <ul class="list-unstyled hidden-xs hidden-sm">
                   <li><a href="about-us.html">About Lautan Luas</a></li>
                   <li><a href="about-us--board-of-directors.html">Board of Directors</a></li>
                   <li><a href="about-us--board-of-commissioners.html">Board of Commissioners</a></li>
@@ -256,9 +261,9 @@
                   <li><a href="about-us--our-poeple.html">Our People</a></li>
                 </ul>
               </div>
-              <div class="col-sm-5">
-                <h5>Industries</h5>
-                <ul class="list-unstyled">
+              <div class="col-sm-5"><a href="#">
+                  <h5>Industries</h5></a>
+                <ul class="list-unstyled hidden-xs hidden-sm">
                   <li><a href="industries.html">Distribution Channels</a></li>
                   <li><a href="industries--service-single.html">Lab Services and R&amp;D</a></li>
                   <li><a href="industries--service-single.html">Integrated Supply Chain</a></li>
@@ -268,27 +273,27 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <h5>Investor Relations</h5>
-            <ul class="list-unstyled">
+          <div class="col-sm-3"><a href="#">
+              <h5>Investor Relations</h5></a>
+            <ul class="list-unstyled hidden-xs hidden-sm">
               <li><a href="investor-relations--stock-information.html">Stock Information</a></li>
               <li><a href="investor-relations--financial-information.html">Financial Information</a></li>
               <li><a href="investor-relations--news-events.html">News and Events</a></li>
               <li><a href="investor-relations--faq.html">FAQ</a></li>
             </ul>
           </div>
-          <div class="col-sm-2">
-            <h5>CSR</h5>
-            <ul class="list-unstyled">
+          <div class="col-sm-2"><a href="#">
+              <h5>CSR</h5></a>
+            <ul class="list-unstyled hidden-xs hidden-sm">
               <li><a href="csr.html#serving-the-poor">Serving the Poor</a></li>
               <li><a href="csr.html#education">Education</a></li>
               <li><a href="csr.html#livelihood">Livelihood</a></li>
               <li><a href="csr.html#others">Others</a></li>
             </ul>
           </div>
-          <div class="col-sm-2">
-            <h5>Careers</h5>
-            <ul class="list-unstyled">
+          <div class="col-sm-2"><a href="#">
+              <h5>Careers</h5></a>
+            <ul class="list-unstyled hidden-xs hidden-sm">
               <li><a href="careers--view-all-jobs.html">View All Jobs</a></li>
               <li><a href="careers--how-to-apply.html">How to Apply</a></li>
               <li><a href="careers.html#why-join">Why Join Lautan Luas</a></li>
@@ -302,7 +307,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8">
-              <div class="hidden-xs hidden-sm copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
+              <div class="copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
               <ul class="menu">
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="#">Terms of Use</a></li>
@@ -311,7 +316,6 @@
                 <li> <a href="#">Disclaimer</a></li>
                 <li> <a href="contact-us.html">Contact Us</a></li>
               </ul>
-              <div class="hidden-md hidden-lg copyright">Copyright &copy; 2014 PT Lautan Luas Tbk. All rights reserved.</div>
             </div>
             <div class="col-sm-4 sosmed"><a href="#">
                 <div class="icon"><img src="images/icon-facebook-1.png"></div></a><a href="#">

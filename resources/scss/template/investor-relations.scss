@@ -492,6 +492,12 @@
 
 
 .block-percentation {
+
+	@media screen and (max-width: 767px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	& > div {
 		
 		.item {
@@ -613,7 +619,8 @@
 			@media screen and (max-width: 767px) {
 				.left {
 					& > .download {
-						left: 10px; 
+						left: 0px; 
+						right: 0px;
 					}
 				}
 			}
