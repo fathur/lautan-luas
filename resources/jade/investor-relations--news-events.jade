@@ -17,7 +17,7 @@ block content
         li.separator
         li.active News and Events
 
-  .gray-bg.padding-small.investor-relation-submenu
+  .gray-bg.padding-small.investor-relation-submenu.hidden-xs
     .container
       .row.pull-right.investor-menu
         .col-xs-12
@@ -25,6 +25,16 @@ block content
             each item in [{link: 'investor-relations--stock-information.html', text: 'STOCK INFORMATION'},{link: 'investor-relations--financial-information.html', text: 'FINANCIAL INFORMATION'},{link: 'investor-relations--news-events.html', text: 'NEWS AND EVENTS', state: 'active'},{link: 'investor-relations--faq.html', text: 'FAQ'}]
               li(class=item.state)
                 a(href=item.link)= item.text
+
+  .gray-bg.padding-small.investor-relation-submenu.visible-xs-block
+    .container
+      .row
+        .col-xs-12
+          select.form-control#investor-relation-submenu-mobile
+            option(url="investor-relations--stock-information.html") Stock Information
+            option(url="investor-relations--financial-information.html") Financial Information
+            option(url="investor-relations--news-events.html" selected) News and Events
+            option(url="investor-relations--faq.html") FAQ
 
   .white-bg.padding-large
     .container.latest-news
@@ -126,3 +136,8 @@ block content
             
 
 block script
+  script(type="text/javascript").
+    $('#investor-relation-submenu-mobile').change(function(){
+      var selected = $('option:selected', this);
+      window.location.href = selected.attr('url');
+    });

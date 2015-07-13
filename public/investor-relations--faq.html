@@ -65,7 +65,7 @@
         </ol>
       </div>
     </div>
-    <div class="gray-bg padding-small investor-relation-submenu">
+    <div class="gray-bg padding-small investor-relation-submenu hidden-xs">
       <div class="container">
         <div class="row pull-right investor-menu">
           <div class="col-xs-12">
@@ -75,6 +75,20 @@
               <li><a href="investor-relations--news-events.html">NEWS AND EVENTS</a></li>
               <li class="active"><a href="investor-relations--faq.html">FAQ</a></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray-bg padding-small investor-relation-submenu visible-xs-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <select id="investor-relation-submenu-mobile" class="form-control">
+              <option url="investor-relations--stock-information.html">Stock Information</option>
+              <option url="investor-relations--financial-information.html">Financial Information</option>
+              <option url="investor-relations--news-events.html">News and Events</option>
+              <option url="investor-relations--faq.html" selected>FAQ</option>
+            </select>
           </div>
         </div>
       </div>
@@ -318,6 +332,12 @@
       //- });
       
       
+    </script>
+    <script type="text/javascript">
+      $('#investor-relation-submenu-mobile').change(function(){
+        var selected = $('option:selected', this);
+        window.location.href = selected.attr('url');
+      });
     </script>
   </body>
 </html>
