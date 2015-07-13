@@ -195,7 +195,11 @@
 
 	.panel {
 		background-color: $light_white;
-		border: none;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+		box-shadow: none;
 		
 	}
 

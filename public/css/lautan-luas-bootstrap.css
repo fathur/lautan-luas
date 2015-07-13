@@ -10592,7 +10592,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .distribution .panel {
   background-color: #FAFAFA;
-  border: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 .distribution .panel-heading {
   background-color: #FAFAFA;
@@ -12268,7 +12272,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin: 5px 0 0;
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 95%;
   opacity: 0;
   pointer-events: none;
   transform: translateY(10px);
