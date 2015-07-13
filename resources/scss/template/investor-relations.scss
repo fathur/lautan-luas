@@ -388,12 +388,20 @@
 
 		&--title {
 			text-transform: uppercase;
-			padding: 15px 30px;
 			font-size: 11px;
 			letter-spacing: .2em;
 			font-weight: 600;
 			line-height: 30px;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+			@media screen and (max-width: 767px) {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			@media (min-width: 768px) {
+				padding: 15px 30px;
+			}
 
 			h5 {
 				color: $white;
@@ -430,7 +438,15 @@
 		
 		.item {
 			// height: 155px;
-			padding: 50px 40px;
+
+			@media screen and (max-width: 767px) {
+				padding: 50px 0px;
+			}
+
+			@media (min-width: 768px) {
+				padding: 50px 40px;
+
+			}
 
 			&.big {
 				padding: 20px 16px;
@@ -485,6 +501,7 @@
 		@media screen and (max-width: 767px) {
 			.item {
 				text-align: center;
+				height: 160px;
 			}
 		}
 	}

@@ -10079,7 +10079,6 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.5;
 }
 .home-image .text {
   color: #FFFFFF;
@@ -10092,6 +10091,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   .home-image .text {
     width: 100%;
     margin: 5px auto 0 auto;
+    text-align: left;
+  }
+  .home-image h1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -10102,6 +10106,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
     max-width: 650px;
     width: 100%;
     margin: 115px auto 0 auto;
+    text-align: center;
+  }
+  .home-image h1 {
+    line-height: 1.5;
   }
 }
 @media (min-width: 992px) {
@@ -10111,6 +10119,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   .home-image .text {
     width: 650px;
     margin: 200px auto 0 auto;
+    text-align: center;
+  }
+  .home-image h1 {
+    line-height: 1.5;
   }
 }
 .our-business-lines .item {
@@ -11806,12 +11818,22 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .blue-bg .block-stock-info--title {
   text-transform: uppercase;
-  padding: 15px 30px;
   font-size: 11px;
   letter-spacing: .2em;
   font-weight: 600;
   line-height: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+@media screen and (max-width: 767px) {
+  .blue-bg .block-stock-info--title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .blue-bg .block-stock-info--title {
+    padding: 15px 30px;
+  }
 }
 .blue-bg .block-stock-info--title h5 {
   color: #FFFFFF;
@@ -11834,8 +11856,15 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   }
 }
 
-.block-stock-info > div .item {
-  padding: 50px 40px;
+@media screen and (max-width: 767px) {
+  .block-stock-info > div .item {
+    padding: 50px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .block-stock-info > div .item {
+    padding: 50px 40px;
+  }
 }
 .block-stock-info > div .item.big {
   padding: 20px 16px;
@@ -11869,6 +11898,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 @media screen and (max-width: 767px) {
   .block-stock-info > div .item {
     text-align: center;
+    height: 160px;
   }
 }
 

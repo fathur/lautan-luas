@@ -94,57 +94,58 @@ block content
             option(selected) 2005
       .row
         .col-xs-12
-          table.table.table-responsive#filter-year
-            thead
-              tr 
-                th(style="") Quarter
-                th(style="") High
-                th(style="") Low
-                th(style="") Average Volume
-                th(style="display:none;") Year
-            tbody
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 1.700
-                  td 1.450
-                  td 1.800.000
-                  td(style="display:none;") 2000
-              each item in ['Q1z','Q2z','Q3z','Q4z']
-                tr
-                  td=item
-                  td 1.700
-                  td 1.450
-                  td 1.800.000
-                  td(style="display:none;") 2001
-              each item in ['Q1x','Q2x','Q3x','Q4x']
-                tr
-                  td=item
-                  td 1.700
-                  td 1.450
-                  td 1.800.000
-                  td(style="display:none;") 2002
-              each item in ['Q1a','Q2a','Q3a','Q4a']
-                tr
-                  td=item
-                  td 1.700
-                  td 1.450
-                  td 1.800.000
-                  td(style="display:none;") 2003
-              each item in ['Q1t','Q2t','Q3t','Q4t']
-                tr
-                  td=item
-                  td 1.700
-                  td 1.450
-                  td 1.800.000
-                  td(style="display:none;") 2004
-              each item in ['Q1a','Q2a','Q3a','Q4a']
-                tr
-                  td=item
-                  td 1.704
-                  td 1.454
-                  td 1.800.000
-                  td(style="display:none;") 2005 
+          .table-responsive
+            table.table#filter-year
+              thead
+                tr 
+                  th(style="") Quarter
+                  th(style="") High
+                  th(style="") Low
+                  th(style="") Average Volume
+                  th(style="display:none;") Year
+              tbody
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 1.700
+                    td 1.450
+                    td 1.800.000
+                    td(style="display:none;") 2000
+                each item in ['Q1z','Q2z','Q3z','Q4z']
+                  tr
+                    td=item
+                    td 1.700
+                    td 1.450
+                    td 1.800.000
+                    td(style="display:none;") 2001
+                each item in ['Q1x','Q2x','Q3x','Q4x']
+                  tr
+                    td=item
+                    td 1.700
+                    td 1.450
+                    td 1.800.000
+                    td(style="display:none;") 2002
+                each item in ['Q1a','Q2a','Q3a','Q4a']
+                  tr
+                    td=item
+                    td 1.700
+                    td 1.450
+                    td 1.800.000
+                    td(style="display:none;") 2003
+                each item in ['Q1t','Q2t','Q3t','Q4t']
+                  tr
+                    td=item
+                    td 1.700
+                    td 1.450
+                    td 1.800.000
+                    td(style="display:none;") 2004
+                each item in ['Q1a','Q2a','Q3a','Q4a']
+                  tr
+                    td=item
+                    td 1.704
+                    td 1.454
+                    td 1.800.000
+                    td(style="display:none;") 2005 
 
   
   include ./template/investor/bottom-contact-2w.jade

@@ -69,78 +69,79 @@ block content
             option 2005
       .row
         .col-xs-12
-          table.table.table-responsive#filter-year
-            thead
-              tr 
-                th Quarter
-                th Revenue Growth 
-                th Gross Margin
-                th Operating Margin
-                th EBITDA/Net Int. Exp.
-                th Net Debt/Equity
-                th Current Ratio
-                th(style="display:none;") Year
-            tbody
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2000
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2001
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2002
-              each item in ['Q1','Q2','Q4443','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2003
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2004
-              each item in ['Q1','Q2','Q3','Q4']
-                tr
-                  td=item
-                  td 2.94%
-                  td 17.41%
-                  td 7.88%
-                  td 4.55
-                  td 0.97
-                  td 1.28
-                  td(style="display:none;") 2005
+          .table-responsive
+            table.table#filter-year
+              thead
+                tr 
+                  th Quarter
+                  th Revenue Growth 
+                  th Gross Margin
+                  th Operating Margin
+                  th EBITDA/Net Int. Exp.
+                  th Net Debt/Equity
+                  th Current Ratio
+                  th(style="display:none;") Year
+              tbody
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2000
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2001
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2002
+                each item in ['Q1','Q2','Q4443','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2003
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2004
+                each item in ['Q1','Q2','Q3','Q4']
+                  tr
+                    td=item
+                    td 2.94%
+                    td 17.41%
+                    td 7.88%
+                    td 4.55
+                    td 0.97
+                    td 1.28
+                    td(style="display:none;") 2005
 
   .gray-bg.padding-large
     .container.annnual-report
