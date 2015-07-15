@@ -54,22 +54,30 @@ block content
     
     .gray-bg.padding-large.hidden-sm.hidden-md.hidden-lg
       .container
-        #about-us-tab-mobile.dl-menuwrapper
-          button.dl-trigger Open Menu
-          ul.dl-menu
-            li
-              a(href='#' ke="#distribution-mobile") Our Business
-              ul.dl-submenu
-                li
-                  a(href='#' ke="#distribution-mobile") Distribution 
-                li
-                  a(href='#' ke="#manufacturing-mobile") Manufacturing
-                li
-                  a(href='#' ke="#services-mobile") Services 
-            li 
-              a(href="#" ke="#ourhistory-mobile") Our History
-            li 
-              a(href="#" ke="#companyprofile-mobile") Company Profile
+        //- #about-us-tab-mobile.dl-menuwrapper
+        //-   button.dl-trigger Open Menu
+        //-   ul.dl-menu
+        //-     li
+        //-       a(href='#' ke="#distribution-mobile") Our Business
+        //-       ul.dl-submenu
+        //-         li
+        //-           a(href='#' ke="#distribution-mobile") Distribution 
+        //-         li
+        //-           a(href='#' ke="#manufacturing-mobile") Manufacturing
+        //-         li
+        //-           a(href='#' ke="#services-mobile") Services 
+        //-     li 
+        //-       a(href="#" ke="#ourhistory-mobile") Our History
+        //-     li 
+        //-       a(href="#" ke="#companyprofile-mobile") Company Profile
+        select.form-control#about-us-tab-mobile
+          optgroup(label="Our Business")
+            option(value="distribution" ke="#distribution-mobile") Distribution
+            option(value="manufacturing" ke="#manufacturing-mobile") Manufacturing
+            option(value="services" ke="#services-mobile") Services
+          option(value="ourhistory" ke="#ourhistory-mobile") Our History
+          option(value="companyprofile" ke="#companyprofile-mobile") Company Profile
+
 
         .padding-large.about-us-tab-mobile-content
           .tab-in-mobile#distribution-mobile(style="")
@@ -191,13 +199,9 @@ block script
       $(".fancybox").fancybox({
         maxWidth  : 800,
         maxHeight : 600,
-        //fitToView : true,
         width       : 800,
         height      : 450,
         aspectRatio : true,
-        //autoSize  : true,
-        //autoHeight: true,
-        //autoWidth: true,
         closeClick  : false,
         padding: 0,
         loop: false,
@@ -207,18 +211,16 @@ block script
         }
       });
 
-      $( '#about-us-tab-mobile' ).dlmenu();
-      $( '#about-us-tab-mobile a' ).click(function(e){
-        e.preventDefault();
-        var ke = $(this).attr('ke');
+      /*$( '#about-us-tab-mobile' ).dlmenu();*/
+      $( '#about-us-tab-mobile' ).change(function(){
+        // e.preventDefault();
+        var ke = $('option:selected').attr('ke');
         $('.tab-in-mobile').fadeOut('fast', function(){
-          $(ke).fadeIn('fast');
+          $(ke).show();
         });
       });
 
       var ourBusinessTab = getCookie('aboutus');
-
-      console.log(ourBusinessTab);
 
       $('#about-us-tab a[href="#ourbusiness"]').tab('show');
       $('#about-us-tab a[href="#'+ourBusinessTab+'"]').tab('show');
@@ -226,7 +228,8 @@ block script
       $('.about-us-tab-mobile-content .tab-in-mobile').hide();
       $('.about-us-tab-mobile-content #'+ourBusinessTab+'-mobile').show();
 
-      // 
+      $('#about-us-tab-mobile option[ke="#'+ourBusinessTab+'-mobile"]').attr('selected','selected');
+
       if(getCookie('aboutus') == '') {
         $('#distribution-mobile').show();
       }

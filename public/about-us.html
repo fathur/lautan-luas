@@ -664,20 +664,15 @@
       </div>
       <div class="gray-bg padding-large hidden-sm hidden-md hidden-lg">
         <div class="container">
-          <div id="about-us-tab-mobile" class="dl-menuwrapper">
-            <button class="dl-trigger">Open Menu</button>
-            <ul class="dl-menu">
-              <li><a href="#" ke="#distribution-mobile">Our Business</a>
-                <ul class="dl-submenu">
-                  <li><a href="#" ke="#distribution-mobile">Distribution </a></li>
-                  <li><a href="#" ke="#manufacturing-mobile">Manufacturing</a></li>
-                  <li><a href="#" ke="#services-mobile">Services </a></li>
-                </ul>
-              </li>
-              <li> <a href="#" ke="#ourhistory-mobile">Our History</a></li>
-              <li> <a href="#" ke="#companyprofile-mobile">Company Profile</a></li>
-            </ul>
-          </div>
+          <select id="about-us-tab-mobile" class="form-control">
+            <optgroup label="Our Business">
+              <option value="distribution" ke="#distribution-mobile">Distribution</option>
+              <option value="manufacturing" ke="#manufacturing-mobile">Manufacturing</option>
+              <option value="services" ke="#services-mobile">Services</option>
+            </optgroup>
+            <option value="ourhistory" ke="#ourhistory-mobile">Our History</option>
+            <option value="companyprofile" ke="#companyprofile-mobile">Company Profile</option>
+          </select>
           <div class="padding-large about-us-tab-mobile-content">
             <div id="distribution-mobile" style="" class="tab-in-mobile">
               <div class="row distribution">
@@ -1410,7 +1405,6 @@
     <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
     <script>
       $('#search-menu').click(function(e){
         var x = 0;
@@ -1465,13 +1459,9 @@
         $(".fancybox").fancybox({
           maxWidth  : 800,
           maxHeight : 600,
-          //fitToView : true,
           width       : 800,
           height      : 450,
           aspectRatio : true,
-          //autoSize  : true,
-          //autoHeight: true,
-          //autoWidth: true,
           closeClick  : false,
           padding: 0,
           loop: false,
@@ -1481,18 +1471,16 @@
           }
         });
       
-        $( '#about-us-tab-mobile' ).dlmenu();
-        $( '#about-us-tab-mobile a' ).click(function(e){
-          e.preventDefault();
-          var ke = $(this).attr('ke');
+        /*$( '#about-us-tab-mobile' ).dlmenu();*/
+        $( '#about-us-tab-mobile' ).change(function(){
+          // e.preventDefault();
+          var ke = $('option:selected').attr('ke');
           $('.tab-in-mobile').fadeOut('fast', function(){
-            $(ke).fadeIn('fast');
+            $(ke).show();
           });
         });
       
         var ourBusinessTab = getCookie('aboutus');
-      
-        console.log(ourBusinessTab);
       
         $('#about-us-tab a[href="#ourbusiness"]').tab('show');
         $('#about-us-tab a[href="#'+ourBusinessTab+'"]').tab('show');
@@ -1500,7 +1488,8 @@
         $('.about-us-tab-mobile-content .tab-in-mobile').hide();
         $('.about-us-tab-mobile-content #'+ourBusinessTab+'-mobile').show();
       
-        // 
+        $('#about-us-tab-mobile option[ke="#'+ourBusinessTab+'-mobile"]').attr('selected','selected');
+      
         if(getCookie('aboutus') == '') {
           $('#distribution-mobile').show();
         }
