@@ -162,11 +162,11 @@ block content
         .col-sm-12
           h5 Services
       .row.content
-        each item in [1,2,3,4]
+        each item in ['Lab Services and RnD','Integrated Supply Chain','IT Solutions','Water Treatment']
           .col-md-3.col-xs-6.item
             a(href="industries--service-single.html")
               .text-wrapper
-              .text Lab Services and RnD
+              .text= item
               img.img-responsive(src="images/1965.png")
        
 
