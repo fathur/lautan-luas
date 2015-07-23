@@ -9690,6 +9690,9 @@ table,
   /* width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed; */
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 table > thead > tr > th,
 table > thead > tr > td,
@@ -9704,6 +9707,35 @@ table > tfoot > tr > td,
 .table > tfoot > tr > th,
 .table > tfoot > tr > td {
   padding: 30px 8px;
+}
+table > thead > tr > th a,
+table > thead > tr > td a,
+table > tbody > tr > th a,
+table > tbody > tr > td a,
+table > tfoot > tr > th a,
+table > tfoot > tr > td a,
+.table > thead > tr > th a,
+.table > thead > tr > td a,
+.table > tbody > tr > th a,
+.table > tbody > tr > td a,
+.table > tfoot > tr > th a,
+.table > tfoot > tr > td a {
+  color: #707070;
+}
+table > thead > tr > th a:hover,
+table > thead > tr > td a:hover,
+table > tbody > tr > th a:hover,
+table > tbody > tr > td a:hover,
+table > tfoot > tr > th a:hover,
+table > tfoot > tr > td a:hover,
+.table > thead > tr > th a:hover,
+.table > thead > tr > td a:hover,
+.table > tbody > tr > th a:hover,
+.table > tbody > tr > td a:hover,
+.table > tfoot > tr > th a:hover,
+.table > tfoot > tr > td a:hover {
+  text-decoration: none;
+  color: rgba(112, 112, 112, 0.5);
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -11196,6 +11228,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .logged .forgot-password {
   margin: 0 20px;
   display: inline-block;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 .logged .email {
   color: #010E35;

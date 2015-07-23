@@ -29,7 +29,7 @@ block content
       .row
         .tabs-left
           .col-xs-3
-            ul.nav.nav-tabs(role='tablist')
+            ul.nav.nav-tabs.tab-apply(role='tablist')
               li.active(role='presentation')
                 a(href='#personal-information', aria-controls='personal-information', role='tab', data-toggle='tab') 1. Personal Information
               li(role='presentation')
@@ -53,3 +53,35 @@ block content
               include ./template/careers/courses.jade
             #upload-files.tab-pane.fade(role='tabpanel')
               include ./template/careers/upload-files.jade
+
+block script
+  script(type="text/javascript").
+
+    var $tabs = $('.tab-apply > li');
+    var offsetTop = $('.steps-apply').offset().top;
+
+    $('.next-apply-steps').on('click', function(e){
+      
+      e.preventDefault();
+      
+      $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show')
+        .on('shown.bs.tab', function (e) {
+          
+          $('html,body').animate({ scrollTop: offsetTop }, 'slow');
+      });
+
+
+    });
+
+    $('.prev-apply-steps').on('click', function(e){
+
+      e.preventDefault();
+      
+      $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show')
+        .on('shown.bs.tab', function (e) {
+
+          $('html,body').animate({ scrollTop: offsetTop }, 'slow');
+      });
+
+
+    });

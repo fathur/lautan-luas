@@ -112,6 +112,10 @@ table,
   /* width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed; */
+  font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+	font-size: $font-size-base;
+
   // Cells
   > thead,
   > tbody,
@@ -123,6 +127,15 @@ table,
       > th,
       > td {
         padding: 30px 8px;
+
+        a {
+        	color: $dark_gray;
+
+        	&:hover {
+        		text-decoration: none;
+        		color: rgba(112,112,112,0.5);
+        	}
+        }
       }
 
       > th {

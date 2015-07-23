@@ -241,6 +241,9 @@
 	.forgot-password {
 		margin: 0 20px;
 		display: inline-block;
+		font-weight: 400;
+		font-family: 'PT Sans', sans-serif;
+		font-size: $font-size-base;
 	}
 
 	.email {

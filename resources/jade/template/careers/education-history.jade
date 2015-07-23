@@ -35,7 +35,7 @@
         //-       each item in ['Year',1980,1981]
         //-         option= item
         .col-sm-2.label-input
-          | Start /  End year:
+          | Year:
         .form-group.col-sm-5
           select#start-school.form-control
             each item in ['Start Year',1980,1981]
@@ -106,6 +106,6 @@
               i.fa.fa-trash-o
               | Delete
   .col-sm-12.btn-action
-    a.btn.btn-blue.pull-right(href="#") Next
+    a.btn.btn-blue.pull-right.next-apply-steps(href="javascript:") Next
     button.btn.btn-transparant.pull-right(type="submit") Save
-    a.btn.btn-transparant.pull-right(href="#") Back
+    a.btn.btn-transparant.pull-right.prev-apply-steps(href="javascript:") Back

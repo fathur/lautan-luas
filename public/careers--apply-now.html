@@ -79,7 +79,7 @@
         <div class="row">
           <div class="tabs-left">
             <div class="col-xs-3">
-              <ul role="tablist" class="nav nav-tabs">
+              <ul role="tablist" class="nav nav-tabs tab-apply">
                 <li role="presentation" class="active"><a href="#personal-information" aria-controls="personal-information" role="tab" data-toggle="tab">1. Personal Information</a></li>
                 <li role="presentation"><a href="#education-history" aria-controls="education-history" role="tab" data-toggle="tab">2. Education History</a></li>
                 <li role="presentation"><a href="#working-experience" aria-controls="working-experience" role="tab" data-toggle="tab">3. Working Experience</a></li>
@@ -449,7 +449,7 @@
                         </div>
                       </div>
                     </form>
-                    <div class="btn-action padding-top-small"><a href="#" class="btn btn-blue pull-right">Next</a>
+                    <div class="btn-action padding-top-small"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
                       <button type="submit" class="btn btn-transparant pull-right">Save</button>
                     </div>
                   </div>
@@ -483,7 +483,7 @@
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-sm-2 label-input">Start /  End year:</div>
+                        <div class="col-sm-2 label-input">Year:</div>
                         <div class="form-group col-sm-5">
                           <select id="start-school" class="form-control">
                             <option>Start Year</option>
@@ -557,8 +557,8 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
-                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="javascript:" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="javascript:" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
                   </div>
                 </div>
               </div>
@@ -688,8 +688,8 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
-                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
                   </div>
                 </div>
               </div>
@@ -758,8 +758,8 @@
                       </tbody>
                     </table>
                   </div>
-                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right">Next</a>
-                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                  <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
                   </div>
                 </div>
               </div>
@@ -798,7 +798,7 @@
                     </div>
                   </div>
                   <div class="col-sm-12 btn-action padding-top-large"><a href="#" class="btn btn-blue pull-right">Finish</a>
-                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right">Back</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
                   </div>
                 </div>
               </div>
@@ -931,6 +931,36 @@
       //- });
       
       
+    </script>
+    <script type="text/javascript">
+      var $tabs = $('.tab-apply > li');
+      var offsetTop = $('.steps-apply').offset().top;
+      
+      $('.next-apply-steps').on('click', function(e){
+        
+        e.preventDefault();
+        
+        $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show')
+          .on('shown.bs.tab', function (e) {
+            
+            $('html,body').animate({ scrollTop: offsetTop }, 'slow');
+        });
+      
+      
+      });
+      
+      $('.prev-apply-steps').on('click', function(e){
+      
+        e.preventDefault();
+        
+        $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show')
+          .on('shown.bs.tab', function (e) {
+      
+            $('html,body').animate({ scrollTop: offsetTop }, 'slow');
+        });
+      
+      
+      });
     </script>
   </body>
 </html>
