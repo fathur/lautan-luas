@@ -148,9 +148,20 @@ $box_industries_phone_height: 135px;
 
 	.content {
 
-		.row:not(:last-child) {
-			.item {
-				margin-bottom: 20px;
+		@media screen and (max-width: 767px) {
+			.row {
+				.item {
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		@media (min-width: 768px) {
+
+			.row:not(:last-child) {
+				.item {
+					margin-bottom: 20px;
+				}
 			}
 		}
 	
@@ -294,5 +305,29 @@ $box_industries_phone_height: 135px;
 .media-galleries {
 	.box {
 		@include hover-box-shadow;
+	}
+
+	@media screen and (max-width: 767px) {
+		.item:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.industry-case-studies {
+		.collection {
+			.item:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.single-process {
+		h2 {
+			margin-top: 20px;
+		}
 	}
 }

@@ -11557,8 +11557,15 @@ table.table-jobs-mobile > tfoot > tr > td.subhead,
   }
 }
 
-.processes .content .row:not(:last-child) .item {
-  margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+  .processes .content .row .item {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .processes .content .row:not(:last-child) .item {
+    margin-bottom: 20px;
+  }
 }
 .processes .content .text-wrapper {
   position: absolute;
@@ -11676,7 +11683,22 @@ table.table-jobs-mobile > tfoot > tr > td.subhead,
 .media-galleries .box:hover, .media-galleries .box:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
 }
+@media screen and (max-width: 767px) {
+  .media-galleries .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .industry-case-studies .collection .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .single-process h2 {
+    margin-top: 20px;
+  }
+}
 .investor-relation-submenu {
   border-bottom: 1px solid #bebebe;
 }
@@ -12100,8 +12122,16 @@ table.table-jobs-mobile > tfoot > tr > td.subhead,
 .information-report .item .box .right > img {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.49);
 }
-.information-report .item .box .left {
-  height: 210px;
+@media screen and (max-width: 767px) {
+  .information-report .item .box .right .date {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .information-report .item .box .left {
+    height: 210px;
+  }
 }
 .information-report .item .box .left h2 {
   margin-top: 0px;
@@ -12119,6 +12149,11 @@ table.table-jobs-mobile > tfoot > tr > td.subhead,
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-size: 10px;
+}
+@media screen and (max-width: 767px) {
+  .information-report .item .box .left > .excerpt {
+    padding-top: 20px;
+  }
 }
 .information-report .item .box .left > .download {
   position: absolute;

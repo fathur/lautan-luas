@@ -65,7 +65,7 @@ block content
               p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
               date May 15, 2015
 
-  .gray-blue-bg.padding-large
+  .gray-blue-bg.padding-large.industry-case-studies
     .container.thumbmail-preview-one
       .row
         .col-xs-6
@@ -73,8 +73,8 @@ block content
         .col-xs-6.text-right
           a.view-all(href="industries--case-studies--archives.html") View all 
             i.fa.fa-angle-right
-      .row
-        .col-xs-3
+      .row.collection
+        .col-sm-3.item
           .box
             .image
               a(href="article-single.html")
@@ -82,7 +82,7 @@ block content
             .text 
               h3 
                 a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
-        .col-xs-3
+        .col-sm-3.item
           .box
             .image
               a(href="article-single.html")
@@ -90,7 +90,7 @@ block content
             .text 
               h3 
                 a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
-        .col-xs-3
+        .col-sm-3.item
           .box
             .image
               a(href="article-single.html")
@@ -98,7 +98,7 @@ block content
             .text 
               h3 
                 a(href="article-single.html") Lorem ipsum dolor sit amet consectetur
-        .col-xs-3
+        .col-sm-3.item
           .box
             .image
               a(href="article-single.html")
@@ -117,7 +117,7 @@ block content
             i.fa.fa-angle-right
       .row.media-galleries
         each item in [1,2,3,4]
-          .col-sm-3
+          .col-sm-3.item
             .box
               a.gallery(href="images/2003.jpg" title="(Eric Goncalves (cathing up again!))")
                 img.img-responsive(src="images/2003.jpg" alt="")

@@ -144,11 +144,16 @@ block content
           .row
             .box
               .col-xs-12.col-sm-3.col-md-5.right
+                .visible-xs-block
+                  h3 Investor Newsletter
+                  span.date May 2013
                 img.img-responsive.center-block(src="images/annual-report-1.png")
               .col-xs-12.col-sm-9.col-md-7.left
-                h3 Annual Report
-                span.date 2013
-                p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                .hidden-xs
+                  h3 Annual Report
+                  span.date 2013
+                .excerpt
+                  p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
                 .download 
                   a.blue.download(href="#") Download PDF
                   span |
@@ -159,11 +164,21 @@ block content
           .row
             .box
               .col-xs-12.col-sm-3.col-md-5.right
+
+                .visible-xs-block
+                  // Title area untuk mobile
+                  h3 Investor Newsletter
+                  span.date May 2013
+
                 img.img-responsive.center-block(src="images/investor-relations-1.jpg")
               .col-xs-12.col-sm-9.col-md-7.left
-                h3 Investor Newsletter
-                span.date May 2013
-                p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                .hidden-xs
+                  // Title area untuk desktop
+                  // Sama dengan yang diatas
+                  h3 Investor Newsletter
+                  span.date May 2013
+                .excerpt
+                  p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
                 .download 
                   a.blue.download(href="#") Download PDF
                   span |
