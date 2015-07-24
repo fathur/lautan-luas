@@ -9694,19 +9694,21 @@ table,
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
 }
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td,
-.table > thead > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > th,
-.table > tbody > tr > td,
-.table > tfoot > tr > th,
-.table > tfoot > tr > td {
-  padding: 30px 8px;
+@media (min-width: 768px) {
+  table > thead > tr > th,
+  table > thead > tr > td,
+  table > tbody > tr > th,
+  table > tbody > tr > td,
+  table > tfoot > tr > th,
+  table > tfoot > tr > td,
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    padding: 30px 8px;
+  }
 }
 table > thead > tr > th a,
 table > thead > tr > td a,
@@ -11242,6 +11244,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding: 30px 0;
   border-bottom: 1px solid #BEBEBE;
 }
+@media screen and (max-width: 767px) {
+  .apply-now.upload-files .btn-upload {
+    margin-bottom: 20px;
+  }
+}
 .apply-now .table td.action > a {
   display: block;
   margin-bottom: 6px;
@@ -11253,7 +11260,66 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .job-opportunities .title .form-group {
   margin-right: 10px;
 }
+@media screen and (max-width: 767px) {
+  .job-opportunities .search-all {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .job-opportunities .search-all {
+    text-align: right;
+  }
+}
 
+table.table-jobs-mobile,
+.table.table-jobs-mobile {
+  width: 100%;
+  margin-bottom: 50px;
+}
+table.table-jobs-mobile > thead > tr,
+table.table-jobs-mobile > tbody > tr,
+table.table-jobs-mobile > tfoot > tr,
+.table.table-jobs-mobile > thead > tr,
+.table.table-jobs-mobile > tbody > tr,
+.table.table-jobs-mobile > tfoot > tr {
+  border-bottom: 1px solid #BEBEBE;
+}
+table.table-jobs-mobile > thead > tr > th,
+table.table-jobs-mobile > thead > tr > td,
+table.table-jobs-mobile > tbody > tr > th,
+table.table-jobs-mobile > tbody > tr > td,
+table.table-jobs-mobile > tfoot > tr > th,
+table.table-jobs-mobile > tfoot > tr > td,
+.table.table-jobs-mobile > thead > tr > th,
+.table.table-jobs-mobile > thead > tr > td,
+.table.table-jobs-mobile > tbody > tr > th,
+.table.table-jobs-mobile > tbody > tr > td,
+.table.table-jobs-mobile > tfoot > tr > th,
+.table.table-jobs-mobile > tfoot > tr > td {
+  padding: 8px;
+}
+table.table-jobs-mobile > thead > tr > th.subhead,
+table.table-jobs-mobile > thead > tr > td.subhead,
+table.table-jobs-mobile > tbody > tr > th.subhead,
+table.table-jobs-mobile > tbody > tr > td.subhead,
+table.table-jobs-mobile > tfoot > tr > th.subhead,
+table.table-jobs-mobile > tfoot > tr > td.subhead,
+.table.table-jobs-mobile > thead > tr > th.subhead,
+.table.table-jobs-mobile > thead > tr > td.subhead,
+.table.table-jobs-mobile > tbody > tr > th.subhead,
+.table.table-jobs-mobile > tbody > tr > td.subhead,
+.table.table-jobs-mobile > tfoot > tr > th.subhead,
+.table.table-jobs-mobile > tfoot > tr > td.subhead {
+  color: #032077;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .logged .row > div:first-child {
+    margin-bottom: 50px;
+  }
+}
 .logged .forgot-password {
   margin: 0 20px;
   display: inline-block;
@@ -11274,12 +11340,6 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   margin-bottom: 10px;
 }
 
-.map {
-  height: 500px;
-}
-.map .gmap {
-  height: 500px;
-}
 .map .contact-info {
   position: relative;
   margin-left: auto;
@@ -11293,6 +11353,22 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .map {
+    height: 300px;
+  }
+  .map .gmap {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .map {
+    height: 500px;
+  }
+  .map .gmap {
+    height: 500px;
+  }
+}
 .contact-form h1 {
   margin-bottom: 30px;
 }
@@ -11845,6 +11921,7 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .event.single .attribute .icon {
   font-size: 40px;
   color: #032077;
+  margin-top: -10px;
 }
 .event.single .attribute .txt {
   padding-right: 50px;

@@ -209,6 +209,13 @@
 			padding: 30px 0;
 			border-bottom: 1px solid $gray;
 		}
+
+		@media screen and (max-width: 767px) {
+			
+			.btn-upload {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	.table {
@@ -235,9 +242,67 @@
 	.content {
 
 	}
+
+	@media screen and (max-width: 767px) {
+
+		.search-all {
+			text-align: center;
+			padding-bottom: 30px;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.search-all {
+			text-align: right;
+		}
+	}
+	
+}
+
+table,
+.table {
+	
+	&.table-jobs-mobile {
+
+		width: 100%;
+		margin-bottom: 50px;
+	
+		> thead,
+		> tbody,
+		> tfoot {
+			
+
+			> tr {
+				
+				border-bottom: 1px solid $gray;
+
+				> th,
+      			> td {
+      				padding: 8px;
+      				// width: 50%;
+
+      				&.subhead {
+      					color: $light_blue;
+      					font-weight: bold;
+      				}
+      			}
+			}
+		}
+	}
 }
 
 .logged {
+
+	// batas antara login dan signup di mobile
+	@media screen and (max-width: 767px) {
+
+		.row {
+			> div:first-child {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
 	.forgot-password {
 		margin: 0 20px;
 		display: inline-block;

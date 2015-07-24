@@ -1,9 +1,4 @@
 .map {
-	height: 500px;
-
-	.gmap {
-		height: 500px;
-	}
 
 	.contact-info {
 		position: relative;
@@ -16,6 +11,26 @@
 			bottom: 80px;
 			background-color: rgba(255, 255, 255, 0.85);
 			padding: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.map {
+		height: 300px;
+
+		.gmap {
+			height: 300px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.map {
+		height: 500px;
+
+		.gmap {
+			height: 500px;
 		}
 	}
 }

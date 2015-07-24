@@ -23,7 +23,7 @@ block content
       .row.title
         .col-md-3
           h5 Job Opportunities
-        .col-md-9.text-right
+        .col-md-9.search-all
           form.form-inline
             .form-group
               input.form-control(placeholder="Enter search term")
@@ -42,7 +42,24 @@ block content
             button.btn.btn-transparant(type="submit") Search
       .row.content
         .col-sm-12
-          table.table.table-responsive
+          // Desktop and table version
+          .visible-xs-block
+            each item in [1,2,3,4,5,6,7,8,9,10]
+              table.table-jobs-mobile
+                thead
+                  tr
+                    th(colspan="2") 
+                      a.blue(href="careers--view-all-jobs--single.html") Accounting Manager
+                tbody
+                  tr
+                    td.subhead Functional area
+                    td Accounting
+                  tr
+                    td.subhead Location
+                    td Jakarta, Indonesia
+
+          // Mobile version
+          table.table.table-responsive.hidden-xs
             thead
               tr 
                 th Job title

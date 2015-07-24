@@ -116,6 +116,7 @@ table,
 	font-family: 'PT Sans', sans-serif;
 	font-size: $font-size-base;
 
+  
   // Cells
   > thead,
   > tbody,
@@ -126,7 +127,10 @@ table,
 
       > th,
       > td {
-        padding: 30px 8px;
+
+      	@media (min-width: 768px) {
+        	padding: 30px 8px;
+      	}
 
         a {
         	color: $dark_gray;
