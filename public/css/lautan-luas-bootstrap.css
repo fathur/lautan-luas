@@ -9871,6 +9871,14 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .carousel-control.right, .carousel-control.left {
   background-image: none;
 }
+@media screen and (max-width: 767px) {
+  .carousel-control.right {
+    right: 10px;
+  }
+  .carousel-control.left {
+    left: 10px;
+  }
+}
 
 /**
  * Main Global style
@@ -10003,19 +10011,19 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   background-image: url("../images/chemical-plant-web.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media screen and (max-width: 767px) {
   .hero {
     height: 200px;
-    background-position: 50% -100px;
+    background-attachment: scroll;
   }
 }
 @media (min-width: 768px) {
   .hero {
     height: 380px;
     background-position: 50% 50%;
+    background-attachment: fixed;
   }
 }
 .breadcrumb-wrapper {
@@ -10095,6 +10103,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .pagination > .active > a {
   background-color: #032077;
+}
+
+.remove-col-padding {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .home-image {
@@ -10516,6 +10529,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border-bottom: 1px solid #BEBEBE;
 }
 
+.about-us-tab-mobile-content {
+  padding-top: 30px;
+}
+
 .tabs-left .nav-tabs {
   border-bottom: 0;
   float: left;
@@ -10555,9 +10572,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   font-weight: bold;
 }
 
-.history .carousel {
-  padding-left: 50px;
-  padding-right: 50px;
+@media (min-width: 768px) {
+  .history .carousel {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .history .carousel-inner .year > h1 {
   color: #032077;
@@ -10567,9 +10586,13 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 @media screen and (max-width: 767px) {
   .history .carousel-inner .year > h1 {
     margin-top: 0px;
+    padding-top: 30px;
   }
   .history .carousel-inner .description {
     margin-top: 0px;
+  }
+  .history .carousel-inner .description p {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -10595,8 +10618,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   color: #707070;
 }
 
-.company-profile {
-  padding: 0 77px;
+@media (min-width: 768px) {
+  .company-profile {
+    padding: 0 77px;
+  }
 }
 .company-profile h3 {
   margin-top: 0px;
@@ -10612,16 +10637,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 @media screen and (max-width: 767px) {
   .company-profile .download {
+    display: block;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .company-profile {
-    text-align: center;
-  }
-}
 .distribution .panel {
   background-color: #FAFAFA;
   border-top: none;
@@ -11028,6 +11049,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   border-bottom: 1px solid #ebebeb;
   border-top: 0px solid #FFFFFF;
 }
+.board-of .board-row > .description {
+  padding-bottom: 30px;
+}
 .board-of .board-row > .description h2 {
   margin-top: 30px;
   margin-bottom: 0px;
@@ -11045,6 +11069,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   padding: 55px 0 0 0;
 }
 
+@media screen and (max-width: 767px) {
+  .board-single .description h2 {
+    margin-top: 15px;
+  }
+}
 .board-single .description h2 {
   margin-bottom: 0px;
 }

@@ -315,6 +315,17 @@ a.btn-transparant {
 		background-image: none;
 	}
 
+	@media screen and (max-width: 767px) {
+
+		&.right {
+			right: 10px;
+		}
+
+		&.left {
+			left: 10px;
+		}
+	}
+
 }
 
 /**
@@ -468,14 +479,13 @@ a.btn-transparant {
 	background-image: url("../images/chemical-plant-web.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	
 }
 
 @media screen and (max-width: 767px) {
 	.hero {
 		height: 200px;
-		background-position: 50% -100px;
-
+		background-attachment: scroll;
 	}
 }
 
@@ -483,7 +493,7 @@ a.btn-transparant {
 	.hero {
 		height: 380px;
 		background-position: 50% 50%;
-
+		background-attachment: fixed;
 	}
 }
 
@@ -573,4 +583,8 @@ a.btn-transparant {
 			background-color: $light_blue;
 		}
 	}
+}
+
+.remove-col-padding {
+	@include remove-col-padding();
 }

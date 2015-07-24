@@ -60,6 +60,10 @@
 	border-bottom: 1px solid $gray;
 }
 
+.about-us-tab-mobile-content {
+	padding-top: 30px;
+}
+
 .tabs-left .nav-tabs {
 	border-bottom: 0;
 	float: left;
@@ -110,9 +114,11 @@
 
 .history {
 
-	.carousel {
-		padding-left: 50px;
-		padding-right: 50px;
+	@media (min-width: 768px) {
+		.carousel {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
 	}
 
 	.carousel-inner {
@@ -125,9 +131,14 @@
 		@media screen and (max-width: 767px) {
 			.year > h1 {
 				margin-top: 0px;
+				padding-top: 30px;
 			}
 			.description {
 				margin-top: 0px;
+
+				p {
+					margin-bottom: 0px;
+				}
 			}	
 		}
 
@@ -166,7 +177,10 @@
 }
 
 .company-profile {
-	padding: 0 77px;
+
+	@media (min-width: 768px) {
+		padding: 0 77px;
+	}
 
 	h3 {
 		margin-top: 0px;
@@ -179,15 +193,16 @@
 
 	@media screen and (max-width: 767px) {
 		.download {
+			display: block;
 			text-align: center;
-			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 	}
 }
 
 @media screen and (max-width: 767px) {
 	.company-profile {
-		text-align: center;
+		// text-align: center;
 	}
 }
 
@@ -713,6 +728,7 @@
 		}
 
 		& > .description {
+			padding-bottom: 30px;
 			h2 {
 				margin-top: 30px;
 				margin-bottom: 0px;
@@ -737,9 +753,16 @@
 
 .board-single {
 	.description {
+		@media screen and (max-width: 767px) {
+			h2 {
+				margin-top: 15px;
+			}
+		}
+
 		h2 {
 			margin-bottom: 0px;
 		}
+
 		.position {
 			color: $black;
 			display: inline-block;

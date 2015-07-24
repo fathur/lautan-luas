@@ -4,7 +4,8 @@
       .pagination
         li
           a(href="#" aria-label="Previous")
-            span(aria-hidden="true") &laquo; Previous Page
+            span(aria-hidden="true") &laquo; 
+              span.hidden-xs Previous Page
         each item in [1,2,3,4]
           li
             a(href="#")= item
@@ -12,4 +13,6 @@
           a(href="#") 5
         li.disabled
           a(href="#" aria-label="Next")
-            span(aria-hidden="true") Next Page &raquo;
+            span(aria-hidden="true") 
+              span.hidden-xs Next Page 
+              | &raquo;
