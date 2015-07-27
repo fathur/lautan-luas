@@ -210,14 +210,23 @@ block content
                         a(href="#") Auditor Report 
                           =item
               #yearly.tab-pane.fade(role="tabpanel")
-                .row
-                  each item in [2006,2007,2008,2009]
-                    .col-sm-3.text-center
-                      a(href="#")
-                        img.img-responsive.center-block(src="images/annual-report-1.png")
-                      .caption 
-                        a(href="#") Auditor Report 
-                          =item
+                
+                .row.padding-small
+                  .col-sm-offset-10.col-sm-2
+                    select.form-control.pull-right#year-auditor
+                      each item in [2006,2007,2008,2009]
+                        option(value= item)= item
+                
+                each item in [2006,2007,2008,2009]
+                  div.auditor-report-ir(id="#{item}")
+                    .row
+                      each ar in [1,2,3,4]
+                        .col-sm-3.text-center
+                          a(href="#")
+                            img.img-responsive.center-block(src="images/annual-report-1.png")
+                          .caption 
+                            a(href="#") Auditor Report #{item}
+                            
 
   include ./template/investor/bottom-contact-2g.jade
             
@@ -244,6 +253,17 @@ block script
 
       $selectYear.change( function() { 
         oTable.fnFilter( $(this).val() ); 
+      });
+
+
+
+      var irar = $('#year-auditor :selected').val();
+      $('#' + irar).show();
+
+      $('#year-auditor').on('change', function() {
+        var y = $('option:selected', this).val();
+        $('.auditor-report-ir').hide();
+        $('#'+y).show();
       });
     });
 

@@ -486,18 +486,78 @@
                   </div>
                 </div>
                 <div id="yearly" role="tabpanel" class="tab-pane fade">
-                  <div class="row">
-                    <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
-                      <div class="caption"> <a href="#">Auditor Report 2006</a></div>
+                  <div class="row padding-small">
+                    <div class="col-sm-offset-10 col-sm-2">
+                      <select id="year-auditor" class="form-control pull-right">
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                      </select>
                     </div>
-                    <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
-                      <div class="caption"> <a href="#">Auditor Report 2007</a></div>
+                  </div>
+                  <div id="2006" class="auditor-report-ir">
+                    <div class="row">
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2006</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2006</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2006</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2006</a></div>
+                      </div>
                     </div>
-                    <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
-                      <div class="caption"> <a href="#">Auditor Report 2008</a></div>
+                  </div>
+                  <div id="2007" class="auditor-report-ir">
+                    <div class="row">
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2007</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2007</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2007</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2007</a></div>
+                      </div>
                     </div>
-                    <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
-                      <div class="caption"> <a href="#">Auditor Report 2009</a></div>
+                  </div>
+                  <div id="2008" class="auditor-report-ir">
+                    <div class="row">
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2008</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2008</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2008</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2008</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="2009" class="auditor-report-ir">
+                    <div class="row">
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2009</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2009</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2009</a></div>
+                      </div>
+                      <div class="col-sm-3 text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
+                        <div class="caption"> <a href="#">Auditor Report 2009</a></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -659,6 +719,17 @@
       
         $selectYear.change( function() { 
           oTable.fnFilter( $(this).val() ); 
+        });
+      
+      
+      
+        var irar = $('#year-auditor :selected').val();
+        $('#' + irar).show();
+      
+        $('#year-auditor').on('change', function() {
+          var y = $('option:selected', this).val();
+          $('.auditor-report-ir').hide();
+          $('#'+y).show();
         });
       });
       

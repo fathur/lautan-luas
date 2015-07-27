@@ -12359,6 +12359,10 @@ table .subhead,
   font-family: 'PT Sans', sans-serif;
 }
 
+.auditor-report-ir {
+  display: none;
+}
+
 /* @font-face {
 	font-family: icomoon;
 	src: url(../fonts/icomoon.eot);
