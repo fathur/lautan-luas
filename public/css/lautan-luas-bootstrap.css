@@ -9752,6 +9752,11 @@ table.dataTable.no-footer,
   border-bottom: 1px solid #FAFAFA;
 }
 
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: 0px solid #FFF;
+  }
+}
 .breadcrumb {
   padding: 0px;
   font-size: 12px;
@@ -10086,6 +10091,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 @media screen and (max-width: 767px) {
   .form-search-menu {
     margin: 20px 15px 10px 15px;
+  }
+  .form-search-menu .form-control-feedback {
+    right: 15px;
   }
 }
 .pagination {
@@ -11277,45 +11285,35 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   }
 }
 
-table.table-jobs-mobile,
-.table.table-jobs-mobile {
+table.table-mobile,
+.table.table-mobile {
   width: 100%;
   margin-bottom: 50px;
 }
-table.table-jobs-mobile > thead > tr,
-table.table-jobs-mobile > tbody > tr,
-table.table-jobs-mobile > tfoot > tr,
-.table.table-jobs-mobile > thead > tr,
-.table.table-jobs-mobile > tbody > tr,
-.table.table-jobs-mobile > tfoot > tr {
+table.table-mobile > thead > tr,
+table.table-mobile > tbody > tr,
+table.table-mobile > tfoot > tr,
+.table.table-mobile > thead > tr,
+.table.table-mobile > tbody > tr,
+.table.table-mobile > tfoot > tr {
   border-bottom: 1px solid #BEBEBE;
 }
-table.table-jobs-mobile > thead > tr > th,
-table.table-jobs-mobile > thead > tr > td,
-table.table-jobs-mobile > tbody > tr > th,
-table.table-jobs-mobile > tbody > tr > td,
-table.table-jobs-mobile > tfoot > tr > th,
-table.table-jobs-mobile > tfoot > tr > td,
-.table.table-jobs-mobile > thead > tr > th,
-.table.table-jobs-mobile > thead > tr > td,
-.table.table-jobs-mobile > tbody > tr > th,
-.table.table-jobs-mobile > tbody > tr > td,
-.table.table-jobs-mobile > tfoot > tr > th,
-.table.table-jobs-mobile > tfoot > tr > td {
+table.table-mobile > thead > tr > th,
+table.table-mobile > thead > tr > td,
+table.table-mobile > tbody > tr > th,
+table.table-mobile > tbody > tr > td,
+table.table-mobile > tfoot > tr > th,
+table.table-mobile > tfoot > tr > td,
+.table.table-mobile > thead > tr > th,
+.table.table-mobile > thead > tr > td,
+.table.table-mobile > tbody > tr > th,
+.table.table-mobile > tbody > tr > td,
+.table.table-mobile > tfoot > tr > th,
+.table.table-mobile > tfoot > tr > td {
   padding: 8px;
 }
-table.table-jobs-mobile > thead > tr > th.subhead,
-table.table-jobs-mobile > thead > tr > td.subhead,
-table.table-jobs-mobile > tbody > tr > th.subhead,
-table.table-jobs-mobile > tbody > tr > td.subhead,
-table.table-jobs-mobile > tfoot > tr > th.subhead,
-table.table-jobs-mobile > tfoot > tr > td.subhead,
-.table.table-jobs-mobile > thead > tr > th.subhead,
-.table.table-jobs-mobile > thead > tr > td.subhead,
-.table.table-jobs-mobile > tbody > tr > th.subhead,
-.table.table-jobs-mobile > tbody > tr > td.subhead,
-.table.table-jobs-mobile > tfoot > tr > th.subhead,
-.table.table-jobs-mobile > tfoot > tr > td.subhead {
+table .subhead,
+.table .subhead {
   color: #032077;
   font-weight: bold;
 }
@@ -11345,6 +11343,12 @@ table.table-jobs-mobile > tfoot > tr > td.subhead,
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .add-steps-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 .map .contact-info {
   position: relative;
   margin-left: auto;

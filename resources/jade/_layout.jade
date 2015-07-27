@@ -54,8 +54,10 @@ html(lang='en')
                     button.btn.btn-default.btn-search#search-close(type="button")
                       i.fa.fa-times
             li.visible-xs-block
-              form.form-search-menu(action="search-results.html" method="get")
-                input.form-control(type="text" name="q" placeholder="Enter search term")
+              .form-group.has-feedback
+                form.form-search-menu(action="search-results.html" method="get")
+                  input.form-control(type="text" name="q" placeholder="Enter search term")
+                  span.glyphicon.glyphicon-search.form-control-feedback(aria-hidden="true")
                   
                   
                 //- .form-group.has-feedback

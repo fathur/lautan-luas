@@ -44,10 +44,12 @@
               </form>
             </li>
             <li class="visible-xs-block">
-              <form action="search-results.html" method="get" class="form-search-menu">
-                <input type="text" name="q" placeholder="Enter search term" class="form-control">
+              <div class="form-group has-feedback">
+                <form action="search-results.html" method="get" class="form-search-menu">
+                  <input type="text" name="q" placeholder="Enter search term" class="form-control"><span aria-hidden="true" class="glyphicon glyphicon-search form-control-feedback"></span>
+                </form>
                 
-              </form>
+              </div>
             </li>
           </ul>
         </div>
@@ -520,43 +522,150 @@
                   </div>
                 </div>
                 <div class="row apply-now education-history--collections">
-                  <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
-                    <table class="table">
-                      <thead>
-                        <tr> 
-                          <th>No</th>
-                          <th>Year</th>
-                          <th>Education Level</th>
-                          <th>School name</th>
-                          <th>Education Field </th>
-                          <th>GPA</th>
-                          <th>Status</th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr> 
-                          <td>1.</td>
-                          <td>200 - 2003 </td>
-                          <td>Senior High Sochool</td>
-                          <td>SMA 1 Klungkung</td>
-                          <td>General</td>
-                          <td>3.1</td>
-                          <td>Passsd</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                        <tr> 
-                          <td>1.</td>
-                          <td>200 - 2003 </td>
-                          <td>Senior High Sochool</td>
-                          <td>SMA 1 Klungkung</td>
-                          <td>General</td>
-                          <td>3.1</td>
-                          <td>Passsd</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"> </i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new working experience record</a>
+                    <!-- Desktop version-->
+                    <div class="table-responsive hidden-xs">
+                      <table class="table">
+                        <thead>
+                          <tr> 
+                            <th>No</th>
+                            <th>Year</th>
+                            <th>Education Level</th>
+                            <th>School name</th>
+                            <th>Education Field </th>
+                            <th>GPA</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Senior High Sochool</td>
+                            <td>SMA 1 Klungkung</td>
+                            <td>General</td>
+                            <td>3.1</td>
+                            <td>Passsd</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Senior High Sochool</td>
+                            <td>SMA 1 Klungkung</td>
+                            <td>General</td>
+                            <td>3.1</td>
+                            <td>Passsd</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Senior High Sochool</td>
+                            <td>SMA 1 Klungkung</td>
+                            <td>General</td>
+                            <td>3.1</td>
+                            <td>Passsd</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Mobile version-->
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2000-2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Education Level</td>
+                            <td>Senior High School</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">School Name </td>
+                            <td>SMA 1 Klungkung</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Education Field</td>
+                            <td>General</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">GPA</td>
+                            <td>3.1</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Status</td>
+                            <td>Pass</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2000-2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Education Level</td>
+                            <td>Senior High School</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">School Name </td>
+                            <td>SMA 1 Klungkung</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Education Field</td>
+                            <td>General</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">GPA</td>
+                            <td>3.1</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Status</td>
+                            <td>Pass</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2000-2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Education Level</td>
+                            <td>Senior High School</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">School Name </td>
+                            <td>SMA 1 Klungkung</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Education Field</td>
+                            <td>General</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">GPA</td>
+                            <td>3.1</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Status</td>
+                            <td>Pass</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="col-sm-12 btn-action"><a href="javascript:" class="btn btn-blue pull-right next-apply-steps">Next</a>
                     <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="javascript:" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
@@ -657,37 +766,118 @@
                   </div>
                 </div>
                 <div class="row apply-now education-history--collections">
-                  <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
-                    <table class="table">
-                      <thead>
-                        <tr> 
-                          <th>No</th>
-                          <th>Period</th>
-                          <th>Company Name</th>
-                          <th>Position Title </th>
-                          <th>Description </th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr> 
-                          <td>1.</td>
-                          <td>200 - 2003 </td>
-                          <td>Google</td>
-                          <td>Analyst</td>
-                          <td>Best empolyee</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                        <tr> 
-                          <td>1.</td>
-                          <td>200 - 2003 </td>
-                          <td>Google</td>
-                          <td>Analyst</td>
-                          <td>Best empolyee</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new working experience record</a>
+                    <!-- Desktop and table version-->
+                    <div class="table-responsive hidden-xs">
+                      <table class="table">
+                        <thead>
+                          <tr> 
+                            <th>No</th>
+                            <th>Period</th>
+                            <th>Company Name</th>
+                            <th>Position Title </th>
+                            <th>Description </th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Google</td>
+                            <td>Analyst</td>
+                            <td>Best empolyee</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Google</td>
+                            <td>Analyst</td>
+                            <td>Best empolyee</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>200 - 2003 </td>
+                            <td>Google</td>
+                            <td>Analyst</td>
+                            <td>Best empolyee</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Mobile version-->
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2002 -2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Company Name</td>
+                            <td>Google</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Position Title</td>
+                            <td>Analyst</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Description</td>
+                            <td>Best empolyee</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2002 -2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Company Name</td>
+                            <td>Google</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Position Title</td>
+                            <td>Analyst</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Description</td>
+                            <td>Best empolyee</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">2002 -2003</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Company Name</td>
+                            <td>Google</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Position Title</td>
+                            <td>Analyst</td>
+                          </tr>
+                          <tr> 
+                            <td class="subhead">Description</td>
+                            <td>Best empolyee</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
                     <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
@@ -730,34 +920,102 @@
                   </div>
                 </div>
                 <div class="row apply-now education-history--collections">
-                  <div class="col-sm-12"><a href="#">+ Add new training record</a>
-                    <table class="table">
-                      <thead>
-                        <tr> 
-                          <th>No</th>
-                          <th>Institution</th>
-                          <th>Location</th>
-                          <th>Year</th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr> 
-                          <td>1.</td>
-                          <td>Bina Nusantara</td>
-                          <td>Jakarta</td>
-                          <td>2015</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                        <tr> 
-                          <td>1.</td>
-                          <td>Bina Nusantara</td>
-                          <td>Jakarta</td>
-                          <td>2015</td>
-                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new training record</a>
+                    <!-- Desktop version-->
+                    <div class="table-responsive hidden-xs">
+                      <table class="table">
+                        <thead>
+                          <tr> 
+                            <th>No</th>
+                            <th>Institution</th>
+                            <th>Location</th>
+                            <th>Year</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr> 
+                            <td>1.</td>
+                            <td>Bina Nusantara</td>
+                            <td>Jakarta</td>
+                            <td>2015</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>Bina Nusantara</td>
+                            <td>Jakarta</td>
+                            <td>2015</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                          <tr> 
+                            <td>1.</td>
+                            <td>Bina Nusantara</td>
+                            <td>Jakarta</td>
+                            <td>2015</td>
+                            <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Mobile version-->
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">Bina Nusantara</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Location</td>
+                            <td>Jakarta</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Year</td>
+                            <td>2005</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">Bina Nusantara</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Location</td>
+                            <td>Jakarta</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Year</td>
+                            <td>2005</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive visible-xs-block">
+                      <table class="table table-mobile">
+                        <thead>
+                          <tr>
+                            <th colspan="2">Bina Nusantara</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="subhead">Location</td>
+                            <td>Jakarta</td>
+                          </tr>
+                          <tr>
+                            <td class="subhead">Year</td>
+                            <td>2005</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
                     <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
@@ -1249,43 +1507,150 @@
                 </div>
               </div>
               <div class="row apply-now education-history--collections">
-                <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
-                  <table class="table">
-                    <thead>
-                      <tr> 
-                        <th>No</th>
-                        <th>Year</th>
-                        <th>Education Level</th>
-                        <th>School name</th>
-                        <th>Education Field </th>
-                        <th>GPA</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr> 
-                        <td>1.</td>
-                        <td>200 - 2003 </td>
-                        <td>Senior High Sochool</td>
-                        <td>SMA 1 Klungkung</td>
-                        <td>General</td>
-                        <td>3.1</td>
-                        <td>Passsd</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                      <tr> 
-                        <td>1.</td>
-                        <td>200 - 2003 </td>
-                        <td>Senior High Sochool</td>
-                        <td>SMA 1 Klungkung</td>
-                        <td>General</td>
-                        <td>3.1</td>
-                        <td>Passsd</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"> </i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new working experience record</a>
+                  <!-- Desktop version-->
+                  <div class="table-responsive hidden-xs">
+                    <table class="table">
+                      <thead>
+                        <tr> 
+                          <th>No</th>
+                          <th>Year</th>
+                          <th>Education Level</th>
+                          <th>School name</th>
+                          <th>Education Field </th>
+                          <th>GPA</th>
+                          <th>Status</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Senior High Sochool</td>
+                          <td>SMA 1 Klungkung</td>
+                          <td>General</td>
+                          <td>3.1</td>
+                          <td>Passsd</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Senior High Sochool</td>
+                          <td>SMA 1 Klungkung</td>
+                          <td>General</td>
+                          <td>3.1</td>
+                          <td>Passsd</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Senior High Sochool</td>
+                          <td>SMA 1 Klungkung</td>
+                          <td>General</td>
+                          <td>3.1</td>
+                          <td>Passsd</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Mobile version-->
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2000-2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Education Level</td>
+                          <td>Senior High School</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">School Name </td>
+                          <td>SMA 1 Klungkung</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Education Field</td>
+                          <td>General</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">GPA</td>
+                          <td>3.1</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Status</td>
+                          <td>Pass</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2000-2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Education Level</td>
+                          <td>Senior High School</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">School Name </td>
+                          <td>SMA 1 Klungkung</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Education Field</td>
+                          <td>General</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">GPA</td>
+                          <td>3.1</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Status</td>
+                          <td>Pass</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2000-2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Education Level</td>
+                          <td>Senior High School</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">School Name </td>
+                          <td>SMA 1 Klungkung</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Education Field</td>
+                          <td>General</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">GPA</td>
+                          <td>3.1</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Status</td>
+                          <td>Pass</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
                 <div class="col-sm-12 btn-action"><a href="javascript:" class="btn btn-blue pull-right next-apply-steps">Next</a>
                   <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="javascript:" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
@@ -1386,37 +1751,118 @@
                 </div>
               </div>
               <div class="row apply-now education-history--collections">
-                <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
-                  <table class="table">
-                    <thead>
-                      <tr> 
-                        <th>No</th>
-                        <th>Period</th>
-                        <th>Company Name</th>
-                        <th>Position Title </th>
-                        <th>Description </th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr> 
-                        <td>1.</td>
-                        <td>200 - 2003 </td>
-                        <td>Google</td>
-                        <td>Analyst</td>
-                        <td>Best empolyee</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                      <tr> 
-                        <td>1.</td>
-                        <td>200 - 2003 </td>
-                        <td>Google</td>
-                        <td>Analyst</td>
-                        <td>Best empolyee</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new working experience record</a>
+                  <!-- Desktop and table version-->
+                  <div class="table-responsive hidden-xs">
+                    <table class="table">
+                      <thead>
+                        <tr> 
+                          <th>No</th>
+                          <th>Period</th>
+                          <th>Company Name</th>
+                          <th>Position Title </th>
+                          <th>Description </th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Google</td>
+                          <td>Analyst</td>
+                          <td>Best empolyee</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Google</td>
+                          <td>Analyst</td>
+                          <td>Best empolyee</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>200 - 2003 </td>
+                          <td>Google</td>
+                          <td>Analyst</td>
+                          <td>Best empolyee</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Mobile version-->
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2002 -2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Company Name</td>
+                          <td>Google</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Position Title</td>
+                          <td>Analyst</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Description</td>
+                          <td>Best empolyee</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2002 -2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Company Name</td>
+                          <td>Google</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Position Title</td>
+                          <td>Analyst</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Description</td>
+                          <td>Best empolyee</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">2002 -2003</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Company Name</td>
+                          <td>Google</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Position Title</td>
+                          <td>Analyst</td>
+                        </tr>
+                        <tr> 
+                          <td class="subhead">Description</td>
+                          <td>Best empolyee</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
                 <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
                   <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
@@ -1459,34 +1905,102 @@
                 </div>
               </div>
               <div class="row apply-now education-history--collections">
-                <div class="col-sm-12"><a href="#">+ Add new training record</a>
-                  <table class="table">
-                    <thead>
-                      <tr> 
-                        <th>No</th>
-                        <th>Institution</th>
-                        <th>Location</th>
-                        <th>Year</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr> 
-                        <td>1.</td>
-                        <td>Bina Nusantara</td>
-                        <td>Jakarta</td>
-                        <td>2015</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                      <tr> 
-                        <td>1.</td>
-                        <td>Bina Nusantara</td>
-                        <td>Jakarta</td>
-                        <td>2015</td>
-                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="col-sm-12"><a href="#" class="add-steps-item">+ Add new training record</a>
+                  <!-- Desktop version-->
+                  <div class="table-responsive hidden-xs">
+                    <table class="table">
+                      <thead>
+                        <tr> 
+                          <th>No</th>
+                          <th>Institution</th>
+                          <th>Location</th>
+                          <th>Year</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr> 
+                          <td>1.</td>
+                          <td>Bina Nusantara</td>
+                          <td>Jakarta</td>
+                          <td>2015</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>Bina Nusantara</td>
+                          <td>Jakarta</td>
+                          <td>2015</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                        <tr> 
+                          <td>1.</td>
+                          <td>Bina Nusantara</td>
+                          <td>Jakarta</td>
+                          <td>2015</td>
+                          <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Mobile version-->
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">Bina Nusantara</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Location</td>
+                          <td>Jakarta</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Year</td>
+                          <td>2005</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">Bina Nusantara</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Location</td>
+                          <td>Jakarta</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Year</td>
+                          <td>2005</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="table-responsive visible-xs-block">
+                    <table class="table table-mobile">
+                      <thead>
+                        <tr>
+                          <th colspan="2">Bina Nusantara</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="subhead">Location</td>
+                          <td>Jakarta</td>
+                        </tr>
+                        <tr>
+                          <td class="subhead">Year</td>
+                          <td>2005</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
                 <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
                   <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>

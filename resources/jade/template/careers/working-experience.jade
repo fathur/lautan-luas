@@ -16,23 +16,7 @@
           
           
       .row
-        //- .col-sm-12.form-inline
-        //-   .form-group
-        //-     label(for="start-school") From
-        //-     select#start-school.form-control
-        //-       each item in ['Year',1980,1981]
-        //-         option= item
-        //-     select#start-school.form-control
-        //-       each item in ['Year',1980,1981]
-        //-         option= item
-        //-   .form-group
-        //-     label(for="end-school") to
-        //-     select#end-school.form-control
-        //-       each item in ['Year',1980,1981]
-        //-         option= item
-        //-     select#end-school.form-control
-        //-       each item in ['Year',1980,1981]
-        //-         option= item
+        
         .col-sm-1.label-input
           | From
         .form-group.col-sm-3
@@ -72,43 +56,55 @@
 
 .row.apply-now.education-history--collections
   .col-sm-12
-    a(href="#") + Add new working experience record
-    table.table
-      thead
-        tr 
-          th No
-          th Period
-          th Company Name
-          th Position Title 
-          th Description 
-          th Actions
-      tbody
-        tr 
-          td 1.
-          td 200 - 2003 
-          td Google
-          td Analyst
-          td Best empolyee
-          td.action
-            a(href="#")
-              i.fa.fa-pencil
-              | Edit
-            a(href="#")
-              i.fa.fa-trash-o
-              | Delete
-         tr 
-          td 1.
-          td 200 - 2003 
-          td Google
-          td Analyst
-          td Best empolyee
-          td.action
-            a(href="#")
-              i.fa.fa-pencil
-              | Edit
-            a(href="#")
-              i.fa.fa-trash-o
-              | Delete
+    a.add-steps-item(href="#") + Add new working experience record
+
+    // Desktop and table version
+    .table-responsive.hidden-xs
+      table.table
+        thead
+          tr 
+            th No
+            th Period
+            th Company Name
+            th Position Title 
+            th Description 
+            th Actions
+        tbody
+          each item in [1,2,3]
+            tr 
+              td 1.
+              td 200 - 2003 
+              td Google
+              td Analyst
+              td Best empolyee
+              td.action
+                a(href="#")
+                  i.fa.fa-pencil
+                  | Edit
+                a(href="#")
+                  i.fa.fa-trash-o
+                  | Delete
+           
+
+    // Mobile version
+    each item in [1,2,3]
+      .table-responsive.visible-xs-block
+        table.table.table-mobile
+          thead
+            tr
+              th(colspan="2") 2002 -2003
+          tbody
+            tr
+              td.subhead Company Name
+              td Google
+            tr 
+              td.subhead Position Title
+              td Analyst
+            tr 
+              td.subhead Description
+              td Best empolyee
+
+
 
   .col-sm-12.btn-action
     a.btn.btn-blue.pull-right.next-apply-steps(href="#") Next

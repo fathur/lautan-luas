@@ -155,6 +155,12 @@ table,
   }
 }
 
+@media screen and (max-width: 767px) {
+	.table-responsive {
+		border: 0px solid #FFF;
+	}
+}
+
 .breadcrumb {
 
 	padding: 0px;
@@ -565,6 +571,10 @@ a.btn-transparant {
 	.form-search-menu {
 		
 		margin: 20px 15px 10px 15px;
+
+		.form-control-feedback {
+			right: 15px;
+		}
 	}
 }
 

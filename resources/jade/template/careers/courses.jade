@@ -24,40 +24,48 @@
 
 .row.apply-now.education-history--collections
   .col-sm-12
-    a(href="#") + Add new training record
-    table.table
-      thead
-        tr 
-          th No
-          th Institution
-          th Location
-          th Year
-          th Actions
-      tbody
-        tr 
-          td 1.
-          td Bina Nusantara
-          td Jakarta
-          td 2015
-          td.action
-            a(href="#")
-              i.fa.fa-pencil
-              | Edit
-            a(href="#")
-              i.fa.fa-trash-o
-              | Delete
-         tr 
-          td 1.
-          td Bina Nusantara
-          td Jakarta
-          td 2015
-          td.action
-            a(href="#")
-              i.fa.fa-pencil
-              | Edit
-            a(href="#")
-              i.fa.fa-trash-o
-              | Delete
+    a.add-steps-item(href="#") + Add new training record
+
+    // Desktop version
+    .table-responsive.hidden-xs
+      table.table
+        thead
+          tr 
+            th No
+            th Institution
+            th Location
+            th Year
+            th Actions
+        tbody
+          each item in [1,2,3]
+            tr 
+              td 1.
+              td Bina Nusantara
+              td Jakarta
+              td 2015
+              td.action
+                a(href="#")
+                  i.fa.fa-pencil
+                  | Edit
+                a(href="#")
+                  i.fa.fa-trash-o
+                  | Delete
+          
+    // Mobile version
+    each item in [1,2,3]
+      .table-responsive.visible-xs-block
+        table.table.table-mobile
+          thead
+            tr
+              th(colspan="2") Bina Nusantara
+          tbody
+            tr
+              td.subhead Location
+              td Jakarta
+            tr
+              td.subhead Year
+              td 2005
+
 
   .col-sm-12.btn-action
     a.btn.btn-blue.pull-right.next-apply-steps(href="#") Next

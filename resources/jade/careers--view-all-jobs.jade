@@ -42,10 +42,10 @@ block content
             button.btn.btn-transparant(type="submit") Search
       .row.content
         .col-sm-12
-          // Desktop and table version
-          .visible-xs-block
-            each item in [1,2,3,4,5,6,7,8,9,10]
-              table.table-jobs-mobile
+          // Mobile version
+          each item in [1,2,3,4,5,6,7,8,9,10]
+            .table-responsive.visible-xs-block
+              table.table.table-mobile
                 thead
                   tr
                     th(colspan="2") 
@@ -58,21 +58,22 @@ block content
                     td.subhead Location
                     td Jakarta, Indonesia
 
-          // Mobile version
-          table.table.table-responsive.hidden-xs
-            thead
-              tr 
-                th Job title
-                th Functional Area
-                th Location
-               
-            tbody
-              each item in [1,2,3,4,5,6,7,8,9,10]
-                tr
-                  td 
-                    a.blue(href="careers--view-all-jobs--single.html") Accounting Manager
-                  td Accounting Manager
-                  td Slipi - Jakarta, Indonesia
+          // Desktop and table version
+          .table-responsive.hidden-xs
+            table.table
+              thead
+                tr 
+                  th Job title
+                  th Functional Area
+                  th Location
+                 
+              tbody
+                each item in [1,2,3,4,5,6,7,8,9,10]
+                  tr
+                    td 
+                      a.blue(href="careers--view-all-jobs--single.html") Accounting Manager
+                    td Accounting Manager
+                    td Slipi - Jakarta, Indonesia
 
           include ./template/pagination.jade
              

@@ -268,7 +268,7 @@
 table,
 .table {
 	
-	&.table-jobs-mobile {
+	&.table-mobile {
 
 		width: 100%;
 		margin-bottom: 50px;
@@ -287,13 +287,15 @@ table,
       				padding: 8px;
       				// width: 50%;
 
-      				&.subhead {
-      					color: $light_blue;
-      					font-weight: bold;
-      				}
+      				
       			}
 			}
 		}
+	}
+
+	.subhead {
+		color: $light_blue;
+		font-weight: bold;
 	}
 }
 
@@ -330,5 +332,13 @@ table,
 .steps-apply {
 	h2 {
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.add-steps-item {
+		display: block;
+		margin-bottom: 20px;
 	}
 }
