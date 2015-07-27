@@ -170,6 +170,12 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		.form-title {
+			padding-top: 20px;
+		}
+	}
+
 	.form-subtitle {
 		padding-top: 15px;
 		padding-bottom: 15px;

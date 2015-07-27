@@ -76,7 +76,8 @@
             <h2>Steps</h2>
           </div>
         </div>
-        <div class="row">
+        <!-- Desktop Version of tab steps-->
+        <div class="row hidden-xs">
           <div class="tabs-left">
             <div class="col-xs-3">
               <ul role="tablist" class="nav nav-tabs tab-apply">
@@ -805,6 +806,734 @@
             </div>
           </div>
         </div>
+        <!-- Mobile version of tab steps-->
+        <div class="row visible-xs-block">
+          <div class="col-xs-12">
+            <select id="steps-tab-mobile" class="form-control">
+              <option value="personal-information" ke="#personal-information-mobile">1. Personal Information</option>
+              <option value="education-history" ke="#education-history-mobile">2. Education History</option>
+              <option value="working-experience" ke="#working-experience-mobile">3. Working Experience</option>
+              <option value="courses" ke="#courses-mobile">4. Courses</option>
+              <option value="upload-files" ke="#upload-files-mobile">5. Upload Files</option>
+            </select>
+          </div>
+          <div class="col-xs-12 steps-collection-mobile">
+            <div id="personal-information-mobile" style="display: block;" class="steps-item-in-mobile">
+              <div class="row apply-now personal-information">
+                <div class="col-sm-12">
+                  <div class="form-title padding-bottom-small">Personal Details</div>
+                  <p>Position Applied: <b>Business Consultant - DKI Jakarta</b></p>
+                  <form method="post" action="#">
+                    <div class="row">
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="Full Name" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="ID Card No." class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <input type="text" placeholder="Home Address" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="City" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="State /  Province" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 form-subtitle">Date of Birth</div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-4">
+                        <!-- input.form-control(type="text" placeholder="Email")-->
+                        <select class="form-control">
+                          <option>Date</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <select class="form-control">
+                          <option>Month</option>
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <select class="form-control">
+                          <option>Year</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input id="male" type="radio" name="gender" value="male">Male
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="female" type="radio" name="gender" value="female">Female
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input id="single" type="radio" name="marital-status" value="single">Single
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="maried" type="radio" name="marital-status" value="maried">maried
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="widow" type="radio" name="marital-status" value="widow">Widow(er)
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <!-- input.form-control(type="text" placeholder="Email")-->
+                        <select class="form-control">
+                          <option>Religion</option>
+                          <option>Islam</option>
+                          <option>Kristen</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="Phone Nomber" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="Mobile Phone Nomber" class="form-control">
+                      </div>
+                    </div>
+                    <!-- Skills-->
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-title padding-bottom-small padding-top-large">Skills</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="Mother Language" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <input type="text" placeholder="Other Language 1" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-sm-offset-6">
+                        <div class="row">
+                          <div class="col-sm-3"> 
+                            <label>Oral:</label>
+                          </div>
+                          <div class="col-sm-9">
+                            <label class="radio-inline">
+                              <input id="fluent" type="radio" name="lang-1-oral" value="fluent">Fluent
+                            </label>
+                            <label class="radio-inline">
+                              <input id="average" type="radio" name="lang-1-oral" value="average">Average
+                            </label>
+                            <label class="radio-inline">
+                              <input id="basic" type="radio" name="lang-1-oral" value="basic">Basic
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3"> 
+                            <label>Written:</label>
+                          </div>
+                          <div class="col-sm-9">
+                            <label class="radio-inline">
+                              <input id="fluent" type="radio" name="lang-1-written" value="fluent">Fluent
+                            </label>
+                            <label class="radio-inline">
+                              <input id="average" type="radio" name="lang-1-written" value="average">Average
+                            </label>
+                            <label class="radio-inline">
+                              <input id="basic" type="radio" name="lang-1-written" value="basic">Basic
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-sm-offset-6">
+                        <input type="text" placeholder="Other Language 2" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-6 col-sm-offset-6">
+                        <div class="row">
+                          <div class="col-sm-3"> 
+                            <label>Oral:</label>
+                          </div>
+                          <div class="col-sm-9">
+                            <label class="radio-inline">
+                              <input id="fluent" type="radio" name="lang-1-oral" value="fluent">Fluent
+                            </label>
+                            <label class="radio-inline">
+                              <input id="average" type="radio" name="lang-1-oral" value="average">Average
+                            </label>
+                            <label class="radio-inline">
+                              <input id="basic" type="radio" name="lang-1-oral" value="basic">Basic
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3"> 
+                            <label>Written:</label>
+                          </div>
+                          <div class="col-sm-9">
+                            <label class="radio-inline">
+                              <input id="fluent" type="radio" name="lang-1-written" value="fluent">Fluent
+                            </label>
+                            <label class="radio-inline">
+                              <input id="average" type="radio" name="lang-1-written" value="average">Average
+                            </label>
+                            <label class="radio-inline">
+                              <input id="basic" type="radio" name="lang-1-written" value="basic">Basic
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12 form-subtitle">Specific Job Related Skills</div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input id="ms-office" type="radio" name="job-related" value="ms-office">MS Office
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="vb" type="radio" name="job-related" value="vb">VB or VB.net
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="ms-visio" type="radio" name="job-related" value="ms-visio">MS Visio
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="java" type="radio" name="job-related" value="java">JAVA
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="HRIS" type="radio" name="job-related" value="HRIS">HRIS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="asp" type="radio" name="job-related" value="asp">ASP
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="network" type="radio" name="job-related" value="network">Network: LAN, WAN
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input id="ms-office" type="radio" name="job-related" value="ms-office">MS Office
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="vb" type="radio" name="job-related" value="vb">VB or VB.net
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="ms-visio" type="radio" name="job-related" value="ms-visio">MS Visio
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="java" type="radio" name="job-related" value="java">JAVA
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="HRIS" type="radio" name="job-related" value="HRIS">HRIS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="asp" type="radio" name="job-related" value="asp">ASP
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="network" type="radio" name="job-related" value="network">Network: LAN, WAN
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <div class="radio">
+                          <label>
+                            <input id="ms-office" type="radio" name="job-related" value="ms-office">MS Office
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="vb" type="radio" name="job-related" value="vb">VB or VB.net
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="ms-visio" type="radio" name="job-related" value="ms-visio">MS Visio
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="java" type="radio" name="job-related" value="java">JAVA
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="HRIS" type="radio" name="job-related" value="HRIS">HRIS
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="asp" type="radio" name="job-related" value="asp">ASP
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input id="network" type="radio" name="job-related" value="network">Network: LAN, WAN
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row padding-small">
+                      <div class="col-sm-6"><span>Willing to travel:</span>
+                        <label class="radio-inline">
+                          <input id="travel-yes" type="radio" name="travel" value="1">Yes
+                        </label>
+                        <label class="radio-inline">
+                          <input id="travel-no" type="radio" name="travel" value="0">No
+                        </label>
+                      </div>
+                      <div class="col-sm-6"><span>Driving License:</span>
+                        <label class="radio-inline">
+                          <input id="driving-sim-a" type="radio" name="driving" value="a">SIM A 
+                        </label>
+                        <label class="radio-inline">
+                          <input id="driving-sim-c" type="radio" name="driving" value="c">SIM C
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row padding-top-small">
+                      <div class="form-group col-sm-12">
+                        <textarea placeholder="Other job-related skills" class="form-control"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="btn-action padding-top-small"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                    <button type="submit" class="btn btn-transparant pull-right">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="education-history-mobile" style="display: none;" class="steps-item-in-mobile">
+              <div class="row apply-now education-history">
+                <div class="col-sm-12">
+                  <div class="form-title padding-bottom-small">Add / Edit Education Record</div>
+                  <form method="post" action="#">
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <select class="form-control">
+                          <option>Select Education Level</option>
+                          <option>SD</option>
+                          <option>SMA</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-5"><span>Status: </span>
+                        <label class="radio-inline">
+                          <input id="pass" type="radio" name="education-status" value="pass">Pass
+                        </label>
+                        <label class="radio-inline">
+                          <input id="fail" type="radio" name="education-status" value="fail">Failed
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <input type="text" placeholder="School name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-2 label-input">Year:</div>
+                      <div class="form-group col-sm-5">
+                        <select id="start-school" class="form-control">
+                          <option>Start Year</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1 label-input">to</div>
+                      <div class="form-group col-sm-4">
+                        <select id="end-school" class="form-control">
+                          <option>End Year</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <select class="form-control">
+                          <option>Education Field</option>
+                          <option>IT</option>
+                          <option>Management</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-5">
+                        <input type="text" placeholder="GPA" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row btn-action padding-bottom-large padding-top-small">
+                      <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row apply-now education-history--collections">
+                <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
+                  <table class="table">
+                    <thead>
+                      <tr> 
+                        <th>No</th>
+                        <th>Year</th>
+                        <th>Education Level</th>
+                        <th>School name</th>
+                        <th>Education Field </th>
+                        <th>GPA</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td>1.</td>
+                        <td>200 - 2003 </td>
+                        <td>Senior High Sochool</td>
+                        <td>SMA 1 Klungkung</td>
+                        <td>General</td>
+                        <td>3.1</td>
+                        <td>Passsd</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                      <tr> 
+                        <td>1.</td>
+                        <td>200 - 2003 </td>
+                        <td>Senior High Sochool</td>
+                        <td>SMA 1 Klungkung</td>
+                        <td>General</td>
+                        <td>3.1</td>
+                        <td>Passsd</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"> </i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 btn-action"><a href="javascript:" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                  <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="javascript:" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
+                </div>
+              </div>
+            </div>
+            <div id="working-experience-mobile" style="display: none;" class="steps-item-in-mobile">
+              <div class="row apply-now education-history">
+                <div class="col-sm-12">
+                  <div class="form-title padding-bottom-small">Add / Edit Working Experience Record</div>
+                  <form method="post" action="#">
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <input type="text" placeholder="Company Name" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-5">
+                        <select class="form-control">
+                          <option>Indutriy Area</option>
+                          <option>SD</option>
+                          <option>SMA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <input type="text" placeholder="Company Adress" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-1 label-input">From</div>
+                      <div class="form-group col-sm-3">
+                        <select id="start-month-working" class="form-control">
+                          <option>Month</option>
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>April</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>December</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-3">
+                        <select id="start-year-working" class="form-control">
+                          <option>Year</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-1 label-input">to</div>
+                      <div class="form-group col-sm-2">
+                        <select id="end-month-working" class="form-control">
+                          <option>Month</option>
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>April</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>December</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm-2">
+                        <select id="end-year-working" class="form-control">
+                          <option>Year</option>
+                          <option>1980</option>
+                          <option>1981</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <input type="text" placeholder="Position Title" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-5">
+                        <input type="text" placeholder="Number of Subordinates" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <textarea placeholder="Job Description" class="form-control"></textarea>
+                      </div>
+                    </div>
+                    <div class="row btn-action padding-bottom-large padding-top-small">
+                      <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row apply-now education-history--collections">
+                <div class="col-sm-12"><a href="#">+ Add new working experience record</a>
+                  <table class="table">
+                    <thead>
+                      <tr> 
+                        <th>No</th>
+                        <th>Period</th>
+                        <th>Company Name</th>
+                        <th>Position Title </th>
+                        <th>Description </th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td>1.</td>
+                        <td>200 - 2003 </td>
+                        <td>Google</td>
+                        <td>Analyst</td>
+                        <td>Best empolyee</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                      <tr> 
+                        <td>1.</td>
+                        <td>200 - 2003 </td>
+                        <td>Google</td>
+                        <td>Analyst</td>
+                        <td>Best empolyee</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                  <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
+                </div>
+              </div>
+            </div>
+            <div id="courses-mobile" style="display: none;" class="steps-item-in-mobile">
+              <div class="row apply-now education-history">
+                <div class="col-sm-12">
+                  <div class="form-title padding-bottom-small">Add / Edit training Record</div>
+                  <form method="post" action="#">
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <input type="text" placeholder="Institution Name" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-5">
+                        <select class="form-control">
+                          <option>Type</option>
+                          <option>SD</option>
+                          <option>SMA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-sm-7">
+                        <input type="text" placeholder="Location" class="form-control">
+                      </div>
+                      <div class="form-group col-sm-5">
+                        <select class="form-control">
+                          <option>Certificate Year</option>
+                          <option>SD</option>
+                          <option>SMA</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row btn-action padding-bottom-large padding-top-small">
+                      <button type="submit" class="btn btn-blue pull-right">Add</button><a href="#" class="btn btn-transparant pull-right">Cancel</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row apply-now education-history--collections">
+                <div class="col-sm-12"><a href="#">+ Add new training record</a>
+                  <table class="table">
+                    <thead>
+                      <tr> 
+                        <th>No</th>
+                        <th>Institution</th>
+                        <th>Location</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr> 
+                        <td>1.</td>
+                        <td>Bina Nusantara</td>
+                        <td>Jakarta</td>
+                        <td>2015</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                      <tr> 
+                        <td>1.</td>
+                        <td>Bina Nusantara</td>
+                        <td>Jakarta</td>
+                        <td>2015</td>
+                        <td class="action"><a href="#"><i class="fa fa-pencil"></i>Edit</a><a href="#"><i class="fa fa-trash-o"></i>Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-sm-12 btn-action"><a href="#" class="btn btn-blue pull-right next-apply-steps">Next</a>
+                  <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
+                </div>
+              </div>
+            </div>
+            <div id="upload-files-mobile" style="display: none;" class="steps-item-in-mobile">
+              <div class="row apply-now upload-files">
+                <div class="col-sm-12 intro">
+                  <p>
+                    You must at least attach your photograph and your Certificate of Graduation below. <br>
+                    You may only upload files with extension .jpg and .pdf with a max size of 500kb.
+                  </p>
+                </div>
+              </div>
+              <div class="row apply-now upload-files">
+                <div class="col-sm-12">
+                  <div class="row"></div>
+                  <div class="row item">
+                    <div class="col-sm-12 form-title padding-bottom-small">Photograph (.jpg only)</div>
+                    <div class="col-sm-8 btn-upload">
+                      <button class="btn btn-blue">upload</button>
+                    </div>
+                    <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                  </div>
+                  <div class="row item">
+                    <div class="col-sm-12 form-title padding-bottom-small">Certificate of Graduation</div>
+                    <div class="col-sm-8 btn-upload">
+                      <button class="btn btn-blue">upload</button>
+                    </div>
+                    <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                  </div>
+                  <div class="row item">
+                    <div class="col-sm-12 form-title padding-bottom-small">Transcript</div>
+                    <div class="col-sm-8 btn-upload">
+                      <button class="btn btn-blue">upload</button>
+                    </div>
+                    <div class="col-sm-4"><img src="images/webclip-1.png" class="img-responsive center-block"></div>
+                  </div>
+                </div>
+                <div class="col-sm-12 btn-action padding-top-large"><a href="#" class="btn btn-blue pull-right">Finish</a>
+                  <button type="submit" class="btn btn-transparant pull-right">Save</button><a href="#" class="btn btn-transparant pull-right prev-apply-steps">Back</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -946,6 +1675,13 @@
             $('html,body').animate({ scrollTop: offsetTop }, 'slow');
         });
       
+        
+        var current = $('#steps-tab-mobile').find(':selected');
+        var next = current.next();
+        next.attr('selected', 'selected');
+        $('.steps-item-in-mobile').fadeOut('fast', function(){
+          $(next.attr('ke')).show();
+        });
       
       });
       
@@ -959,7 +1695,21 @@
             $('html,body').animate({ scrollTop: offsetTop }, 'slow');
         });
       
+        var current = $('#steps-tab-mobile').find(':selected');
+        var prev = current.prev();
+        prev.attr('selected', 'selected');
+        $('.steps-item-in-mobile').fadeOut('fast', function(){
+          $(prev.attr('ke')).show();
+        });
       
+      
+      });
+      
+      $( '#steps-tab-mobile' ).change(function(){
+        var ke = $('option:selected', this).attr('ke');
+        $('.steps-item-in-mobile').fadeOut('fast', function(){
+          $(ke).show();
+        });
       });
     </script>
   </body>

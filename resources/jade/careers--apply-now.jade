@@ -26,7 +26,8 @@ block content
         .col-xs-12
           h2 Steps
 
-      .row
+      // Desktop Version of tab steps
+      .row.hidden-xs
         .tabs-left
           .col-xs-3
             ul.nav.nav-tabs.tab-apply(role='tablist')
@@ -54,6 +55,28 @@ block content
             #upload-files.tab-pane.fade(role='tabpanel')
               include ./template/careers/upload-files.jade
 
+      // Mobile version of tab steps
+      .row.visible-xs-block
+        .col-xs-12
+          select.form-control#steps-tab-mobile
+            option(value="personal-information" ke="#personal-information-mobile") 1. Personal Information
+            option(value="education-history" ke="#education-history-mobile") 2. Education History
+            option(value="working-experience" ke="#working-experience-mobile") 3. Working Experience
+            option(value="courses" ke="#courses-mobile") 4. Courses
+            option(value="upload-files" ke="#upload-files-mobile") 5. Upload Files
+
+        .col-xs-12.steps-collection-mobile
+          .steps-item-in-mobile#personal-information-mobile(style="display: block;")
+            include ./template/careers/personal-information.jade
+          .steps-item-in-mobile#education-history-mobile(style="display: none;")
+            include ./template/careers/education-history.jade
+          .steps-item-in-mobile#working-experience-mobile(style="display: none;")
+            include ./template/careers/working-experience.jade
+          .steps-item-in-mobile#courses-mobile(style="display: none;")
+            include ./template/careers/courses.jade
+          .steps-item-in-mobile#upload-files-mobile(style="display: none;")
+            include ./template/careers/upload-files.jade
+
 block script
   script(type="text/javascript").
 
@@ -70,6 +93,13 @@ block script
           $('html,body').animate({ scrollTop: offsetTop }, 'slow');
       });
 
+      
+      var current = $('#steps-tab-mobile').find(':selected');
+      var next = current.next();
+      next.attr('selected', 'selected');
+      $('.steps-item-in-mobile').fadeOut('fast', function(){
+        $(next.attr('ke')).show();
+      });
 
     });
 
@@ -83,5 +113,19 @@ block script
           $('html,body').animate({ scrollTop: offsetTop }, 'slow');
       });
 
+      var current = $('#steps-tab-mobile').find(':selected');
+      var prev = current.prev();
+      prev.attr('selected', 'selected');
+      $('.steps-item-in-mobile').fadeOut('fast', function(){
+        $(prev.attr('ke')).show();
+      });
 
+
+    });
+
+    $( '#steps-tab-mobile' ).change(function(){
+      var ke = $('option:selected', this).attr('ke');
+      $('.steps-item-in-mobile').fadeOut('fast', function(){
+        $(ke).show();
+      });
     });

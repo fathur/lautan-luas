@@ -11214,6 +11214,11 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .apply-now .form-title.first {
   padding-top: 0px;
 }
+@media screen and (max-width: 767px) {
+  .apply-now .form-title {
+    padding-top: 20px;
+  }
+}
 .apply-now .form-subtitle {
   padding-top: 15px;
   padding-bottom: 15px;

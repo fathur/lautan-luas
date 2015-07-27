@@ -52,24 +52,9 @@ block content
                   include ./template/about-us/company-profile.jade
 
     
-    .gray-bg.padding-large.hidden-sm.hidden-md.hidden-lg
+    .gray-bg.padding-large.visible-xs-block
       .container
-        //- #about-us-tab-mobile.dl-menuwrapper
-        //-   button.dl-trigger Open Menu
-        //-   ul.dl-menu
-        //-     li
-        //-       a(href='#' ke="#distribution-mobile") Our Business
-        //-       ul.dl-submenu
-        //-         li
-        //-           a(href='#' ke="#distribution-mobile") Distribution 
-        //-         li
-        //-           a(href='#' ke="#manufacturing-mobile") Manufacturing
-        //-         li
-        //-           a(href='#' ke="#services-mobile") Services 
-        //-     li 
-        //-       a(href="#" ke="#ourhistory-mobile") Our History
-        //-     li 
-        //-       a(href="#" ke="#companyprofile-mobile") Company Profile
+        
         select.form-control#about-us-tab-mobile
           optgroup(label="Our Business")
             option(value="distribution" ke="#distribution-mobile") Distribution
@@ -214,7 +199,7 @@ block script
       /*$( '#about-us-tab-mobile' ).dlmenu();*/
       $( '#about-us-tab-mobile' ).change(function(){
         // e.preventDefault();
-        var ke = $('option:selected').attr('ke');
+        var ke = $('option:selected', this).attr('ke');
         $('.tab-in-mobile').fadeOut('fast', function(){
           $(ke).show();
         });

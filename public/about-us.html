@@ -663,7 +663,7 @@
           </div>
         </div>
       </div>
-      <div class="gray-bg padding-large hidden-sm hidden-md hidden-lg">
+      <div class="gray-bg padding-large visible-xs-block">
         <div class="container">
           <select id="about-us-tab-mobile" class="form-control">
             <optgroup label="Our Business">
@@ -1476,7 +1476,7 @@
         /*$( '#about-us-tab-mobile' ).dlmenu();*/
         $( '#about-us-tab-mobile' ).change(function(){
           // e.preventDefault();
-          var ke = $('option:selected').attr('ke');
+          var ke = $('option:selected', this).attr('ke');
           $('.tab-in-mobile').fadeOut('fast', function(){
             $(ke).show();
           });
