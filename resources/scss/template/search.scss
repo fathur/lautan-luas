@@ -2,4 +2,14 @@
 	font-weight: 400;
 	font-family: 'PT Sans', sans-serif;
 	font-size: $font-size-base;
+
+	@media screen and (max-width: 767px) {
+		text-align: center;
+		display: block;
+		padding-bottom: 15px;
+	}
+
+	@media (min-width: 768px) {
+		text-align: right;
+	}
 }

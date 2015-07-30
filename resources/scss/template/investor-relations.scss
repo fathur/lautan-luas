@@ -745,12 +745,46 @@
 	&.archive {
 		.tab-row {
 			margin-bottom: 30px;
+
+			/* a.tab {
+				padding-left: 0px;
+			} */
+
+			@media screen and (max-width: 767px) {
+
+
+				.quarterly {
+					text-align: right;
+
+
+				}
+
+				.yearly {
+					text-align: left;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.quarterly {
+					> a {
+						padding-left: 0px;
+					}
+				}
+
+				
+			}
 		}
 
 		.tab-row-content {
 			.caption {
 				padding-top: 15px;
 				padding-bottom: 40px;
+			}
+
+			@media (min-width: 768px) {
+				#yearly {
+					margin-top: -50px;
+				}
 			}
 		}
 
@@ -761,9 +795,13 @@
 		border: none;
 
 		li {
-			&.item {
 
-				width: 49%;
+			@media screen and (max-width: 767px) {
+
+				&.item {
+
+					width: 49%;
+				}
 			}
 
 			a {

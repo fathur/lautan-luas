@@ -82,8 +82,8 @@ a {
 		
 	}
 
-	/* &.blue {
-		color: rgba(3, 32, 119, 1);
+	&.blue {
+		color: rgba(3, 32, 119, 1) !important;
 
 		-webkit-transition: color 500ms ease-out;
 		-moz-transition: color 500ms ease-out;
@@ -93,9 +93,9 @@ a {
 	 
 		&:hover {
 			text-decoration: none;
-			color: rgba(3, 32, 119, .5);
+			color: rgba(3, 32, 119, .5) !important;
 		}
-	} */
+	}
 }
 
 img {

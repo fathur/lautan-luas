@@ -77,11 +77,11 @@
           </div>
         </div>
         <div class="row tab-row">
-          <div class="col-xs-12">
+          <div style="z-index: 100;" class="col-xs-12">
             <ul role="tablist" class="nav nav-tabs tab">
-              <li role="presentation" class="item text-right active"><a href="#quarterly" aria-controls="quarterly" role="tab" data-toggle="tab">Quarterly</a></li>
+              <li role="presentation" class="quarterly item active"><a href="#quarterly" aria-controls="quarterly" role="tab" data-toggle="tab">Quarterly</a></li>
               <li style="margin-top: 4px;" class="separator">/</li>
-              <li role="presentation" class="text-left item"><a href="#yearly" aria-controls="yearly" role="tab" data-toggle="tab">Yearly</a></li>
+              <li role="presentation" class="yearly item"><a href="#yearly" aria-controls="yearly" role="tab" data-toggle="tab">Yearly</a></li>
             </ul>
           </div>
         </div>
@@ -134,6 +134,16 @@
                   </div>
                 </div>
                 <div id="yearly" role="tabpanel" class="tab-pane fade">
+                  <div class="row padding-bottom-small">
+                    <div class="col-sm-offset-10 col-sm-2">
+                      <select class="form-control pull-right">
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                      </select>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12 item text-center"><a href="#"><img src="images/annual-report-1.png" class="img-responsive center-block"></a>
                       <div class="caption"> <a href="#">Annual Report 2014</a></div>

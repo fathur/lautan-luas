@@ -9662,23 +9662,21 @@ a {
   -ms-transition: color 500ms ease-out;
   -o-transition: color 500ms ease-out;
   transition: color 500ms ease-out;
-  	/* &.blue {
-  		color: rgba(3, 32, 119, 1);
-  
-  		-webkit-transition: color 500ms ease-out;
-  		-moz-transition: color 500ms ease-out;
-  		-ms-transition: color 500ms ease-out;
-  		-o-transition: color 500ms ease-out;
-  		transition: color 500ms ease-out;
-  	 
-  		&:hover {
-  			text-decoration: none;
-  			color: rgba(3, 32, 119, .5);
-  		}
-  	} */
 }
 a:hover {
   text-decoration: none;
+}
+a.blue {
+  color: #032077 !important;
+  -webkit-transition: color 500ms ease-out;
+  -moz-transition: color 500ms ease-out;
+  -ms-transition: color 500ms ease-out;
+  -o-transition: color 500ms ease-out;
+  transition: color 500ms ease-out;
+}
+a.blue:hover {
+  text-decoration: none;
+  color: rgba(3, 32, 119, 0.5) !important;
 }
 
 .box-shadow {
@@ -11151,6 +11149,14 @@ a.btn-transparant:hover, a.btn-transparant:focus {
   color: #032077;
 }
 
+@media screen and (max-width: 767px) {
+  .why-join-single h2 {
+    padding-top: 20px;
+  }
+  .why-join-single .pull-right {
+    float: none !important;
+  }
+}
 .search-job {
   background-image: linear-gradient(rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.49)), url("../images/person-working-2.jpg");
   background-position: 0 0, 50% 50%;
@@ -11167,6 +11173,12 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .search-job .anchor .btn {
   margin: 0 10px;
+}
+@media screen and (max-width: 767px) {
+  .search-job .anchor .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .employee .item {
@@ -12240,16 +12252,39 @@ table .subhead,
 
 .auditor-report.archive .tab-row {
   margin-bottom: 30px;
+  /* a.tab {
+  	padding-left: 0px;
+  } */
+}
+@media screen and (max-width: 767px) {
+  .auditor-report.archive .tab-row .quarterly {
+    text-align: right;
+  }
+  .auditor-report.archive .tab-row .yearly {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .auditor-report.archive .tab-row .quarterly > a {
+    padding-left: 0px;
+  }
 }
 .auditor-report.archive .tab-row-content .caption {
   padding-top: 15px;
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .auditor-report.archive .tab-row-content #yearly {
+    margin-top: -50px;
+  }
+}
 .auditor-report .tab {
   border: none;
 }
-.auditor-report .tab li.item {
-  width: 49%;
+@media screen and (max-width: 767px) {
+  .auditor-report .tab li.item {
+    width: 49%;
+  }
 }
 .auditor-report .tab li a {
   display: inline-block;
@@ -13001,6 +13036,18 @@ table .subhead,
   font-weight: 400;
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+  .search-count {
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .search-count {
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=lautan-luas-bootstrap.css.map */

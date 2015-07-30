@@ -211,21 +211,32 @@ block content
                           =item
               #yearly.tab-pane.fade(role="tabpanel")
                 
-                .row.padding-small
-                  .col-sm-offset-10.col-sm-2
-                    select.form-control.pull-right#year-auditor
-                      each item in [2006,2007,2008,2009]
-                        option(value= item)= item
+                //- Tab yearly ada dropdown tahunnya
+                //- .row.padding-small
+                //-   .col-sm-offset-10.col-sm-2
+                //-     select.form-control.pull-right#year-auditor
+                //-       each item in [2006,2007,2008,2009]
+                //-         option(value= item)= item
                 
-                each item in [2006,2007,2008,2009]
-                  div.auditor-report-ir(id="#{item}")
-                    .row
-                      each ar in [1,2,3,4]
-                        .col-sm-3.text-center
-                          a(href="#")
-                            img.img-responsive.center-block(src="images/annual-report-1.png")
-                          .caption 
-                            a(href="#") Auditor Report #{item}
+                //- each item in [2006,2007,2008,2009]
+                //-   div.auditor-report-ir(id="#{item}")
+                //-     .row
+                //-       each ar in [1,2,3,4]
+                //-         .col-sm-3.text-center
+                //-           a(href="#")
+                //-             img.img-responsive.center-block(src="images/annual-report-1.png")
+                //-           .caption 
+                //-             a(href="#") Auditor Report #{item}
+
+                //- Tab yearly tanpa dropdown tahun
+                .row
+                  each item in [2010,2011,2012,2013]
+                    .col-sm-3.text-center
+                      a(href="#")
+                        img.img-responsive.center-block(src="images/annual-report-1.png")
+                      .caption 
+                        a(href="#") Auditor Report 
+                          =item
                             
 
   include ./template/investor/bottom-contact-2g.jade
