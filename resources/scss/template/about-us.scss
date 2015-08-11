@@ -657,6 +657,11 @@
 		h5 {
 			color: $gray;
 		}
+
+		.item {
+			margin-bottom: 30px;
+		}
+
 		.title {
 			font-family: 'PT Sans', sans-serif;
 			font-weight: bold;
@@ -664,7 +669,10 @@
 		}
 		.validity {
 			display: block;
-			padding: 15px 0;
+			padding: 10px 0;
+			font-weight: 400;
+			font-family: 'PT Sans', sans-serif;
+			font-size: $font-size-base;
 		}
 		.download > a  {
 			color: $light_blue;

@@ -11023,6 +11023,9 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 .good-corporate .attachment h5 {
   color: #BEBEBE;
 }
+.good-corporate .attachment .item {
+  margin-bottom: 30px;
+}
 .good-corporate .attachment .title {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -11030,7 +11033,10 @@ a.btn-transparant:hover, a.btn-transparant:focus {
 }
 .good-corporate .attachment .validity {
   display: block;
-  padding: 15px 0;
+  padding: 10px 0;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
 }
 .good-corporate .attachment .download > a {
   color: #032077;

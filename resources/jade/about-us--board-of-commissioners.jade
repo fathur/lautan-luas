@@ -19,7 +19,7 @@ block content
 
   .white-bg.board-of.padding-extra-large
     //- each item in [1,2,3]
-    each item in [{name1: 'Joan Fudiana', title1: 'President Commissioner', picture1: 'images/joan-fudiana-1.png', name2: 'Pranata Hajadi', title2: 'Vice President Commissioner', picture2: 'images/pranata-hajadi-1.png'},{name1: 'Hari Slamet Widodo', title1: 'Independent Commissioner', picture1: 'images/hari-slamet-widodo-1.png', name2: 'Zaenal Arifin', title2: 'Independent Commissioner', picture2: 'images/zaenal-arifin-1.png'}]
+    each item in [{name1: 'Joan Fudiana', title1: 'President Commissioner', picture1: 'images/joan-fudiana-1.png', name2: 'Pranata Hajadi', title2: 'Vice President Commissioner', picture2: 'images/pranata-hajadi-1.png'},{name1: 'Hari Slamet Widodo', title1: 'Independent Commissioner', picture1: 'images/hari-slamet-widodo-1.png', name2: 'Zaenal Arifin', title2: 'Independent Commissioner', picture2: 'images/zaenal-arifin-1.png'},{name1: 'Lorem Ipsum ', title1: 'Lorem Ipsum ', picture1: 'images/hari-slamet-widodo-1.png'}]
       
       // Untuk table dan desktop version
       .board-row.hidden-xs
@@ -40,15 +40,17 @@ block content
                 .col-md-12
                   a.view-all(href="about-us--board-of-commissioners--single.html") View Profile &nbsp;
                     i.fa.fa-angle-right
-              
-            .col-md-6
-              .row 
-                .col-md-12
-                  h2= item.name2
-                  .position= item.title2
-                .col-md-12
-                  a.view-all(href="about-us--board-of-commissioners--single.html") View Profile &nbsp;
-                    i.fa.fa-angle-right
+
+            if item.name2
+              .col-md-6
+                .row 
+                  .col-md-12
+                    h2= item.name2
+                    .position= item.title2
+                  .col-md-12
+                    a.view-all(href="about-us--board-of-commissioners--single.html") View Profile &nbsp;
+                      i.fa.fa-angle-right
+            
               
               
 
@@ -70,19 +72,20 @@ block content
                 i.fa.fa-angle-right
               
 
-        // Second person
-        .picture
-          .gray-bg
-          .container
-            .col-sm-12
-              img.img-responsive.center-block(src= item.picture2)
-        .description.text-center
-          .container
-            .col-md-12
-              h2= item.name2
-              .position= item.title2
-            .col-md-12
-              a.view-all(href="about-us--board-of-commissioners--single.html") View Profile &nbsp;
-                i.fa.fa-angle-right
+        if item.name2  
+          // Second person
+          .picture
+            .gray-bg
+            .container
+              .col-sm-12
+                img.img-responsive.center-block(src= item.picture2)
+          .description.text-center
+            .container
+              .col-md-12
+                h2= item.name2
+                .position= item.title2
+              .col-md-12
+                a.view-all(href="about-us--board-of-commissioners--single.html") View Profile &nbsp;
+                  i.fa.fa-angle-right
               
          
