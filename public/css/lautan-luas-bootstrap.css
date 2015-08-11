@@ -12312,6 +12312,63 @@ table .subhead,
   color: #032077;
 }
 
+.latest-news.archive .tab-row {
+  margin-bottom: 30px;
+  /* a.tab {
+  	padding-left: 0px;
+  } */
+}
+@media screen and (max-width: 767px) {
+  .latest-news.archive .tab-row .investor-news {
+    text-align: right;
+  }
+  .latest-news.archive .tab-row .general-news {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .latest-news.archive .tab-row .investor-news > a {
+    padding-left: 0px;
+  }
+}
+.latest-news.archive .tab-row-content .caption {
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .latest-news.archive .tab-row-content #investor-news,
+  .latest-news.archive .tab-row-content #general-news {
+    margin-top: -50px;
+  }
+}
+.latest-news .tab {
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .latest-news .tab li.item {
+    width: 49%;
+  }
+}
+.latest-news .tab li a {
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 10px;
+  margin-bottom: 0px;
+  border: none;
+  padding-top: 9px;
+  color: #BEBEBE;
+}
+.latest-news .tab li a:hover, .latest-news .tab li a:active {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.latest-news .tab li.active a {
+  border: none;
+  color: #032077;
+}
+
 .faq {
   	/* .questions {
   		li {

@@ -22,27 +22,65 @@ block content
         li.active News
 
   .padding-extra-large.white-bg
-    .container.archive
+    .container.latest-news.archive
       .row
-        .col-sm-12
+        .col-xs-12
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel magna vel augue pellentesque sollicitudin. Nunc ut semper sem. Curabitur at lectus sodales, tristique nisi et, sodales urna. Vivamus in velit at lorem hendrerit pulvinar. Suspendisse ut malesuada purus. Mauris ullamcorper risus in lorem tristique, ut fringilla velit suscipit. In a arcu quis mi ultricies pulvinar in ac ex. Nulla consequat metus id turpis tincidunt pharetra. In sagittis, erat sit amet facilisis dignissim, urna orci tempus ligula, vitae elementum dolor urna ut dolor. Sed eu arcu vitae ligula malesuada egestas.
 
-      .row.filter
-        .col-sm-2.col-sm-offset-10.col-xs-4.col-xs-offset-8
-          select.pull-right.form-control(onchange="window.location = 'investor-relations--news-events--archives.html';")
-            option 1990
-            option 1991
-            option 1992
+      .row.tab-row
+        .col-sm-6(style="z-index: 100;")
+          ul.nav.nav-tabs.tab(role="tablist")
+            li.investor-news.item.active(role="presentation")
+              a(href="#investor-news" aria-controls="investor-news" role="tab" data-toggle="tab") Investor News 
+            li.separator(style="margin-top: 4px;") /
+            li.general-news.item(role="presentation")
+              a(href="#general-news" aria-controls="general-news" role="tab" data-toggle="tab") General News
+      
+      .row.tab-row-content
+        .col-xs-12
+          div(role="tabpanel")
+            .tab-content 
+              #investor-news.tab-pane.fade.in.active(role="tabpanel")
+                .row.padding-bottom-small
+                  .col-sm-offset-10.col-sm-2
+                    select.form-control.pull-right
+                      each item in [2006,2007,2008,2009]
+                        option(value= item)= item
+                each i in [1,2,3]
+                  .row.latest-news
+                    each item in [1,2,3]
+                      .col-md-4.col-sm-4.col-xs-12
+                        .wrapper
+                          h3 
+                            a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
+                          p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                          date May 15, 2015
+              #general-news.tab-pane.fade(role="tabpanel")
+                .row.padding-bottom-small
+                  .col-sm-offset-10.col-sm-2
+                    select.form-control.pull-right
+                      each item in [2006,2007,2008,2009]
+                        option(value= item)= item
+                each i in [1,2,3]
+                  .row.latest-news
+                    each item in [1,2,3]
+                      .col-md-4.col-sm-4.col-xs-12
+                        .wrapper
+                          h3 
+                            a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
+                          p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                          date May 15, 2015
+      
 
-      each i in [1,2,3]
-        .row.latest-news
-          each item in [1,2,3]
-            .col-md-4.col-sm-4.col-xs-12
-              .wrapper
-                h3 
-                  a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
-                p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
-                date May 15, 2015
+
+      //- .row.filter
+      //-   .col-sm-2.col-sm-offset-10.col-xs-4.col-xs-offset-8
+      //-     select.pull-right.form-control(onchange="window.location = 'investor-relations--news-events--archives.html';")
+      //-       option 1990
+      //-       option 1991
+      //-       option 1992
+
+      
                 
       include ./template/pagination.jade
 

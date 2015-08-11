@@ -829,6 +829,95 @@
 	}
 }
 
+.latest-news {
+
+	&.archive {
+		.tab-row {
+			margin-bottom: 30px;
+
+			/* a.tab {
+				padding-left: 0px;
+			} */
+
+			@media screen and (max-width: 767px) {
+
+
+				.investor-news {
+					text-align: right;
+
+
+				}
+
+				.general-news {
+					text-align: left;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.investor-news {
+					> a {
+						padding-left: 0px;
+					}
+				}
+
+				
+			}
+		}
+
+		.tab-row-content {
+			.caption {
+				padding-top: 15px;
+				padding-bottom: 40px;
+			}
+
+			@media (min-width: 768px) {
+				#investor-news,
+				#general-news {
+					margin-top: -50px;
+				}
+			}
+		}
+
+	}
+
+	.tab {
+		border: none;
+
+		li {
+
+			@media screen and (max-width: 767px) {
+
+				&.item {
+
+					width: 49%;
+				}
+			}
+
+			a {
+				@include title-uppercase;
+
+				border: none;
+				padding-top: 9px;
+				color: $gray;
+
+				&:hover,
+				&:active {
+					border: none;
+					background-color: rgba(255,255,255,0);
+				}
+			}
+
+			&.active {
+				a {
+					border: none;
+					color: $light_blue;
+				}
+			}	
+			
+		}
+	}
+}
+
 .faq {
 	/* .questions {
 		li {
