@@ -37,22 +37,66 @@ block content
             option(url="investor-relations--news-events.html" selected) News and Events
             option(url="investor-relations--faq.html") FAQ
 
+  //- News tabbed
   .white-bg.padding-large
     .container.latest-news
       .row
-        .col-xs-8
+        .col-sm-4.col-xs-8
           h5 Latest News
-        .col-xs-4.pull-right.text-right
+
+        //-   .col-xs-4.pull-right.text-right
+        //-     a.view-all(href="investor-relations--news-events--archives.html") View all 
+        //-       i.fa.fa-angle-right
+        //- .row
+        //-   each item in [1,2,3]
+        //-     .col-sm-4
+        //-       .wrapper
+        //-         h3 
+        //-           a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
+        //-         p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+        //-         date May 15, 2015
+        .col-sm-4.hidden-xs
+          ul.nav.nav-tabs.tab(role="tablist")
+            li.item.text-right.active(role="presentation")
+              a(href="#investor-news" aria-controls="investor-news" role="tab" data-toggle="tab") Investor News
+            li.separator(style="margin-top: 4px;") /
+            li.text-left.item(role="presentation")
+              a(href="#general-news " aria-controls="general-news " role="tab" data-toggle="tab") General News
+
+        .col-sm-4.col-xs-4.text-right
           a.view-all(href="investor-relations--news-events--archives.html") View all 
             i.fa.fa-angle-right
+
+        .col-xs-12.visible-xs-block
+          ul.nav.nav-tabs.tab(role="tablist")
+            li.item.text-right.active(role="presentation")
+              a(href="#investor-news" aria-controls="investor-news" role="tab" data-toggle="tab") Investor News
+            li.separator(style="margin-top: 4px;") /
+            li.text-left.item(role="presentation")
+              a(href="#general-news " aria-controls="general-news " role="tab" data-toggle="tab") General News
       .row
-        each item in [1,2,3]
-          .col-sm-4
-            .wrapper
-              h3 
-                a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
-              p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
-              date May 15, 2015
+        .col-xs-12
+          div(role="tabpanel")
+            .tab-content
+              #investor-news.tab-pane.fade.in.active(role="tabpanel")
+                .row
+                  each item in [1,2,3]
+                    .col-sm-4
+                      .wrapper
+                        h3 
+                          a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
+                        p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                        date May 15, 2015
+                        
+              #general-news.tab-pane.fade(role="tabpanel")
+                .row
+                  each item in [1,2,3]
+                    .col-sm-4
+                      .wrapper
+                        h3 
+                          a(href="article-single.html") Lorem ipsum dolor sit amet consectetur elit
+                        p Nullam pulvinar laoreet nunc vel sollicitudin. Integer imperdiet fringilla urna et maximus. Maecenas placerat augue at enim venenatis placerat.
+                        date May 15, 2015
 
   .gray-bg.padding-large
     .container.investor-events
